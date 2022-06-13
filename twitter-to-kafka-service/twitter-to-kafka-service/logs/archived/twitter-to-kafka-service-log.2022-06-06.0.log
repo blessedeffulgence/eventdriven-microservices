@@ -1,0 +1,932 @@
+2022-06-06 13:41:37 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [TwitterToKafkaServiceApplicationTest], using SpringBootContextLoader
+2022-06-06 13:41:37 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [TwitterToKafkaServiceApplicationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-06-06 13:41:37 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [TwitterToKafkaServiceApplicationTest]: TwitterToKafkaServiceApplicationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-06-06 13:41:37 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration TwitterToKafkaServiceApplication for test class TwitterToKafkaServiceApplicationTest
+2022-06-06 13:41:37 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-06-06 13:41:37 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2ceb80a1, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@4b45dcb8, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7216fb24, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2072acb2, org.springframework.test.context.support.DirtiesContextTestExecutionListener@50ecde95, org.springframework.test.context.event.EventPublishingTestExecutionListener@35a9782c, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@70a36a66, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@45815ffc, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@732f29af, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@d3957fe, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6622fc65, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@299321e2]
+2022-06-06 13:41:37 [main] INFO  c.t.k.s.TwitterToKafkaServiceApplicationTest - Starting TwitterToKafkaServiceApplicationTest using Java 18.0.1.1 on AMasterPiece with PID 15192 (started by bless in D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\twitter-to-kafka-service)
+2022-06-06 13:41:37 [main] INFO  c.t.k.s.TwitterToKafkaServiceApplicationTest - No active profile set, falling back to 1 default profile: "default"
+2022-06-06 13:41:38 [main] INFO  c.t.k.s.TwitterToKafkaServiceApplicationTest - Started TwitterToKafkaServiceApplicationTest in 0.888 seconds (JVM running for 1.937)
+2022-06-06 13:41:38 [main] INFO  c.t.k.s.TwitterToKafkaServiceApplication - Application starting....
+2022-06-06 13:41:38 [main] INFO  c.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Spring, ElasticSearch]
+2022-06-06 14:49:42 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [TwitterToKafkaServiceApplicationTest], using SpringBootContextLoader
+2022-06-06 14:49:42 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [TwitterToKafkaServiceApplicationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-06-06 14:49:42 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [TwitterToKafkaServiceApplicationTest]: TwitterToKafkaServiceApplicationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-06-06 14:49:42 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration TwitterToKafkaServiceApplication for test class TwitterToKafkaServiceApplicationTest
+2022-06-06 14:49:42 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-06-06 14:49:42 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2ceb80a1, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@4b45dcb8, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7216fb24, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2072acb2, org.springframework.test.context.support.DirtiesContextTestExecutionListener@50ecde95, org.springframework.test.context.event.EventPublishingTestExecutionListener@35a9782c, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@70a36a66, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@45815ffc, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@732f29af, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@d3957fe, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6622fc65, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@299321e2]
+2022-06-06 14:49:42 [main] INFO  c.t.k.s.TwitterToKafkaServiceApplicationTest - Starting TwitterToKafkaServiceApplicationTest using Java 18.0.1.1 on AMasterPiece with PID 13504 (started by bless in D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\twitter-to-kafka-service)
+2022-06-06 14:49:42 [main] INFO  c.t.k.s.TwitterToKafkaServiceApplicationTest - No active profile set, falling back to 1 default profile: "default"
+2022-06-06 14:49:43 [main] INFO  c.t.k.s.TwitterToKafkaServiceApplicationTest - Started TwitterToKafkaServiceApplicationTest in 0.808 seconds (JVM running for 1.803)
+2022-06-06 14:49:43 [main] INFO  c.t.k.s.TwitterToKafkaServiceApplication - Application starting....
+2022-06-06 14:49:43 [main] INFO  c.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Spring, ElasticSearch]
+2022-06-06 14:49:43 [main] INFO  c.t.k.s.TwitterToKafkaServiceApplication - Welcome to kafka streams
+2022-06-06 14:49:43 [Twitter Stream consumer /  [1][initializing]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2022-06-06 14:49:43 [main] INFO  c.t.k.s.r.i.TwitterKafkaStreamRunner - Started Filtering for keywords[Java, Microservices, Kafka, Spring, ElasticSearch]
+2022-06-06 14:49:44 [SpringApplicationShutdownHook] INFO  c.t.k.s.r.i.TwitterKafkaStreamRunner - Closing twitter stream
+2022-06-06 16:28:13 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [TwitterToKafkaServiceApplicationTest], using SpringBootContextLoader
+2022-06-06 16:28:13 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [TwitterToKafkaServiceApplicationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-06-06 16:28:13 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [TwitterToKafkaServiceApplicationTest]: TwitterToKafkaServiceApplicationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-06-06 16:28:13 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration TwitterToKafkaServiceApplication for test class TwitterToKafkaServiceApplicationTest
+2022-06-06 16:28:13 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-06-06 16:28:13 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6622fc65, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@299321e2, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@23fb172e, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@64ba3208, org.springframework.test.context.support.DirtiesContextTestExecutionListener@158a3b2e, org.springframework.test.context.event.EventPublishingTestExecutionListener@25a6944c, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5e1fa5b1, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6b00f608, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2f17e30d, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3e821657, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1d131e1b, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@71cf1b07]
+2022-06-06 16:28:13 [main] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/bless/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/bless/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2022-06-06 16:28:13 [main] INFO  c.t.k.s.TwitterToKafkaServiceApplicationTest - Starting TwitterToKafkaServiceApplicationTest using Java 18.0.1.1 on AMasterPiece with PID 16908 (started by bless in D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\twitter-to-kafka-service)
+2022-06-06 16:28:13 [main] INFO  c.t.k.s.TwitterToKafkaServiceApplicationTest - No active profile set, falling back to 1 default profile: "default"
+2022-06-06 16:28:14 [main] INFO  c.t.k.s.TwitterToKafkaServiceApplicationTest - Started TwitterToKafkaServiceApplicationTest in 0.756 seconds (JVM running for 1.71)
+2022-06-06 16:28:14 [main] INFO  c.t.k.s.TwitterToKafkaServiceApplication - Application starting....
+2022-06-06 16:28:14 [main] INFO  c.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Spring, ElasticSearch]
+2022-06-06 16:28:14 [main] INFO  c.t.k.s.TwitterToKafkaServiceApplication - Welcome to kafka streams
+2022-06-06 16:28:14 [main] INFO  c.t.k.s.r.i.TwitterV2KafkaStreamRunner - Created filter for twitter stream for keywords: [Java, Microservices, Kafka, Spring, ElasticSearch]
+2022-06-06 16:28:17 [main] INFO  c.t.k.s.r.impl.TwitterV2StreamHelper - Created rules for twitter stream Java
+2022-06-06 16:28:18 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-06-06 16:28:18 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:774)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:755)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:132)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:43)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$8(ClassBasedTestDescriptor.java:363)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:368)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$9(ClassBasedTestDescriptor.java:363)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:362)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:283)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:282)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:272)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:271)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:102)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:101)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:66)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: java.lang.NullPointerException: Cannot invoke "String.isEmpty()" because "line" is null
+	at TwitterV2StreamHelper.connectStream(TwitterV2StreamHelper.java:86)
+	at TwitterV2KafkaStreamRunner.start(TwitterV2KafkaStreamRunner.java:38)
+	at TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:33)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:771)
+	... 73 common frames omitted
+2022-06-06 16:28:18 [main] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/bless/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/bless/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2022-06-06 16:28:18 [main] INFO  c.t.k.s.TwitterToKafkaServiceApplicationTest - Starting TwitterToKafkaServiceApplicationTest using Java 18.0.1.1 on AMasterPiece with PID 16908 (started by bless in D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\twitter-to-kafka-service)
+2022-06-06 16:28:18 [main] INFO  c.t.k.s.TwitterToKafkaServiceApplicationTest - No active profile set, falling back to 1 default profile: "default"
+2022-06-06 16:28:18 [main] INFO  c.t.k.s.TwitterToKafkaServiceApplicationTest - Started TwitterToKafkaServiceApplicationTest in 0.252 seconds (JVM running for 6.422)
+2022-06-06 16:28:18 [main] INFO  c.t.k.s.TwitterToKafkaServiceApplication - Application starting....
+2022-06-06 16:28:18 [main] INFO  c.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Spring, ElasticSearch]
+2022-06-06 16:28:18 [main] INFO  c.t.k.s.TwitterToKafkaServiceApplication - Welcome to kafka streams
+2022-06-06 16:28:18 [main] INFO  c.t.k.s.r.i.TwitterV2KafkaStreamRunner - Created filter for twitter stream for keywords: [Java, Microservices, Kafka, Spring, ElasticSearch]
+2022-06-06 16:28:23 [main] INFO  c.t.k.s.r.impl.TwitterV2StreamHelper - Created rules for twitter stream Java
+2022-06-06 16:28:24 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-06-06 16:28:24 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:774)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:755)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:132)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.outputConditionEvaluationReport(SpringBootDependencyInjectionTestExecutionListener.java:53)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:46)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$8(ClassBasedTestDescriptor.java:363)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:368)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$9(ClassBasedTestDescriptor.java:363)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:362)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:283)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:282)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:272)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:271)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:102)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:101)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:66)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: java.lang.NullPointerException: Cannot invoke "String.isEmpty()" because "line" is null
+	at TwitterV2StreamHelper.connectStream(TwitterV2StreamHelper.java:86)
+	at TwitterV2KafkaStreamRunner.start(TwitterV2KafkaStreamRunner.java:38)
+	at TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:33)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:771)
+	... 72 common frames omitted
+2022-06-06 16:28:24 [main] ERROR o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@64ba3208] to prepare test instance [TwitterToKafkaServiceApplicationTest@18a19e]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:43)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$8(ClassBasedTestDescriptor.java:363)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:368)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$9(ClassBasedTestDescriptor.java:363)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:362)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:283)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:282)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:272)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:271)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:102)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:101)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:66)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:774)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:755)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:132)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	... 68 common frames omitted
+Caused by: java.lang.NullPointerException: Cannot invoke "String.isEmpty()" because "line" is null
+	at TwitterV2StreamHelper.connectStream(TwitterV2StreamHelper.java:86)
+	at TwitterV2KafkaStreamRunner.start(TwitterV2KafkaStreamRunner.java:38)
+	at TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:33)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:771)
+	... 73 common frames omitted
+2022-06-06 16:47:50 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [TwitterToKafkaServiceApplicationTest], using SpringBootContextLoader
+2022-06-06 16:47:50 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [TwitterToKafkaServiceApplicationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-06-06 16:47:50 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [TwitterToKafkaServiceApplicationTest]: TwitterToKafkaServiceApplicationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-06-06 16:47:50 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration TwitterToKafkaServiceApplication for test class TwitterToKafkaServiceApplicationTest
+2022-06-06 16:47:50 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-06-06 16:47:50 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@23fb172e, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@64ba3208, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@158a3b2e, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@25a6944c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5e1fa5b1, org.springframework.test.context.event.EventPublishingTestExecutionListener@6b00f608, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2f17e30d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@3e821657, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1d131e1b, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@71cf1b07, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@615091b8, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@4fce136b]
+2022-06-06 16:47:51 [main] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/bless/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/bless/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2022-06-06 16:47:51 [main] INFO  c.t.k.s.TwitterToKafkaServiceApplicationTest - Starting TwitterToKafkaServiceApplicationTest using Java 18.0.1.1 on AMasterPiece with PID 20272 (started by bless in D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\twitter-to-kafka-service)
+2022-06-06 16:47:51 [main] INFO  c.t.k.s.TwitterToKafkaServiceApplicationTest - No active profile set, falling back to 1 default profile: "default"
+2022-06-06 16:47:51 [main] INFO  c.t.k.s.TwitterToKafkaServiceApplicationTest - Started TwitterToKafkaServiceApplicationTest in 0.858 seconds (JVM running for 1.875)
+2022-06-06 16:47:51 [main] INFO  c.t.k.s.TwitterToKafkaServiceApplication - Application starting....
+2022-06-06 16:47:51 [main] INFO  c.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Spring, ElasticSearch]
+2022-06-06 16:47:51 [main] INFO  c.t.k.s.TwitterToKafkaServiceApplication - Welcome to kafka streams
+2022-06-06 16:47:51 [main] INFO  c.t.k.s.r.i.TwitterV2KafkaStreamRunner - Created filter for twitter stream for keywords: [Java, Microservices, Kafka, Spring, ElasticSearch]
+2022-06-06 16:48:39 [main] INFO  c.t.k.s.r.impl.TwitterV2StreamHelper - Created rules for twitter stream Java
+2022-06-06 16:48:52 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @hinaga_spring: #tkrvプラス 
+⚠垢移動につき再掲
+
+彼女に男の影がちらついて感情を揺さぶられるbntn幹i部の皆様
+(kkch/kkni/snz/rind) https://t.co/RwLLY74iq4
+2022-06-06 16:48:52 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}https://t.co/SPSB5txgJi
+2022-06-06 16:48:52 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @livedoornews: 【朗報】『マイクラ』Java版と統合版 Windows PC向けにセット販売へ
+https://t.co/drCfJQyO6P
+
+すでにいずれかを所有済みのユーザーは、もう片方のエディションを無料で入手できるようになる。さらに、Java版と統…
+2022-06-06 16:48:52 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}@BigBoobs_Milf @_horny_spring_break_sluts_sex_education_the_movie_shemale_oakland_interracial_t_girls_forum
+2022-06-06 16:48:52 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}@Kafka_0666 If it was me, it would mean I was old and senile and belong in a home for the mentally ill! I can’t speak for you, though 😁😆 It could mean you enjoy throwing your money away🤣😁😄😆
+2022-06-06 16:48:52 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @configuroweb: No. 2396 programming meme #programmingjoke #code #coding #javascript #python #datascience #programming #programmer #joke…
+2022-06-06 16:48:52 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}5 times a day.
+2022-06-06 16:48:52 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/7 14:59迄にR…
+2022-06-06 16:48:52 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}@wakamusya_eigyo あふろんサン
+自分の中の嫌な部分から逃げず、
+対峙できたものだけが、人に優しくなれると
+僕は信じています。
+2022-06-06 16:48:52 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/7 14:59迄にR…
+2022-06-06 16:48:52 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/7 14:59迄にR…
+2022-06-06 16:48:52 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/7 14:59迄にR…
+2022-06-06 16:48:52 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @uniworldnews: Enrolment crisis at US colleges and universities deepened in spring 2022 even as pandemic effects ebb, 
+raising concerns…
+2022-06-06 16:48:52 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @configuroweb: No. 2396 programming meme #programmingjoke #code #coding #javascript #python #datascience #programming #programmer #joke…
+2022-06-06 16:49:00 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @hinaga_spring: #tkrvプラス 
+⚠垢移動につき再掲
+
+彼女に男の影がちらついて感情を揺さぶられるbntn幹i部の皆様
+(kkch/kkni/snz/rind) https://t.co/RwLLY74iq4
+2022-06-06 16:49:00 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}@mohjb @hot_girl_spring Man I think too limitedly I said a mouse ball :P
+2022-06-06 16:49:00 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @spring_record_: 220606 사운드웨이브 팬싸pre
+
+아이고 무섭다🫢🫢
+
+#정세운 https://t.co/hVNIj5sxFo
+2022-06-06 16:49:00 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/7 14:59迄にR…
+2022-06-06 16:49:00 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @motherlander: Dari 504 patung Buddha yang seharusnya ada di Borobudur, 43 'hilang tak tergantikan', lebih dari 300 lainnya rusak, 250 d…
+2022-06-06 16:49:00 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}The Spring Fling Hiring Event hosted by the DC Housing Authority is happening tomorrow, June 7th, from 10 a.m. - 2 p.m. https://t.co/N323O530Ji
+2022-06-06 16:49:00 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}hot spring today 😌
+2022-06-06 16:49:00 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}@Spring_ff3 私とも遊べ
+2022-06-06 16:49:00 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}@DaultaniIshann @kunalstwt I haven't started open source yet cause I am starting Java from today.
+But you can start open source from GitHub, GSoc as a beginner.
+2022-06-06 16:49:00 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}So lovely. The birds came out to chat! https://t.co/ExKAhKDPAd
+2022-06-06 16:49:00 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @cheong320: 내가 특별히 좋아하는 현진이 영상
+인형이 모라고 일케 무서워하냐고 ( ᵕ̩̩ㅅᵕ̩̩ ) 
+https://t.co/0iyFYtG3P6
+2022-06-06 16:49:00 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @spring__0726: 220606 애플뮤직 원어스 영통팬싸
+
+서호 생일 기념 소원 들어주기
+원어스와 투문의 행복을 위한 정권찌르기
+(같이하고 옴)
+
+#원어스 #서호 https://t.co/3vHLth4VjV
+2022-06-06 16:49:00 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @motherlander: Dari 504 patung Buddha yang seharusnya ada di Borobudur, 43 'hilang tak tergantikan', lebih dari 300 lainnya rusak, 250 d…
+2022-06-06 16:49:00 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @tooth_ghost: Enjoy the hot spring!☺️
+#SonnyBrisko #Briskart https://t.co/XMXJjO3Nhx
+2022-06-06 16:49:00 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}マイクラjava版と統合版セット売りになるらしいし買おっかなー！
+2022-06-06 16:49:07 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}@Revantyas1 thanks for your input
+2022-06-06 16:49:07 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}@Spring_190304 언니 사실 나 수술실이야....
+웃다가배아파서 https://t.co/T1LHJ1FoIr
+2022-06-06 16:49:07 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}ang hot sa hot spring bat ganon chz https://t.co/jq0tWscg7M
+2022-06-06 16:49:07 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}@haru12_spring 見てられない展開なのです…😭
+2022-06-06 16:49:07 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}Beautiful kurdistan ❤️
+Video by haamd mala karam
+#waterfall #hiking #mountains #mountain #nature #NatureBeauty #naturelove #beauty #beautiful
+#Spring #Travel https://t.co/823JeUJn35
+2022-06-06 16:49:07 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}@SeanMiPhillips @SeanMiPhillips, this looks awesome!!
+2022-06-06 16:49:07 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/7 14:59迄にR…
+2022-06-06 16:49:07 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}@RelianceCares Call centre in Philippines
+2022-06-06 16:49:07 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @philosproject: Our Philos Leadership Institute Spring ‘22 participants are in Israel! 🇮🇱
+
+For the next 2 weeks, we will study Islam’s i…
+2022-06-06 16:49:07 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}@victoriabeckham 🕹 $HUB - HUBCOIN🕹
+HubCoin (#HUB) is the gaming hub for gamers and enthusiasts
+Connect, Battle and Win with HubCoin! 
+
+🕹 More than 330 holders
+🕹 Listing on LBANK is done
+
+Flexible staking programme soon with 24% APY
+🔥TG: https://t.co/xJj3Dr5Jwo
+🔥Web: https://t.co/GiIkarHDtq
+2022-06-06 16:49:07 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @Imminent_Flair: Creating for millenniums @Imminent_Flair 
+.
+
+.
+
+.
+
+#freelance #business #cyber #AI #coding #Saturday #code #developer #…
+2022-06-06 16:49:07 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}@ConorMcTether @Geoffrey_Ford14 @ICU1010 @NBCPhiladelphia Not that weird running around aimlessly and the nonstop fighting, though.
+2022-06-06 16:49:07 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}@badhabstakes Nope, calculus with a hangover
+2022-06-06 16:49:07 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @StrangerNews11: It was supposed to be the best Spring break ever...💔💥😭 #StrangerThings4 https://t.co/ovQprDsEOk
+2022-06-06 16:49:07 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @FieldmousePress: We’re pleased to announce the publication of our Spring & Summer 2022 Season on Crowdfundr today! We’re publishing fou…
+2022-06-06 16:49:13 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @configuroweb: No. 2396 programming meme #programmingjoke #code #coding #javascript #python #datascience #programming #programmer #joke…
+2022-06-06 16:49:13 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @JAVA_ANIMAL: アイルランドが毛皮農場を禁止！法案が3月29日、上院での最終段階を終え、今後、大統領による署名がなされます。残る3つの毛皮農場は、今年中に閉鎖される見込みです。
+JAVAも加盟しているFur Free AllianceのメンバーRespect…
+2022-06-06 16:49:13 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}@Jessicam6946 @SomertonEm Lol we learned that the hard way. Omg.
+2022-06-06 16:49:13 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}Java and Bedrock editions merge, creating one Minecraft to rule them all
+
+https://t.co/nt6SLh9dkA
+2022-06-06 16:49:13 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}@PeterBackes3 @scrowder I’m not taking children to it and I’m changing the channel. Pretty simple.
+2022-06-06 16:49:13 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/7 14:59迄にR…
+2022-06-06 16:49:13 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}@RacunBelanja mincun diskon 60k ada link tanpa refresh lagi ngga?
+2022-06-06 16:49:13 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @TheGraboid: Jon Moxley vs. AJ Gray
+Joey Janela’s Spring Break 6 pt. 1
+March 31st, 2022
+Fair Park
+Dallas, TX https://t.co/Osv9rWusJZ
+2022-06-06 16:49:13 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}@NellHitchens @mgowan18 @Timm_on_Java @Hutt4561 @Karl_Lauterbach Was sollen das für Maßnahmen sein, die vulnerable Gruppen schützen?
+2022-06-06 16:49:13 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @BTSarmy4ever94: Top 5 Most Liked Songs on Melon🇰🇷
+
+1. @BTS_twt's Spring Day — 560,380
+2. Through The Night — 442,068
+3. Boy With Luv —…
+2022-06-06 16:49:13 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}Henry Kitcher photographed by Ferry van der Nat and styled by Raphael Hirsch for Tom Ford, Spring/Summer 2019, Look no. 7 https://t.co/IvZUlrC5Hl
+2022-06-06 16:49:13 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}@R_are_L_ 整地気持ちいいね
+2022-06-06 16:49:13 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}#Lanzarote 💫
+
+Pool or sea? The beautiful panoramic view that gifts us Ana. 🧡
+
+Thank you, Ana! @ana_cres 
+
+#GranTagoro #Family #Fun #PoolDays #DreamDays #Lanzarote #Spring https://t.co/bW8THXc70U
+2022-06-06 16:49:19 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}@Paupee63 We are sending the police immediately. That’s just not nice. Would you rather a nail file for future use?
+2022-06-06 16:49:19 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}MULTI ADSBX CIRCLING ALERT : At time Mon Jun  6 14:38:48 2022 #RN233    was likely to be circling at FL139 22nm from UIA Andalusia_VOR_US
+ near J P Howard Road, Spring Hill, Conecuh County, Alab #AvGeek #ADSB https://t.co/BtP5nN60jc https://t.co/LAgSlZnG2f
+2022-06-06 16:49:19 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}זה אמיתי 😳 https://t.co/Kl23yKOGPl
+2022-06-06 16:49:19 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}Help us protect lives @HSCAberdeen @fimitchelhill @Lisalawril1 @luangrugeon @sandramacleod14 @JuneBarnard @carolineand73 @alimac04 @EmmaLamont82 @gillbruce61 @jo_conlon https://t.co/0lRgBPZ7rl
+2022-06-06 16:49:19 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}@OCTPATHofficial こっちのビハインドもよかったよー❤️
+これ見たら続きみたくて、FCに入ってしまう人増えたらいいなぁー🦄💜✨
+2022-06-06 16:49:19 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/7 14:59迄にR…
+2022-06-06 16:49:19 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @tooth_ghost: Enjoy the hot spring!☺️
+#SonnyBrisko #Briskart https://t.co/XMXJjO3Nhx
+2022-06-06 16:49:19 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @AmazonScience: Amazon Research Awards' spring 2022 call for proposals is now open for submissions until July 8.
+
+Research areas are:
+➡️…
+2022-06-06 16:49:19 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @dahyunsarchives: #DAHYUN ttt spring picnic ep. 3 https://t.co/wk5qbZkQBq
+2022-06-06 16:49:19 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}[혼자 공부하는 Java] Chapter 06-5. 클래스_인스턴스 멤버와 정적 멤버_2022/05/30 https://t.co/gubgkiZIUh
+2022-06-06 16:49:19 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}@Spring_sayu0127 可哀想です
+2022-06-06 16:49:19 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}@itsanitarani @Barbour @JohnLewisRetail Blondes are ok but you're hotter ! x
+2022-06-06 16:49:19 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @TubersT: sound frequency Generator 
+https://t.co/V4VFvEEIWB
+
+#Neymar #Amanda #Casemiro #ASAHI #Danilo #elasnogau #BigData #Analytics #D…
+2022-06-06 16:49:28 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/7 14:59迄にR…
+2022-06-06 16:49:28 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @FartsUSA: @muntaba @Java_jigga Standing outside my HOOTERS screaming GROOMERS. https://t.co/XXpbqeramL
+2022-06-06 16:49:28 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}Stephen Frears to direct BILLY WILDER & ME from Christopher Hampton’s screenplay starring Christoph Waltz. Production will commence in the spring of 2023 in Greece, Munich and Paris. https://t.co/pQ5mHaPsoz
+2022-06-06 16:49:28 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @BAMBAMxABYSS: [NOTICE]
+
+Don't miss BamBam's exclusive interview and poster for French magazine Kpop Life in the spring issue released o…
+2022-06-06 16:49:28 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @denfaminicogame: 『マインクラフト』Java版と統合版をWindows PC向けにセット販売へ
+https://t.co/rPPI2YJQpc
+
+どちらか一方を所有済みのユーザーは、もう片方のエディションを無料で入手可能に。発売以降も各エディションは独立…
+2022-06-06 16:49:28 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}@Snow__Spring 아하. 그 쪽이 진짜였던 거구나? (이제 알았다는 듯 고개 끄덕끄덕.)
+2022-06-06 16:49:28 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}00/06/06 07:18:65 مe
+No other woman had that air of spring in Janu
+?؟
+
+سےفے نمشے https://t.co/tVZPoz1sjT
+2022-06-06 16:49:28 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/7 14:59迄にR…
+2022-06-06 16:49:28 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}@Spring_TEIO 素の声で叫んじゃったよ…うがいするのも足ガタガタで頑張ってさ〜…
+2022-06-06 16:49:28 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @360MarTech: @SirionLabs  Selected As Value Leader In Spend Matters’ Spring 2022 SolutionMap For Contract Lifecycle Management
+@SupplyMa…
+2022-06-06 16:49:28 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}@ShitsDope @campanulacea Not really man lol, graduated high school just over a year ago, been working full time in the summer and college full time in the fall and winter/spring 🤷🏼‍♂️ plus, if I’m old enough to go to war for the country I think I’m done growing up ;)
+2022-06-06 16:49:28 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @DIORJP: キム・ジョーンズとERLがゲスト デザインした #DiorSpring23 メンズのショーに、アンバサダーのSehunがオンラインで参加！風合いのあるセーターとパステルのパンツで、カリフォルニアの太陽を思わせる装いを披露しました。
+https://t.c…
+2022-06-06 16:49:28 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}@RadioCitizenFM @EtanaStrongOne @OgalTina @abdimunai Tamu Tamu #driveonreloaded nikiwa spring valley
+2022-06-06 16:49:28 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}cek Java in Paris | Buah Karya Bangsa di Paris https://t.co/c6uC2up7kl #ShopeeID https://t.co/h93yfQTXrt
+2022-06-06 16:49:31 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @BPCLimited: Also including, Balancing Bridge, Two-Seater Arc Swing, Garden Bench, Garden Swing, Spring Rider, were also installed makin…
+2022-06-06 16:49:31 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @PrettyJiBrasil: 'Hold My Hand' agora é a #6 música da #IU a passar mais tempo no chart semanal do MelOn, ultrapassando 'I Give You My H…
+2022-06-06 16:49:31 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @spring__0726: 220606 애플뮤직 원어스 영통팬싸
+
+상남자(상여자) 특 - 두글자(한글자)로 핸드폰 저장함😎
+
+재미는 없지만 오늘 똘망똘망 병아리 같아><
+
+#이도 #건학 #원어스 https://t.co/zyu1INJ8d2
+2022-06-06 16:49:31 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @BTSarmy4ever94: .@BTS_twt's "Spring Day" (2017) has already accumulated 560,000 likes on Melon, extending its record as the most liked…
+2022-06-06 16:49:31 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @BTSarmy4ever94: .@BTS_twt's "Spring Day" (2017) has already accumulated 560,000 likes on Melon, extending its record as the most liked…
+2022-06-06 16:49:31 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}@AliceOseman @jotozacoatl
+2022-06-06 16:49:31 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/7 14:59迄にR…
+2022-06-06 16:49:31 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @motherlander: Dari 504 patung Buddha yang seharusnya ada di Borobudur, 43 'hilang tak tergantikan', lebih dari 300 lainnya rusak, 250 d…
+2022-06-06 16:49:31 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @cloudyyamilee: spring halo 2021 giveaway!
+
+• follow me + @evmiox 
+• like + retweet https://t.co/TIvgeMQqtj
+2022-06-06 16:49:31 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @maglionero12: Kafka on holiday. Make my day. https://t.co/kAkkp9Ufsb
+2022-06-06 16:49:31 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @motherlander: Dari 504 patung Buddha yang seharusnya ada di Borobudur, 43 'hilang tak tergantikan', lebih dari 300 lainnya rusak, 250 d…
+2022-06-06 16:49:31 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}@words_matter18 It is perfect for rhodos. This spring has been crummy for most everything, but perfect for them. Cool and rainy. I know it's your color Words.
+2022-06-06 16:49:31 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}6月8日にマイクラアプデくるけど
+楽しみ(^^)
+統合版持ってる人はJava版無料で出来るとあったけど
+私SwitchとモバイルでマイクラあるけどJava版出来たら是非やる！！！
+2022-06-06 16:49:31 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}@Joi2James https://t.co/XTmiP2Njte
+0.2 $ETH https://t.co/cJXuDa7vCO
+2022-06-06 16:49:39 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/7 14:59迄にR…
+2022-06-06 16:49:39 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @tae15adams: RAIDER NATION ☠️! Come out and support my youth football camp with @flexworkmgt at the Spring Valley High School, June 18th…
+2022-06-06 16:49:39 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}Espero que essa semana consiga finalizar java com o bruce
+2022-06-06 16:49:39 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @suryzcooking: Fresh Spring Rolls with Best Sauce (VIDEO)! recipe @ https://t.co/2qvxPqGlj4 https://t.co/TcaAHrsnEy
+2022-06-06 16:49:39 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @nbn_tweets: NBN's Spring 2022 mag is here! Pick up a copy at The Rock, Norris or Tech tomorrow from 11-4! https://t.co/PXC0Jp0nQr
+2022-06-06 16:49:39 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}@lylapocalypse @PeterBackes3 @scrowder He is…
+2022-06-06 16:49:39 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}제가 어떻게 모아를 치겠어용.,.!! 열라쳐 드릴게용!! https://t.co/XSflIOxhq3 https://t.co/aVpo3c7snW
+2022-06-06 16:49:39 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @spring_2021: On this morning, Military council troops continuously fired artillery shells to YePote and SinZaeYwar Villages from YePote…
+2022-06-06 16:49:39 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @spring_record_: 220606 사운드웨이브 팬싸pre
+
+🫧🫧🫧🫧🫧
+
+#정세운 https://t.co/bI631iIp4G
+2022-06-06 16:49:39 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}"The personal information of more than 30,000 students was found on an improperly secured Elasticsearch server, security researchers with SafetyDetectives report."
+2022-06-06 16:49:39 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}@BTSarmy4ever94 @BTS_twt Bts king!!
+2022-06-06 16:49:39 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @CheyCab: I drove some prom kids this spring and one of girls said she didn’t like working at caribou and getting up early because she,…
+2022-06-06 16:49:39 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}@manaw0804 Spring day
+
+#BTS9thAnniversary 
+#9YearswithBTS
+2022-06-06 16:49:39 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/7 14:59迄にR…
+2022-06-06 16:49:39 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}@Noland_Spring 👍🏼
+2022-06-06 16:49:44 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @dtd_myaunsfw: Ayo it’s spring😪💦 there will be additional 18+ materials on my Patreon by tomorrow. All patrons are going to get the pack…
+2022-06-06 16:49:44 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @KrisztinaJano: Let's make our own spring together,
+let's turn out lives into the garden of love so full of joy..#You♥️ https://t.co/9bf…
+2022-06-06 16:49:44 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}@2169_spring 
+ご応募ありがとうございました！
+抽選結果は後日、DMでお知らせいたします◎
+
+なすマスターを目指すあなたへ豆知識をお届け！
+今回は、塩を使ったあく抜きの方法📝
+
+もっと知りたい方はこちらへどうぞ↓
+https://t.co/3uXuYscAUS https://t.co/owZHMU41Sr
+2022-06-06 16:49:44 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @angelicadisogno: @dianadep1 @marmelyr @ejlazar @1Atsuhimerose2 @ampomata @BrindusaB1 @Spiros209 @peac4love @djolavarrieta @vvgcabras @s…
+2022-06-06 16:49:44 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @wdd_ocheme: Two to Three Fully-funded PhD Positions available at the Department of Civil and Environmental Engineering at Texas A&M for…
+2022-06-06 16:49:44 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @cloudyyamilee: spring halo 2021 giveaway!
+
+• follow me + @evmiox 
+• like + retweet https://t.co/TIvgeMQqtj
+2022-06-06 16:49:44 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @theupdatearmy: Chart Diário MelOn – [05.06.2022]
+
+#1(=) That That (prod.&feat. SUGA)
+#33(+3) Dynamite
+#39(+2) Butter
+#48(+5) PTD
+#73(+4…
+2022-06-06 16:49:44 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}.@usda_oce Wx: Cool but dry weather favors late-season planting (as field conditions permit) for a variety of crops—including #corn, #soybeans, sugarbeets, and spring #wheat—in the Red River Valley of the North (#Plant22). https://t.co/SSCzlmgJAZ
+2022-06-06 16:49:44 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/7 14:59迄にR…
+2022-06-06 16:49:44 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}haha birthday gift ko na sana sa sarili ko yung spring ed kineme kaya lang kinancel ko nalang kasi baka walang pcs 🥲
+2022-06-06 16:49:44 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @JAVA_ANIMAL: アイルランドが毛皮農場を禁止！法案が3月29日、上院での最終段階を終え、今後、大統領による署名がなされます。残る3つの毛皮農場は、今年中に閉鎖される見込みです。
+JAVAも加盟しているFur Free AllianceのメンバーRespect…
+2022-06-06 16:49:44 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @theupdatearmy: Chart Semanal MelOn pt.2
+
+#76(-2) Spring Day
+[277 semanas no Top100]
+
+#79(-6) With You by Jimin
+[6 semanas no Top 100]…
+2022-06-06 16:49:49 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}@DrunenWillem @ongehoordnedtv @KAFKA_Dev @GalerieNoes @RGBhacks @RegioGV @POL_GooienVecht @BureauRVS @ProvincieNH @RZwijnenberg @PubNub Waar ik nog een formule voor moet bedenken. De onbewijsbare normaalheid van mannen 🙉 https://t.co/QrcXLvHn6N
+2022-06-06 16:49:49 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @hinaga_spring: #tkrvプラス 
+⚠垢移動につき再掲
+
+待ち合わせする弟、媚薬飲まされた弟、兄ちゃんに嫉妬する弟の3本です https://t.co/kHbc0i3BFE
+2022-06-06 16:49:49 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @realsoundjp: 【コラム】M!LK（@milk_info）、ライブを通して着実に重ねる成長　5人の個性と団結見せ切った『SPRING TOUR 2022 "CIRCUS"』ファイナル
+
+#MILK #MILK春CIRCUS
+https://t.co/7OOgt…
+2022-06-06 16:49:49 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}@abantoheimu1 情報元間違えてたらしくてクロスプレイじゃないみたい🤔
+ただ、Java持ってたら統合無料でもらえるみたいなのも見た〜
+2022-06-06 16:49:49 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}昨日と今日にやったダンカグのリザルトの撮った写真の残りです。
+Spring of Dreams、MISS31もあるだと！？ https://t.co/Ew7tjhs7oF
+2022-06-06 16:49:49 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/7 14:59迄にR…
+2022-06-06 16:49:49 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}Minecraft Java and Bedrock Combine, Will Not Be Sold Separately https://t.co/1KMhH3bInn https://t.co/qAd1h2cfwf
+2022-06-06 16:49:49 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @harriorrihar: Less future, more spring. (2017) https://t.co/qaAeretY3R
+2022-06-06 16:49:49 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @daantjedesiree: @lientje1967 @sjoerdgalema Vanmorgen nog bezig geweest met het aanbrengen van de verplichte rubberblokken in de vloer v…
+2022-06-06 16:49:49 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @OU_Wrestling: Let's not forget the impressive run from @BPicklo this U20 circuit so far! 
+
+8️⃣ wins and 4️⃣ techs in eleven matches thi…
+2022-06-06 16:49:49 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}@PTIofficial @ImranKhanPTI https://t.co/3fm4CDMPrR
+2022-06-06 16:49:49 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @heartstoppeer: NO BC THERES SOMETHING ABOUT CHARLIE SPRING STANDING ON THE CHAIR SO HE CAN GET A BETTER LOOK AT NICK PLAYING RUGBY
+2022-06-06 16:49:55 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/7 14:59迄にR…
+2022-06-06 16:49:55 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}へ？ https://t.co/RfEIrbIDtn
+2022-06-06 16:49:55 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}Let's get you verified on all social media platforms ✅
+
+#hackingtools #hackingnews #hacker #hackers #hackerman #hackerspace #learnhacking #hacking #hackerstayaway #hackinglife #ethicalhacker #cybersecurity #termuxhacking #cyberawareness #java #coding #programmer #software https://t.co/54aKIoKY4n
+2022-06-06 16:49:55 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}@5STARS_4U_LOVE けこちゃん普通に見終わった？
+私ひとりで変な人だったはず😂
+2022-06-06 16:49:55 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}@fukutaityo_o わからん
+2022-06-06 16:49:55 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}Lucky me...I got to take this group of kids to my first ever Spring STEM Camp! They went with me in January and then again last week. 3 days and 2 nights of place based learning! 100% grant funded. https://t.co/sD9NaWXyBZ
+2022-06-06 16:49:55 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @NineArchesPress: Our Spring 2022 Book Bundle is here, a trio of titles bought together as a perfect reading package, just £20+ post htt…
+2022-06-06 16:49:55 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/7 14:59迄にR…
+2022-06-06 16:49:55 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}#Daiya'sFact  Dia is Amu's fourth and final Guardian Character. Her egg was created a while after Ran, Miki, and Suu were born. Because Amu disliked everything that happened in the spring term, Dia lost sight of her owner, became an X-Character, and went to Utau Hoshina.
+2022-06-06 16:49:55 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}@hotteok_pwr @BTS_twt Spring Day
+2022-06-06 16:49:55 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}If the spring of 2020 taught us anything, enjoy every moment we have with our students. With 3 days left make sure to slow down and appreciate the tender moments, the smiles, laughter, and joy! #dg58pride https://t.co/dJ5lRaDegT
+2022-06-06 16:49:55 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @motherlander: Dari 504 patung Buddha yang seharusnya ada di Borobudur, 43 'hilang tak tergantikan', lebih dari 300 lainnya rusak, 250 d…
+2022-06-06 16:49:55 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}Enter for a chance to win 1 of 12 skincare prizes during our Spring Season Giveaway! https://t.co/FdYoW8vjl4
+2022-06-06 16:49:55 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @birdfrogdraws: First love // late spring https://t.co/XjdVtH0IN6
+2022-06-06 16:49:55 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}VANCE JOY SCHEDULING HIS CONCERT IN MY CITY WHILE IM HOME ON SPRING BREAK OH I LOVE HIM
+2022-06-06 16:49:58 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @livedoornews: 【朗報】『マイクラ』Java版と統合版 Windows PC向けにセット販売へ
+https://t.co/drCfJQyO6P
+
+すでにいずれかを所有済みのユーザーは、もう片方のエディションを無料で入手できるようになる。さらに、Java版と統…
+2022-06-06 16:49:58 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}@GabrielleRou C'est quoi ces fleurs ?
+Superbes 🤩
+2022-06-06 16:49:58 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/7 14:59迄にR…
+2022-06-06 16:49:58 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @CkHken1000000: 【交換】ジャンプGIGA 2022 SPRING 付録 
+
+《譲》各1
+SAKAMOTO DAYS  デコステッカー
+呪術廻戦 死滅回游特製クリアファイル
+ハイキュー!! 敵校ポスター
+
+《求》画像④
+最強ジャンプ7月号 ヒロアカステッカー…
+2022-06-06 16:49:58 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}@kakeruSHI_ch 持ってます持ってます！
+
+統合版とかもあるんですけど、javaが１番！
+
+(･ิω･ิ)
+2022-06-06 16:49:58 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}@FNurhammam 😏
+2022-06-06 16:49:58 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @Skyla69148749: Jimin 
+and 
+Buldak Fried Noodles 🍳
+
+This song #WithYou by #JIMIN #BTSJIMIN of #BTS (@BTS_twt) and Sungwoon like a spring…
+2022-06-06 16:49:58 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}#HelpMyanmarIDPs
+#2022Jun6Coup
+#WhatsHappeningInMyanmar https://t.co/gLR7l7Me32
+2022-06-06 16:49:58 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}Ups letzte woche gar nicht gemacht aber dafür hier mein festivalsong vom Sputnik Spring Break.
+Der geht mir auch 0 aus dem kopf asdfgdfgh
+https://t.co/GQLfHyGJ7G
+2022-06-06 16:49:58 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @cheong320: 내가 특별히 좋아하는 현진이 영상
+인형이 모라고 일케 무서워하냐고 ( ᵕ̩̩ㅅᵕ̩̩ ) 
+https://t.co/0iyFYtG3P6
+2022-06-06 16:49:58 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}@cloudyyamilee @evmiox done
+2022-06-06 16:49:58 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}@Danimalee1 @mallariaubrey It can be exploited or the person is fake just trying to scam u
+2022-06-06 16:49:58 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @denfaminicogame: 『マインクラフト』Java版と統合版をWindows PC向けにセット販売へ
+https://t.co/rPPI2YJQpc
+
+どちらか一方を所有済みのユーザーは、もう片方のエディションを無料で入手可能に。発売以降も各エディションは独立…
+2022-06-06 16:49:58 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @charts_k: .@BTS_twt’s “Spring Day” re-entered the Top 50 of Melon Top 100 at 12AM KST 🇰🇷
+2022-06-06 16:49:58 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @KORE1225: 僕のサウンドプロデュースでの清春ニューリリースです。
+2022-06-06 16:50:06 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}@CJOnline We have potholes springing up everywhere because the original intent of the half cent sales tax to fund street repairs was never spent properly… poor city government is the cause
+2022-06-06 16:50:06 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @livedoornews: 【朗報】『マイクラ』Java版と統合版 Windows PC向けにセット販売へ
+https://t.co/drCfJQyO6P
+
+すでにいずれかを所有済みのユーザーは、もう片方のエディションを無料で入手できるようになる。さらに、Java版と統…
+2022-06-06 16:50:06 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @FartsUSA: @muntaba @Java_jigga Standing outside my HOOTERS screaming GROOMERS. https://t.co/XXpbqeramL
+2022-06-06 16:50:06 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @spring_2021: At around 1:30pm today, about 80 SAC Troops from HteeSaung village, MyinMu Tsp stormed KanPhyar Village and set it on fire…
+2022-06-06 16:50:06 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @spring_2021: In MaeZar village,Indaw Tsp,Sagaing, a 50yo woman was killed when artillery shells exploded when she going to pick up an u…
+2022-06-06 16:50:06 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}The Slinky story doesn’t start with Betty James, but it sure doesn’t unfold the same without her. She named the toy in 1945, saved it in 1960, gave it a jingle in 1962 and promoted it for 63 years. It all started when her husband brought home a spring.
+https://t.co/tTVsbin7SD
+2022-06-06 16:50:06 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}@myteddybearboy_ 범규를 입에 앙~~ https://t.co/DeK8NkQRe3
+2022-06-06 16:50:06 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}I know people here play Minecraft https://t.co/qezFcCgfBT
+2022-06-06 16:50:06 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/7 14:59迄にR…
+2022-06-06 16:50:06 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}VBA members, your spring issue of the Vermont Bar Journal should be in your mail or on your desk now. Here's a link to the e-version. https://t.co/9l15NbEa1N
+2022-06-06 16:50:06 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @Tanjilasmm: Skills required for different sectors.!
+#100DaysOfCode #SoftwareDeveloper #coder #coding #cybersecurity #BigData #javascrip…
+2022-06-06 16:50:06 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @prodK0YA: the crown reference from spring day - fire - persona - proof 😭 https://t.co/VzActGgm3q
+2022-06-06 16:50:06 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}Reminder- Spring Track Banquet is tomorrow- 6/7 at 6pm (Wakefield Elks) for athletes with the award ceremony to begin at 7pm!
+2022-06-06 16:50:06 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/7 14:59迄にR…
+2022-06-06 16:50:06 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @charts_k: .@BTS_twt’s “Spring Day” re-entered the Top 50 of Melon Top 100 at 12AM KST 🇰🇷
+2022-06-06 16:50:14 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}might buy 100 shirts just to delay my inevitable cancellation https://t.co/gBV9fe68Xv
+2022-06-06 16:50:14 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}Georgetown Law ends Free Speech in its classrooms and installs "feeling offended" as the basis for its educational offerings. Should anyone feel offended by an assignment or opinion, then the Law School must now spring into action and censure the speaker. So now authoritarianism https://t.co/roRyl8h7ro
+2022-06-06 16:50:14 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}@empirial2k20 Niina feeling generous
+2022-06-06 16:50:14 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}@Fanta_fps やろっかなｗ
+2022-06-06 16:50:14 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/7 14:59迄にR…
+2022-06-06 16:50:14 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}@syj2trolley Hi po ~ can I dm you po? Just want to ask something hehe
+2022-06-06 16:50:14 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}holds sway and our system of laws is rejected in whole. American jurisprudence is based on idea that truth is found when parties in dispute argue the merits of their cases before impartial jurists/juries. Substituting muzzles for speech is the antithesis of our Judeo-Christian
+2022-06-06 16:50:14 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}@Bassi_Amor i prefer a spring/summer appointment though 🌞
+2022-06-06 16:50:14 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/7 14:59迄にR…
+2022-06-06 16:50:14 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}Me: idk I don’t rlly have an addictive personality
+Also me: has to wean myself off nasal spray every spring
+2022-06-06 16:50:14 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}Fall into Spring this year by entering for a chance to win a Hallmark Channel Wines Gift Bundle! A value of over $350 per bundle https://t.co/nx79Mwl99q
+2022-06-06 16:50:14 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}RT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/7 14:59迄にR…
+2022-06-06 16:50:14 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}Check out the @UCLAWTennis recruiting class - ranked No. 5 in #CollegeTennis: https://t.co/FLwQ0Sfu6b #GoBruins
+2022-06-06 16:50:14 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}@spring_light3 I know how much it matters to you
+2022-06-06 16:50:14 [main] INFO  c.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text {}ランキング:10位 (ゲーム、おもちゃ)
+
+アニプレックス (特典付)(Switch)鬼滅の刃 ヒノカミ血風譚 通常版 返品種別B...(22:50)
+
+https://t.co/OhgqKUHIVE

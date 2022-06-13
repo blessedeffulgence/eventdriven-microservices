@@ -12,6 +12,10 @@
     <artifactId>twitter-to-kafka-service</artifactId>
     <dependencies>
         <dependency>
+            <groupId>com.eventdriven.microservices</groupId>
+            <artifactId>app-config-data</artifactId>
+        </dependency>
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
         </dependency>
@@ -25,17 +29,30 @@
             <artifactId>twitter4j-stream</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <optional>true</optional>
-        </dependency>
-        <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpclient</artifactId>
         </dependency>
         <dependency>
             <groupId>org.json</groupId>
             <artifactId>json</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.eventdriven.microservices</groupId>
+            <artifactId>common-config</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.eventdriven.microservices</groupId>
+            <artifactId>admin</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.eventdriven.microservices</groupId>
+            <artifactId>model</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.eventdriven.microservices</groupId>
+            <artifactId>producer</artifactId>
         </dependency>
     </dependencies>
 
@@ -48,8 +65,22 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>${spring-boot.version}</version>
+                <configuration>
+                    <image>
+                        <name>onesmuseffulgence/eventdrivenms-${project.artifactId}:${project.version}</name>
+                        <pullPolicy>IF_NOT_PRESENT</pullPolicy>
+                    </image>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>install</phase>
+                        <goals>
+                            <goal>build-image</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
+
         </plugins>
     </build>
 
