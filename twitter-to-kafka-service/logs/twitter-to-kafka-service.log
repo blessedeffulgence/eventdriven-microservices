@@ -18224,3 +18224,1483 @@ https://t.co/77tXEejF36
 2022-06-13 17:38:02 [kafka-producer-network-thread | producer-2] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-2] Resetting the last seen epoch of partition twitter-topic-1 to 7 since the associated topicId changed from null to OnQ7qUHCT5WkDAzN7qcthg
 2022-06-13 17:38:02 [kafka-producer-network-thread | producer-2] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-2] Cluster ID: ipXzkkC1SOWeraUxMBn-Ig
 2022-06-13 17:38:02 [kafka-producer-network-thread | producer-2] INFO  o.a.k.c.p.i.TransactionManager - [Producer clientId=producer-2] ProducerId set to 3002 with epoch 0
+2022-06-14 10:21:36 [main] INFO  c.e.m.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 18.0.1.1 on AMasterPiece with PID 16508 (D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\twitter-to-kafka-service\target\classes started by bless in D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices)
+2022-06-14 10:21:36 [main] INFO  c.e.m.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-06-14 10:21:36 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2022-06-14 10:21:36 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=twitter-to-kafka-service, profiles=[default], label=null, version=3ec2cd40f8181d0472e75e31b52ea43e9b3fff5a, state=null
+2022-06-14 10:21:38 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=b4a44a80-be14-3bf9-895b-b2063c452bed
+2022-06-14 10:21:39 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2022-06-14 10:21:39 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.1.1
+2022-06-14 10:21:39 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 97671528ba54a138
+2022-06-14 10:21:39 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1655191299974
+2022-06-14 10:21:43 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port 8080
+2022-06-14 10:21:44 [main] INFO  c.e.m.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 21.586 seconds (JVM running for 23.475)
+2022-06-14 10:21:44 [main] INFO  c.e.m.t.k.s.TwitterToKafkaServiceApplication - Application starting....
+2022-06-14 10:21:44 [main] INFO  c.e.m.k.a.c.client.KafkaAdminClient - Creating 1 topics, 0 Attempts
+2022-06-14 10:21:44 [main] INFO  c.e.m.k.a.c.client.KafkaAdminClient - Reading kafka topics[twitter-topic], attempts 0
+2022-06-14 10:21:46 [main] INFO  c.e.m.t.k.s.i.i.KafkaStreamInitializer - Topic with name twitter-topic is ready for operation
+2022-06-14 10:21:46 [main] INFO  c.e.m.t.k.s.r.i.TwitterV2KafkaStreamRunner - Created filter for twitter stream for keywords: [Java, Microservices, Kafka, Spring, ElasticSearch]
+2022-06-14 10:21:52 [main] INFO  c.e.m.t.k.s.r.i.TwitterV2StreamHelper - Created rules for twitter stream Java
+2022-06-14 10:22:07 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @spring_yugyeom: 220610 청춘페스티벌
+네가 웃으면 나도 좋아:) 💚
+@yugyeom 
+#GOT7    #갓세븐    #YUGYEOM   #유겸 https://t.co/ehzHq4vS41
+2022-06-14 10:22:07 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 3278657959, "id": 1536609828935675904, "text": "RT @spring_yugyeom: 220610 청춘페스티벌\n네가 웃으면 나도 좋아:) 💚\n@yugyeom \n#GOT7    #갓세븐    #YUGYEOM   #유겸 https://t.co/ehzHq4vS41", "createdAt": 1655191306000}, to topictwitter-topic
+2022-06-14 10:22:07 [main] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = -1
+	batch.size = 16383
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = snappy
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.LongSerializer
+	linger.ms = 5
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 60000
+	retries = 5
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class io.confluent.kafka.serializers.KafkaAvroSerializer
+
+2022-06-14 10:22:07 [main] INFO  i.c.k.s.KafkaAvroSerializerConfig - KafkaAvroSerializerConfig values: 
+	auto.register.schemas = true
+	avro.reflection.allow.null = false
+	avro.remove.java.properties = false
+	avro.use.logical.type.converters = false
+	basic.auth.credentials.source = URL
+	basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	bearer.auth.token = [hidden]
+	context.name.strategy = class io.confluent.kafka.serializers.context.NullContextNameStrategy
+	id.compatibility.strict = true
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	latest.compatibility.strict = true
+	max.schemas.per.subject = 1000
+	normalize.schemas = false
+	proxy.host = 
+	proxy.port = -1
+	schema.reflection = false
+	schema.registry.basic.auth.user.info = [hidden]
+	schema.registry.ssl.cipher.suites = null
+	schema.registry.ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	schema.registry.ssl.endpoint.identification.algorithm = https
+	schema.registry.ssl.engine.factory.class = null
+	schema.registry.ssl.key.password = null
+	schema.registry.ssl.keymanager.algorithm = SunX509
+	schema.registry.ssl.keystore.certificate.chain = null
+	schema.registry.ssl.keystore.key = null
+	schema.registry.ssl.keystore.location = null
+	schema.registry.ssl.keystore.password = null
+	schema.registry.ssl.keystore.type = JKS
+	schema.registry.ssl.protocol = TLSv1.3
+	schema.registry.ssl.provider = null
+	schema.registry.ssl.secure.random.implementation = null
+	schema.registry.ssl.trustmanager.algorithm = PKIX
+	schema.registry.ssl.truststore.certificates = null
+	schema.registry.ssl.truststore.location = null
+	schema.registry.ssl.truststore.password = null
+	schema.registry.ssl.truststore.type = JKS
+	schema.registry.url = [http://localhost:8081]
+	use.latest.version = false
+	use.schema.id = -1
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2022-06-14 10:22:07 [main] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=producer-1] Instantiated an idempotent producer.
+2022-06-14 10:22:07 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.1.1
+2022-06-14 10:22:07 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 97671528ba54a138
+2022-06-14 10:22:07 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1655191327905
+2022-06-14 10:22:08 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Resetting the last seen epoch of partition twitter-topic-0 to 7 since the associated topicId changed from null to OnQ7qUHCT5WkDAzN7qcthg
+2022-06-14 10:22:08 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Resetting the last seen epoch of partition twitter-topic-2 to 9 since the associated topicId changed from null to OnQ7qUHCT5WkDAzN7qcthg
+2022-06-14 10:22:08 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Resetting the last seen epoch of partition twitter-topic-1 to 10 since the associated topicId changed from null to OnQ7qUHCT5WkDAzN7qcthg
+2022-06-14 10:22:08 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: ipXzkkC1SOWeraUxMBn-Ig
+2022-06-14 10:22:08 [kafka-producer-network-thread | producer-1] INFO  o.a.k.c.p.i.TransactionManager - [Producer clientId=producer-1] ProducerId set to 5001 with epoch 0
+2022-06-14 10:22:09 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @kengselyn: teuday, trace, & blue spring festival 💙 my loves 🥹
+
+#JIHOON #지훈 #JUNKYU #준규 @treasuremembers https://t.co/HbzPAzWgqe
+2022-06-14 10:22:09 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1038835028, "id": 1536609832265871360, "text": "RT @kengselyn: teuday, trace, & blue spring festival 💙 my loves 🥹\n\n#JIHOON #지훈 #JUNKYU #준규 @treasuremembers https://t.co/HbzPAzWgqe", "createdAt": 1655191307000}, to topictwitter-topic
+2022-06-14 10:22:09 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:22:09 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1172460880560181248, "id": 1536609834250141696, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191307000}, to topictwitter-topic
+2022-06-14 10:22:09 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:22:09 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1451793126700445698, "id": 1536609839681441793, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191309000}, to topictwitter-topic
+2022-06-14 10:22:09 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:22:09 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 2874434834, "id": 1536609841481158657, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191309000}, to topictwitter-topic
+2022-06-14 10:22:09 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @lulilulalula: after Our Spring MV now we also get S#1 MV, and it's all produced by Rocky himself. thank you for these masterpiece and o…
+2022-06-14 10:22:09 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1431799570791469057, "id": 1536609842974306305, "text": "RT @lulilulalula: after Our Spring MV now we also get S#1 MV, and it's all produced by Rocky himself. thank you for these masterpiece and o\u2026", "createdAt": 1655191310000}, to topictwitter-topic
+2022-06-14 10:22:09 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @path_fynder: Mmm 🔥🔥🔥
+
+220612 Blue Spring Festival
+
+#PARKJEONGWOO #박정우
+#HARUTO #하루토
+#CHOIHYUNSUK #최현석
+#TREASURE #트레저 https://t.co/YTgS79…
+2022-06-14 10:22:09 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1343757948854517761, "id": 1536609845599965184, "text": "RT @path_fynder: Mmm 🔥🔥🔥\n\n220612 Blue Spring Festival\n\n#PARKJEONGWOO #박정우\n#HARUTO #하루토\n#CHOIHYUNSUK #최현석\n#TREASURE #트레저 https://t.co/YTgS79\u2026", "createdAt": 1655191310000}, to topictwitter-topic
+2022-06-14 10:22:09 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @no_loey_no_life: #CHANYEOL's Message ❤️
+
+"EXO-L 🇯🇵 how are you? This is #찬열. Spring is coming to an end and the hot season is coming. P…
+2022-06-14 10:22:09 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1014765858864824320, "id": 1536609847256698880, "text": "RT @no_loey_no_life: #CHANYEOL's Message ❤️\n\n\"EXO-L 🇯🇵 how are you? This is #찬열. Spring is coming to an end and the hot season is coming. P\u2026", "createdAt": 1655191311000}, to topictwitter-topic
+2022-06-14 10:22:09 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:22:09 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 119031491, "id": 1536609850960261120, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191311000}, to topictwitter-topic
+2022-06-14 10:22:09 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @path_fynder: His eyes 🔥
+
+220612 Blue Spring Festival 
+
+#PARKJEONGWOO #박정우
+#TREASURE #트레저
+@treasuremembers https://t.co/xpTHVeiXOF
+2022-06-14 10:22:09 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1343757948854517761, "id": 1536609853128339456, "text": "RT @path_fynder: His eyes 🔥\n\n220612 Blue Spring Festival \n\n#PARKJEONGWOO #박정우\n#TREASURE #트레저\n@treasuremembers https://t.co/xpTHVeiXOF", "createdAt": 1655191312000}, to topictwitter-topic
+2022-06-14 10:22:09 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @path_fynder: Park Jeongwoo, you deserve all the good things. 🥹
+
+220612 Blue Spring Festival
+
+#PARKJEONGWOO #박정우
+#TREASURE #트레저 https://…
+2022-06-14 10:22:09 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1058935918940299265, "id": 1536609856177639424, "text": "RT @path_fynder: Park Jeongwoo, you deserve all the good things. 🥹\n\n220612 Blue Spring Festival\n\n#PARKJEONGWOO #박정우\n#TREASURE #트레저 https://\u2026", "createdAt": 1655191313000}, to topictwitter-topic
+2022-06-14 10:22:09 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:22:09 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 792492652327559168, "id": 1536609863328886784, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191314000}, to topictwitter-topic
+2022-06-14 10:22:09 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicWhy The Allies Couldn't Overcome German Trenches in Spring 1917 (WW1 Doc... https://t.co/avoa4tvGdO via @YouTube 
+"WW1" History, merci.
+2022-06-14 10:22:09 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1514438166459035648, "id": 1536609865556103168, "text": "Why The Allies Couldn't Overcome German Trenches in Spring 1917 (WW1 Doc... https://t.co/avoa4tvGdO via @YouTube \n\"WW1\" History, merci.", "createdAt": 1655191315000}, to topictwitter-topic
+2022-06-14 10:22:17 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:22:17 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1494280369864343556, "id": 1536609864595963905, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191315000}, to topictwitter-topic
+2022-06-14 10:22:17 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @path_fynder: Park Jeongwoo, you deserve all the good things. 🥹
+
+220612 Blue Spring Festival
+
+#PARKJEONGWOO #박정우
+#TREASURE #트레저 https://…
+2022-06-14 10:22:17 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1343757948854517761, "id": 1536609868269834240, "text": "RT @path_fynder: Park Jeongwoo, you deserve all the good things. 🥹\n\n220612 Blue Spring Festival\n\n#PARKJEONGWOO #박정우\n#TREASURE #트레저 https://\u2026", "createdAt": 1655191316000}, to topictwitter-topic
+2022-06-14 10:22:17 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @doristhehat: Yesterday’s lovely lunch break at the very atmospheric Magpie Mine near Sheldon. An ancient lead mine. Thrilled to find Sp…
+2022-06-14 10:22:17 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 798289565312290816, "id": 1536609864855822336, "text": "RT @doristhehat: Yesterday\u2019s lovely lunch break at the very atmospheric Magpie Mine near Sheldon. An ancient lead mine. Thrilled to find Sp\u2026", "createdAt": 1655191315000}, to topictwitter-topic
+2022-06-14 10:22:17 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:22:17 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 841964810778550272, "id": 1536609868349870080, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191316000}, to topictwitter-topic
+2022-06-14 10:22:17 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @EXOPublicity: CHANYEOL UPDATE from EXOL 🇯🇵 
+
+‘EXO-L 🇯🇵 how are you? This is Chanyeol. Spring is coming to an end and the hot season is…
+2022-06-14 10:22:17 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1331138247263625217, "id": 1536609874636812289, "text": "RT @EXOPublicity: CHANYEOL UPDATE from EXOL 🇯🇵 \n\n\u2018EXO-L 🇯🇵 how are you? This is Chanyeol. Spring is coming to an end and the hot season is\u2026", "createdAt": 1655191317000}, to topictwitter-topic
+2022-06-14 10:22:17 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topic@B_happy_spring 그건 꾸금계에..^^
+2022-06-14 10:22:17 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1019193809802915840, "id": 1536609872737107968, "text": "@B_happy_spring 그건 꾸금계에..^^", "createdAt": 1655191317000}, to topictwitter-topic
+2022-06-14 10:22:17 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:22:17 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1069545795517468672, "id": 1536609872711929864, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191317000}, to topictwitter-topic
+2022-06-14 10:22:17 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topic@CioCraftsman @formfunction #ShinjiruInu going crazy on a bloody market, they just listed on CMC, trending on asian Platform & Bilboard on Las Vegas live.
+
+Usecases: ShinjiSwap, Shinji Multichain Bridge, Treasury Fund & ShinjiVerse.
+
+Chart https://t.co/H0jMkGeMNs
+
+TG https://t.co/SbTaicke7C
+2022-06-14 10:22:17 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1533753152629243904, "id": 1536609873282347008, "text": "@CioCraftsman @formfunction #ShinjiruInu going crazy on a bloody market, they just listed on CMC, trending on asian Platform & Bilboard on Las Vegas live.\n\nUsecases: ShinjiSwap, Shinji Multichain Bridge, Treasury Fund & ShinjiVerse.\n\nChart https://t.co/H0jMkGeMNs\n\nTG https://t.co/SbTaicke7C", "createdAt": 1655191317000}, to topictwitter-topic
+2022-06-14 10:22:17 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:22:17 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1300134892177559552, "id": 1536609877744754690, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191318000}, to topictwitter-topic
+2022-06-14 10:22:17 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @tamjaichunbkk: ทุกคนพอจะเข้า spring summer บอกเลยว่า brand ต่างๆที่เกาหลีออกสินนค้ามาน่ารักมากๆๆๆ เลยทำเธรดรวมมาให้ มีทั้ง keds kodak f…
+2022-06-14 10:22:17 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 716567488259985408, "id": 1536609881918423041, "text": "RT @tamjaichunbkk: ทุกคนพอจะเข้า spring summer บอกเลยว่า brand ต่างๆที่เกาหลีออกสินนค้ามาน่ารักมากๆๆๆ เลยทำเธรดรวมมาให้ มีทั้ง keds kodak f\u2026", "createdAt": 1655191319000}, to topictwitter-topic
+2022-06-14 10:22:17 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @path_fynder: You worked hard, my boys. I hope you had fun with teumes. 
+🦋🐺
+
+220612 Blue Spring Festival
+
+#HARUTO #하루토
+#PARKJEONGWOO  #박…
+2022-06-14 10:22:17 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1508719640431669248, "id": 1536609887077052418, "text": "RT @path_fynder: You worked hard, my boys. I hope you had fun with teumes. \n🦋🐺\n\n220612 Blue Spring Festival\n\n#HARUTO #하루토\n#PARKJEONGWOO  #박\u2026", "createdAt": 1655191320000}, to topictwitter-topic
+2022-06-14 10:22:17 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @Spring_190304: 연주니야.. 얼굴은 너무 애긴데 손은 너무 애기가 아니잖니.. https://t.co/DcDW1zNv4q
+2022-06-14 10:22:17 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1455523125639073796, "id": 1536609887798452224, "text": "RT @Spring_190304: 연주니야.. 얼굴은 너무 애긴데 손은 너무 애기가 아니잖니.. https://t.co/DcDW1zNv4q", "createdAt": 1655191320000}, to topictwitter-topic
+2022-06-14 10:22:17 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:22:17 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 896070746610442242, "id": 1536609896938209280, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191322000}, to topictwitter-topic
+2022-06-14 10:22:17 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicランキング:4位 「カーナビ・カーAV」 (16:22)
+
+CY-RC100KD
+
+価格:-🔥
+
+https://t.co/JbdTviWohL
+2022-06-14 10:22:17 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1371493492640256011, "id": 1536609900939587584, "text": "ランキング:4位 「カーナビ・カーAV」 (16:22)\n\nCY-RC100KD\n\n価格:-🔥\n\nhttps://t.co/JbdTviWohL", "createdAt": 1655191323000}, to topictwitter-topic
+2022-06-14 10:22:26 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:22:26 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 2786316218, "id": 1536609912146382849, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191326000}, to topictwitter-topic
+2022-06-14 10:22:26 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @raspstyles: thierry mugler spring/summer 1999 https://t.co/hhtkSSzRYw
+2022-06-14 10:22:26 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 4619032412, "id": 1536609919981752320, "text": "RT @raspstyles: thierry mugler spring/summer 1999 https://t.co/hhtkSSzRYw", "createdAt": 1655191328000}, to topictwitter-topic
+2022-06-14 10:22:26 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicGlobal Settings are not stored in the local storage any more https://t.co/pDi3GB2xb9 #github #TypeScript #Kotlin #HTML #GLSL #SCSS #Java #JavaScript #Shell #Python #Ruby #Dockerfile
+2022-06-14 10:22:26 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1078992647933448192, "id": 1536609925799251968, "text": "Global Settings are not stored in the local storage any more https://t.co/pDi3GB2xb9 #github #TypeScript #Kotlin #HTML #GLSL #SCSS #Java #JavaScript #Shell #Python #Ruby #Dockerfile", "createdAt": 1655191329000}, to topictwitter-topic
+2022-06-14 10:22:26 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:22:26 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1185164557175508992, "id": 1536609927946711040, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191330000}, to topictwitter-topic
+2022-06-14 10:22:26 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:22:26 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 364047809, "id": 1536609930257768448, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191330000}, to topictwitter-topic
+2022-06-14 10:22:26 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicWhy is it when I have work I really want to stay in bed and when I don't I spring out https://t.co/Lz9O4liNb9
+2022-06-14 10:22:26 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 2383422907, "id": 1536609932342091776, "text": "Why is it when I have work I really want to stay in bed and when I don't I spring out https://t.co/Lz9O4liNb9", "createdAt": 1655191331000}, to topictwitter-topic
+2022-06-14 10:22:26 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:22:26 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1427410086528389122, "id": 1536609931620929537, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191331000}, to topictwitter-topic
+2022-06-14 10:22:26 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topic@sunooyaahhh spring day
+2022-06-14 10:22:26 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1477033766141194240, "id": 1536609936205295616, "text": "@sunooyaahhh spring day", "createdAt": 1655191332000}, to topictwitter-topic
+2022-06-14 10:22:26 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:22:26 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 141062975, "id": 1536609936024604672, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191332000}, to topictwitter-topic
+2022-06-14 10:22:26 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:22:26 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 178243356, "id": 1536609937119657984, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191332000}, to topictwitter-topic
+2022-06-14 10:22:26 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @EAnnBink: Can we get it up to 25 orders this year?
+💕💕💕💕💕💕💕💕💕💕💕💕💕💕💕
+For the Queens 👑: https://t.co/Vf7QTRiT3r
+🖤🖤🖤🖤🖤🖤🖤🖤🖤🖤🖤🖤🖤🖤🖤
+For the Ki…
+2022-06-14 10:22:26 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1261845568994684928, "id": 1536609943469453312, "text": "RT @EAnnBink: Can we get it up to 25 orders this year?\n💕💕💕💕💕💕💕💕💕💕💕💕💕💕💕\nFor the Queens 👑: https://t.co/Vf7QTRiT3r\n🖤🖤🖤🖤🖤🖤🖤🖤🖤🖤🖤🖤🖤🖤🖤\nFor the Ki\u2026", "createdAt": 1655191334000}, to topictwitter-topic
+2022-06-14 10:22:26 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @chs7chillmp4: 220612 Blue Spring Festival
+
+음 (MMM) ROCK ver.
+
+4K 📹 : https://t.co/xh53FsHXtl
+
+#트레저 #최현석 #CHOIHYUNSUK https://t.co/GxKcl…
+2022-06-14 10:22:26 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 956538077714894848, "id": 1536609941448163329, "text": "RT @chs7chillmp4: 220612 Blue Spring Festival\n\n음 (MMM) ROCK ver.\n\n4K 📹 : https://t.co/xh53FsHXtl\n\n#트레저 #최현석 #CHOIHYUNSUK https://t.co/GxKcl\u2026", "createdAt": 1655191333000}, to topictwitter-topic
+2022-06-14 10:22:26 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @AbbeFaria: @Java_jigga https://t.co/JQtjXaZpT5
+2022-06-14 10:22:26 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 732323875, "id": 1536609948603502593, "text": "RT @AbbeFaria: @Java_jigga https://t.co/JQtjXaZpT5", "createdAt": 1655191335000}, to topictwitter-topic
+2022-06-14 10:22:26 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @Irene_Odessa: @reutski @EBorgbjerg It's not about Ukraine only! It's about all of us.  Ukraine's fall would be a long-term world catast…
+2022-06-14 10:22:26 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 436830098, "id": 1536609948662124544, "text": "RT @Irene_Odessa: @reutski @EBorgbjerg It's not about Ukraine only! It's about all of us.  Ukraine's fall would be a long-term world catast\u2026", "createdAt": 1655191335000}, to topictwitter-topic
+2022-06-14 10:22:31 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/14 14:59迄に…
+2022-06-14 10:22:31 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 806788401508646912, "id": 1536609950516101121, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/14 14:59迄に\u2026", "createdAt": 1655191335000}, to topictwitter-topic
+2022-06-14 10:22:31 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:22:31 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1364114611348197377, "id": 1536609952047198210, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191336000}, to topictwitter-topic
+2022-06-14 10:22:31 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @first_issues: Global Settings are not stored in the local storage any more https://t.co/pDi3GB2xb9 #github #TypeScript #Kotlin #HTML #G…
+2022-06-14 10:22:31 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1437728609909706753, "id": 1536609952617205760, "text": "RT @first_issues: Global Settings are not stored in the local storage any more https://t.co/pDi3GB2xb9 #github #TypeScript #Kotlin #HTML #G\u2026", "createdAt": 1655191336000}, to topictwitter-topic
+2022-06-14 10:22:31 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:22:31 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1414250022611296263, "id": 1536609953687154688, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191336000}, to topictwitter-topic
+2022-06-14 10:22:31 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @justmhyuk_: another masterpiece like “Our Spring” 🥹
+#라키 🌸
+https://t.co/pjQrys8oyp
+2022-06-14 10:22:31 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1426415368206049280, "id": 1536609956438257664, "text": "RT @justmhyuk_: another masterpiece like \u201COur Spring\u201D 🥹\n#라키 🌸\nhttps://t.co/pjQrys8oyp", "createdAt": 1655191337000}, to topictwitter-topic
+2022-06-14 10:22:31 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:22:31 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 443676518, "id": 1536609952571138048, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191336000}, to topictwitter-topic
+2022-06-14 10:22:31 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:22:31 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1314929458504032256, "id": 1536609953040846849, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191336000}, to topictwitter-topic
+2022-06-14 10:22:31 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @taicheUK: "Green Succulent Close Up Cacti Art" #Poster  by #taiche #succulent #echeveria #cactus #succulents #plants #plant #flower #gr…
+2022-06-14 10:22:31 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 26701241, "id": 1536609960188051458, "text": "RT @taicheUK: \"Green Succulent Close Up Cacti Art\" #Poster  by #taiche #succulent #echeveria #cactus #succulents #plants #plant #flower #gr\u2026", "createdAt": 1655191337000}, to topictwitter-topic
+2022-06-14 10:22:31 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topic@maino_ooo はじめまして、こんにちは。
+検索よりありがとうございます🙇‍♂️
+大変申し訳ないのですが、そちらはもうお取引先が決まってしまいました😭
+2022-06-14 10:22:31 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1422836717019566083, "id": 1536609959856680962, "text": "@maino_ooo はじめまして、こんにちは。\n検索よりありがとうございます🙇\u200D♂️\n大変申し訳ないのですが、そちらはもうお取引先が決まってしまいました😭", "createdAt": 1655191337000}, to topictwitter-topic
+2022-06-14 10:22:31 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @spring_yugyeom: 220610 청춘페스티벌
+무대에서 더 빛나는 너🌠
+@yugyeom 
+#GOT7    #갓세븐    #YUGYEOM   #유겸 https://t.co/glZWQMgRLY
+2022-06-14 10:22:31 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1050737254912520192, "id": 1536609960036999168, "text": "RT @spring_yugyeom: 220610 청춘페스티벌\n무대에서 더 빛나는 너🌠\n@yugyeom \n#GOT7    #갓세븐    #YUGYEOM   #유겸 https://t.co/glZWQMgRLY", "createdAt": 1655191337000}, to topictwitter-topic
+2022-06-14 10:22:31 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @rayim_it: Cheatsheets in R. #BigData #Analytics #DataScience #AI #MachineLearning #IoT #IIoT #PyTorch #Python #RStats #TensorFlow #Java…
+2022-06-14 10:22:31 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 2676234874, "id": 1536609960506834944, "text": "RT @rayim_it: Cheatsheets in R. #BigData #Analytics #DataScience #AI #MachineLearning #IoT #IIoT #PyTorch #Python #RStats #TensorFlow #Java\u2026", "createdAt": 1655191338000}, to topictwitter-topic
+2022-06-14 10:22:31 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @spring_yugyeom: 220610 청춘페스티벌
+🖤
+@yugyeom 
+#GOT7    #갓세븐    #YUGYEOM   #유겸 https://t.co/cUXFcZSupI
+2022-06-14 10:22:31 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 879316592475086848, "id": 1536609966056177664, "text": "RT @spring_yugyeom: 220610 청춘페스티벌\n🖤\n@yugyeom \n#GOT7    #갓세븐    #YUGYEOM   #유겸 https://t.co/cUXFcZSupI", "createdAt": 1655191339000}, to topictwitter-topic
+2022-06-14 10:22:31 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicLike the generations of leaves, the lives of mortal men. Now the wind scatters the old leaves across the earth, now the living timber bursts with the new buds and spring comes round again. And so with men: as one generation comes to life, another dies away.
+2022-06-14 10:22:31 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1513519017029419015, "id": 1536609967565725697, "text": "Like the generations of leaves, the lives of mortal men. Now the wind scatters the old leaves across the earth, now the living timber bursts with the new buds and spring comes round again. And so with men: as one generation comes to life, another dies away.", "createdAt": 1655191339000}, to topictwitter-topic
+2022-06-14 10:22:31 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:22:31 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 744918130380595200, "id": 1536609972804542466, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191341000}, to topictwitter-topic
+2022-06-14 10:22:40 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicWe should come back in August, when most of the spring-sown crops will be harvested.
+2022-06-14 10:22:40 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1513817569106423809, "id": 1536609969587429381, "text": "We should come back in August, when most of the spring-sown crops will be harvested.", "createdAt": 1655191340000}, to topictwitter-topic
+2022-06-14 10:22:40 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topic#藍井エイル10周年サイコロ占い
+今日のおすすめ曲は…「春～SPRING～」！
+▶️MVを見る👀
+https://t.co/HAttBlOmIb
+▶️今すぐ聴く🎧
+https://t.co/H1X8uAHdDS
+--🎲サイコロ占いはこちら🎲--
+https://t.co/QOscTkFXKo
+2022-06-14 10:22:40 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 80180842, "id": 1536609970610851840, "text": "#藍井エイル10周年サイコロ占い\n今日のおすすめ曲は\u2026「春～SPRING～」！\n▶️MVを見る👀\nhttps://t.co/HAttBlOmIb\n▶️今すぐ聴く🎧\nhttps://t.co/H1X8uAHdDS\n--🎲サイコロ占いはこちら🎲--\nhttps://t.co/QOscTkFXKo", "createdAt": 1655191340000}, to topictwitter-topic
+2022-06-14 10:22:40 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @DvilCouture: Saint Laurent - Spring 2020 https://t.co/DY7LMYsvi8
+2022-06-14 10:22:40 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 54176475, "id": 1536609973274148864, "text": "RT @DvilCouture: Saint Laurent - Spring 2020 https://t.co/DY7LMYsvi8", "createdAt": 1655191341000}, to topictwitter-topic
+2022-06-14 10:22:40 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @tongbingxue: Universal Map of Great Ming, 1389.
+
+One of the oldest surviving maps from East Asia.
+Depicts Eurasia, China in the center…
+2022-06-14 10:22:40 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 60897995, "id": 1536609980165804032, "text": "RT @tongbingxue: Universal Map of Great Ming, 1389.\n\nOne of the oldest surviving maps from East Asia.\nDepicts Eurasia, China in the center\u2026", "createdAt": 1655191342000}, to topictwitter-topic
+2022-06-14 10:22:40 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @spring_yugyeom: 220610 청춘페스티벌
+무대에서 더 빛나는 너🌠
+@yugyeom 
+#GOT7    #갓세븐    #YUGYEOM   #유겸 https://t.co/glZWQMgRLY
+2022-06-14 10:22:40 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 3278657959, "id": 1536609979410440192, "text": "RT @spring_yugyeom: 220610 청춘페스티벌\n무대에서 더 빛나는 너🌠\n@yugyeom \n#GOT7    #갓세븐    #YUGYEOM   #유겸 https://t.co/glZWQMgRLY", "createdAt": 1655191342000}, to topictwitter-topic
+2022-06-14 10:22:40 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @first_issues: Global Settings are not stored in the local storage any more https://t.co/pDi3GB2xb9 #github #TypeScript #Kotlin #HTML #G…
+2022-06-14 10:22:40 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1423655520196435969, "id": 1536609984930529280, "text": "RT @first_issues: Global Settings are not stored in the local storage any more https://t.co/pDi3GB2xb9 #github #TypeScript #Kotlin #HTML #G\u2026", "createdAt": 1655191343000}, to topictwitter-topic
+2022-06-14 10:22:40 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicFor good Java content https://t.co/1fLYONfrmj
+2022-06-14 10:22:40 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 4313260458, "id": 1536609987950063617, "text": "For good Java content https://t.co/1fLYONfrmj", "createdAt": 1655191344000}, to topictwitter-topic
+2022-06-14 10:22:40 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @Ground_Y: Ground Y 2022 Spring/Summer
+New Arrival
+
+https://t.co/o3tGz5DAMF
+
+#groundy #yohjiyamamoto #グラウンドワイ #ヨウジヤマモト #22s #超特急 #小笠原海 h…
+2022-06-14 10:22:40 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 536315185, "id": 1536609989691080704, "text": "RT @Ground_Y: Ground Y 2022 Spring/Summer\nNew Arrival\n\nhttps://t.co/o3tGz5DAMF\n\n#groundy #yohjiyamamoto #グラウンドワイ #ヨウジヤマモト #22s #超特急 #小笠原海 h\u2026", "createdAt": 1655191345000}, to topictwitter-topic
+2022-06-14 10:22:40 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:22:40 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 531920586, "id": 1536609988134596608, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191344000}, to topictwitter-topic
+2022-06-14 10:22:40 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @tobe_egbulefu: TEG “ORIGINAL EMERALD BOMBER JACKET”  Teg street-wears Summer/Spring 022 
+
+MADE BY TEG, MADE IN NIGERIA 
+
+20,000 https:/…
+2022-06-14 10:22:40 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 864190044113969152, "id": 1536609992761036800, "text": "RT @tobe_egbulefu: TEG \u201CORIGINAL EMERALD BOMBER JACKET\u201D  Teg street-wears Summer/Spring 022 \n\nMADE BY TEG, MADE IN NIGERIA \n\n20,000 https:/\u2026", "createdAt": 1655191345000}, to topictwitter-topic
+2022-06-14 10:22:40 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @SMTBreakingBad: Bob Odenkirk is Tohru Adachi
+
+Persona 4 Coming to Netflix Spring 2023 https://t.co/lsPKDqpbvm
+2022-06-14 10:22:40 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 972008344515825664, "id": 1536609991984959488, "text": "RT @SMTBreakingBad: Bob Odenkirk is Tohru Adachi\n\nPersona 4 Coming to Netflix Spring 2023 https://t.co/lsPKDqpbvm", "createdAt": 1655191345000}, to topictwitter-topic
+2022-06-14 10:22:40 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topic@PatarHD pepeshki - java
+pepeshki420 - bedrock
+2022-06-14 10:22:40 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1195368502368047104, "id": 1536609999136477184, "text": "@PatarHD pepeshki - java\npepeshki420 - bedrock", "createdAt": 1655191347000}, to topictwitter-topic
+2022-06-14 10:22:40 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:22:40 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 817287284483461120, "id": 1536610002172977152, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191348000}, to topictwitter-topic
+2022-06-14 10:22:40 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicFeeling stuck with assignment
+Class kicking my ass....
+essay due
+ math
+sociology '
+java script
+h/work.
+accounting
+PowerPoint
+essay pay  .
+algebra
+literature
+PowerPoint''
+statistics
+business.
+law
+probability
+2022-06-14 10:22:40 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1494575623972573190, "id": 1536609999090290690, "text": "Feeling stuck with assignment\nClass kicking my ass....\nessay due\n math\nsociology '\njava script\nh/work.\naccounting\nPowerPoint\nessay pay  .\nalgebra\nliterature\nPowerPoint''\nstatistics\nbusiness.\nlaw\nprobability", "createdAt": 1655191347000}, to topictwitter-topic
+2022-06-14 10:22:40 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topichttps://t.co/HkpCv4jv7b
+2022-06-14 10:22:40 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 936306160872935425, "id": 1536610008292638720, "text": "https://t.co/HkpCv4jv7b", "createdAt": 1655191349000}, to topictwitter-topic
+2022-06-14 10:22:46 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:22:46 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 199090882, "id": 1536610010658402304, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191350000}, to topictwitter-topic
+2022-06-14 10:22:46 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topic@CyberSamuraiNFT @luckyflokicoins is a dog-themed meme coin
+
+✅ RATSCOIN x Amazing doge ~200x
+✅ NEW TREND - SPIN TO EARN
+✅ KYC & AUDIT
+✅ AUTO BURN
+✅ AUTO-REFLECTIONS
+✅ RENOUNCED OWNERSHIP
+✅ 300+ PARTNERS & KOLS
+2022-06-14 10:22:46 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1527899611306020865, "id": 1536610015892881411, "text": "@CyberSamuraiNFT @luckyflokicoins is a dog-themed meme coin\n\n✅ RATSCOIN x Amazing doge ~200x\n✅ NEW TREND - SPIN TO EARN\n✅ KYC & AUDIT\n✅ AUTO BURN\n✅ AUTO-REFLECTIONS\n✅ RENOUNCED OWNERSHIP\n✅ 300+ PARTNERS & KOLS", "createdAt": 1655191351000}, to topictwitter-topic
+2022-06-14 10:22:46 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topichttps://t.co/yvBgKbuplV Adjustable Spring Hand Exerciser | Finger Exerciser| Hand Grip Strengthener for Men & Women (Multicolor) https://t.co/dLKP12jQ6T
+2022-06-14 10:22:46 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1296029045352615937, "id": 1536610023010451456, "text": "https://t.co/yvBgKbuplV Adjustable Spring Hand Exerciser | Finger Exerciser| Hand Grip Strengthener for Men & Women (Multicolor) https://t.co/dLKP12jQ6T", "createdAt": 1655191352000}, to topictwitter-topic
+2022-06-14 10:22:46 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicFeeling stuck with assignment
+Class kicking my ass....
+essay due
+ math
+sociology '
+java script
+h/work.
+accounting
+PowerPoint
+essay pay  .
+algebra
+literature
+PowerPoint''
+statistics
+business.
+law
+probability.
+2022-06-14 10:22:46 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1494575623972573190, "id": 1536610023186616321, "text": "Feeling stuck with assignment\nClass kicking my ass....\nessay due\n math\nsociology '\njava script\nh/work.\naccounting\nPowerPoint\nessay pay  .\nalgebra\nliterature\nPowerPoint''\nstatistics\nbusiness.\nlaw\nprobability.", "createdAt": 1655191353000}, to topictwitter-topic
+2022-06-14 10:22:46 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @SPRiNGNEWS_TH: ความเท่าเทียมที่ยังไม่เท่าเทียม เผยข้อมูลอัตราค่าธรรมเนียม จดทะเบียนคู่ชีวิตสำหรับบุคคลผู้มีความหลากหลายทางเพศเสียเงิน 5…
+2022-06-14 10:22:46 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 2395736389, "id": 1536610021689110529, "text": "RT @SPRiNGNEWS_TH: ความเท่าเทียมที่ยังไม่เท่าเทียม เผยข้อมูลอัตราค่าธรรมเนียม จดทะเบียนคู่ชีวิตสำหรับบุคคลผู้มีความหลากหลายทางเพศเสียเงิน 5\u2026", "createdAt": 1655191352000}, to topictwitter-topic
+2022-06-14 10:22:46 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topic6月13日学習報告
+
+取り組んだページ数:2
+取り組んだ問題数:1(M), 1(H)
+コース:上級
+使用言語:java
+
+ https://t.co/NsOlwMZNpe #RecursionCS #コンピューターサイエンス #プログラミング #独学
+2022-06-14 10:22:46 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 2408962982, "id": 1536610022787981312, "text": "6月13日学習報告\n\n取り組んだページ数:2\n取り組んだ問題数:1(M), 1(H)\nコース:上級\n使用言語:java\n\n https://t.co/NsOlwMZNpe #RecursionCS #コンピューターサイエンス #プログラミング #独学", "createdAt": 1655191352000}, to topictwitter-topic
+2022-06-14 10:22:46 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topic@JackD157 @African_Spring Haibo we don’t need CK documents or certificates… we will submit when the AG start asking lol
+2022-06-14 10:22:46 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 2707617063, "id": 1536610021253033984, "text": "@JackD157 @African_Spring Haibo we don\u2019t need CK documents or certificates\u2026 we will submit when the AG start asking lol", "createdAt": 1655191352000}, to topictwitter-topic
+2022-06-14 10:22:46 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:22:46 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1146738348616118272, "id": 1536610023153217536, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191353000}, to topictwitter-topic
+2022-06-14 10:22:46 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:22:46 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 868347037980307456, "id": 1536610022687264768, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191352000}, to topictwitter-topic
+2022-06-14 10:22:46 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topic@spring_troupe SNEEFFF SNEEFF THANK U EIGHTSIT 🥺🥺
+2022-06-14 10:22:46 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1361126490092544004, "id": 1536610024738406402, "text": "@spring_troupe SNEEFFF SNEEFF THANK U EIGHTSIT 🥺🥺", "createdAt": 1655191353000}, to topictwitter-topic
+2022-06-14 10:22:46 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @TheRealHoarse: Well, this spring, my son, out of the blue, told me he missed playing and was thinking of trying out for the high school…
+2022-06-14 10:22:46 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1241810579691433985, "id": 1536610028890648577, "text": "RT @TheRealHoarse: Well, this spring, my son, out of the blue, told me he missed playing and was thinking of trying out for the high school\u2026", "createdAt": 1655191354000}, to topictwitter-topic
+2022-06-14 10:22:46 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicDas Voting zur #Anime Spring Season steht vor der Tür!
+
+Auch dieses Mal dürfen #AniTuber ein Video einreichen, um am Voting teilzunehmen.
+
+⚠️Voraussetzung: Das Video muss zwischen dem 19.03.22 und dem 19.06.22 veröffentlicht worden sein und natürlich mit Anime zu tun haben. https://t.co/TEnTzxGhp0
+2022-06-14 10:22:46 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1209211640924770304, "id": 1536610028496506881, "text": "Das Voting zur #Anime Spring Season steht vor der Tür!\n\nAuch dieses Mal dürfen #AniTuber ein Video einreichen, um am Voting teilzunehmen.\n\n⚠️Voraussetzung: Das Video muss zwischen dem 19.03.22 und dem 19.06.22 veröffentlicht worden sein und natürlich mit Anime zu tun haben. https://t.co/TEnTzxGhp0", "createdAt": 1655191354000}, to topictwitter-topic
+2022-06-14 10:22:46 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:22:46 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 2692148874, "id": 1536610034897010690, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191355000}, to topictwitter-topic
+2022-06-14 10:22:46 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @nb_spring: When life starts heading toward hardships , you start heading for a more powerful character 
+Good morning my friends 
+Have a…
+2022-06-14 10:22:46 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1471340631439990785, "id": 1536610035530444801, "text": "RT @nb_spring: When life starts heading toward hardships , you start heading for a more powerful character \nGood morning my friends \nHave a\u2026", "createdAt": 1655191355000}, to topictwitter-topic
+2022-06-14 10:22:53 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @spring_yugyeom: 220610 청춘페스티벌
+청춘을 의인화하면 유겸이 같아🫶🏻
+@yugyeom 
+#GOT7    #갓세븐    #YUGYEOM   #유겸 https://t.co/zBL0q5mLff
+2022-06-14 10:22:53 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 234962957, "id": 1536610034687168513, "text": "RT @spring_yugyeom: 220610 청춘페스티벌\n청춘을 의인화하면 유겸이 같아🫶🏻\n@yugyeom \n#GOT7    #갓세븐    #YUGYEOM   #유겸 https://t.co/zBL0q5mLff", "createdAt": 1655191355000}, to topictwitter-topic
+2022-06-14 10:22:53 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @spring_yugyeom: 220610 청춘페스티벌
+🖤
+@yugyeom 
+#GOT7    #갓세븐    #YUGYEOM   #유겸 https://t.co/cUXFcZSupI
+2022-06-14 10:22:53 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1429312177324761094, "id": 1536610037002489857, "text": "RT @spring_yugyeom: 220610 청춘페스티벌\n🖤\n@yugyeom \n#GOT7    #갓세븐    #YUGYEOM   #유겸 https://t.co/cUXFcZSupI", "createdAt": 1655191356000}, to topictwitter-topic
+2022-06-14 10:22:53 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @Exysay_Eastbay: @J_Motoki This is brood #1 being raised on top of my ladder this spring, just about to leave the nest. Fertile Myrtle h…
+2022-06-14 10:22:53 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 266252872, "id": 1536610040181796864, "text": "RT @Exysay_Eastbay: @J_Motoki This is brood #1 being raised on top of my ladder this spring, just about to leave the nest. Fertile Myrtle h\u2026", "createdAt": 1655191357000}, to topictwitter-topic
+2022-06-14 10:22:53 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:22:53 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 831425024749821952, "id": 1536610041088086016, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191357000}, to topictwitter-topic
+2022-06-14 10:22:53 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:22:53 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1251181867, "id": 1536610043084570624, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191357000}, to topictwitter-topic
+2022-06-14 10:22:53 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:22:53 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 537116765, "id": 1536610044233523200, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191358000}, to topictwitter-topic
+2022-06-14 10:22:53 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:22:53 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 3769219873, "id": 1536610043252326401, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191357000}, to topictwitter-topic
+2022-06-14 10:22:53 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @energyengineer9: All about MS SQL Server: 20 MS SQL Server Tutorial !!!!!!!!!!!!!
+
+##Blockchain #AI #DataSecurity #ML #dataScientist #D…
+2022-06-14 10:22:53 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1319903481486950400, "id": 1536610045521276930, "text": "RT @energyengineer9: All about MS SQL Server: 20 MS SQL Server Tutorial !!!!!!!!!!!!!\n\n##Blockchain #AI #DataSecurity #ML #dataScientist #D\u2026", "createdAt": 1655191358000}, to topictwitter-topic
+2022-06-14 10:22:53 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:22:53 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1295176324953198592, "id": 1536610045407875073, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191358000}, to topictwitter-topic
+2022-06-14 10:22:53 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @Remisagoodboy: A non-Royal tweet, sort of….
+Is anyone else coveting Kate Moss’s jacket from today?
+
+It turns out the jacket is a rare p…
+2022-06-14 10:22:53 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1342045898910486528, "id": 1536610045651488768, "text": "RT @Remisagoodboy: A non-Royal tweet, sort of\u2026.\nIs anyone else coveting Kate Moss\u2019s jacket from today?\n\nIt turns out the jacket is a rare p\u2026", "createdAt": 1655191358000}, to topictwitter-topic
+2022-06-14 10:22:53 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @yutkat: 各言語のググラビリティ
+
+Go: 一般用語で短いから汚染される
+C: 1文字とか正気か？
+Rust: 最近ゲームの方にやられ気味
+PHP: ほぼWordPress情報
+Java: なぜかMinecraftがでる
+Julia: 女性の名前でひどいことになる…
+2022-06-14 10:22:53 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 3314987286, "id": 1536610052085522432, "text": "RT @yutkat: 各言語のググラビリティ\n\nGo: 一般用語で短いから汚染される\nC: 1文字とか正気か？\nRust: 最近ゲームの方にやられ気味\nPHP: ほぼWordPress情報\nJava: なぜかMinecraftがでる\nJulia: 女性の名前でひどいことになる\u2026", "createdAt": 1655191359000}, to topictwitter-topic
+2022-06-14 10:22:53 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:22:53 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 137562450, "id": 1536610051179556865, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191359000}, to topictwitter-topic
+2022-06-14 10:22:53 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topic@opensea https://t.co/XTmiP2Njte
+0.2 $ETH
+Unveiling of spring
+In the celebration of the seasons
+With the waterfall anthem
+Has done the master of the world
+Unveiling of spring
+
+Velvet green carpet
+extended  in the plain
+On the hair of the tree
+Made of flowers’ crown https://t.co/Z0HhJL8IH8
+2022-06-14 10:22:53 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1465388049085480961, "id": 1536610052831862784, "text": "@opensea https://t.co/XTmiP2Njte\n0.2 $ETH\nUnveiling of spring\nIn the celebration of the seasons\nWith the waterfall anthem\nHas done the master of the world\nUnveiling of spring\n\nVelvet green carpet\nextended  in the plain\nOn the hair of the tree\nMade of flowers\u2019 crown https://t.co/Z0HhJL8IH8", "createdAt": 1655191360000}, to topictwitter-topic
+2022-06-14 10:22:53 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:22:53 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1322717695918239747, "id": 1536610058175651841, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191361000}, to topictwitter-topic
+2022-06-14 10:22:56 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:22:56 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 2956167738, "id": 1536610063955247106, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191362000}, to topictwitter-topic
+2022-06-14 10:22:56 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:22:56 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 2556971132, "id": 1536610062713909248, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191362000}, to topictwitter-topic
+2022-06-14 10:22:56 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:22:56 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1166303019467567104, "id": 1536610062952636416, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191362000}, to topictwitter-topic
+2022-06-14 10:22:56 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @SHANEO203: @Java_jigga https://t.co/nuraoH9RBS
+2022-06-14 10:22:56 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 732323875, "id": 1536610061866348544, "text": "RT @SHANEO203: @Java_jigga https://t.co/nuraoH9RBS", "createdAt": 1655191362000}, to topictwitter-topic
+2022-06-14 10:22:56 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:22:56 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1083649206017961984, "id": 1536610063082631168, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191362000}, to topictwitter-topic
+2022-06-14 10:22:56 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:22:56 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 2556673809, "id": 1536610062063620098, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191362000}, to topictwitter-topic
+2022-06-14 10:22:56 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:22:56 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 923796949605552128, "id": 1536610062860713984, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191362000}, to topictwitter-topic
+2022-06-14 10:22:56 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:22:56 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1459451915033772033, "id": 1536610068073807872, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191363000}, to topictwitter-topic
+2022-06-14 10:22:56 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:22:56 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1014685351296753664, "id": 1536610070930530307, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191364000}, to topictwitter-topic
+2022-06-14 10:22:56 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @SPRiNGNEWS_TH: สหรัฐฯจะทยอยยุติการจำหน่ายผลิตภัณฑ์พลาสติกแบบใช้ครั้งเดียว (single-use plastic) ในอุทยานแห่งชาติและที่สาธารณะอื่นๆภายใน…
+2022-06-14 10:22:56 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 150235465, "id": 1536610071505162240, "text": "RT @SPRiNGNEWS_TH: สหรัฐฯจะทยอยยุติการจำหน่ายผลิตภัณฑ์พลาสติกแบบใช้ครั้งเดียว (single-use plastic) ในอุทยานแห่งชาติและที่สาธารณะอื่นๆภายใน\u2026", "createdAt": 1655191364000}, to topictwitter-topic
+2022-06-14 10:22:56 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topic@XS34567 こんにちは、お世話になっております🙇🏻‍♀️
+💗さんの缶バッジの方を全て・💛さんの缶バッジ全てをまとめて買取させて頂くことは可能でしょうか？御検討よろしくお願い致します。
+2022-06-14 10:22:56 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1264368217297793025, "id": 1536610072029081600, "text": "@XS34567 こんにちは、お世話になっております🙇🏻\u200D♀️\n💗さんの缶バッジの方を全て・💛さんの缶バッジ全てをまとめて買取させて頂くことは可能でしょうか？御検討よろしくお願い致します。", "createdAt": 1655191364000}, to topictwitter-topic
+2022-06-14 10:22:56 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topic@gunnarmorling In my experience, the undisputed, exacting and uncommon requirements of the Java-based FinTech industry behind Chronicle are uncommon in the industry. I have not seen a Java-based system where a logger, used to create sensible, useful logs (no TRACE), outpaces I/O so much.
+2022-06-14 10:22:56 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 876045046633701376, "id": 1536610073052598277, "text": "@gunnarmorling In my experience, the undisputed, exacting and uncommon requirements of the Java-based FinTech industry behind Chronicle are uncommon in the industry. I have not seen a Java-based system where a logger, used to create sensible, useful logs (no TRACE), outpaces I/O so much.", "createdAt": 1655191364000}, to topictwitter-topic
+2022-06-14 10:22:56 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicjules leblanc using a tori spring audio i’m screaming my faves
+2022-06-14 10:22:56 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1305948464975474688, "id": 1536610077716533249, "text": "jules leblanc using a tori spring audio i\u2019m screaming my faves", "createdAt": 1655191366000}, to topictwitter-topic
+2022-06-14 10:22:56 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @spring_yugyeom: 220610 청춘페스티벌
+세상 제일 멋진 무빙💙
+@yugyeom 
+#GOT7    #갓세븐    #YUGYEOM   #유겸 https://t.co/ovVGY7hn6q
+2022-06-14 10:22:56 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 3278657959, "id": 1536610076923817985, "text": "RT @spring_yugyeom: 220610 청춘페스티벌\n세상 제일 멋진 무빙💙\n@yugyeom \n#GOT7    #갓세븐    #YUGYEOM   #유겸 https://t.co/ovVGY7hn6q", "createdAt": 1655191365000}, to topictwitter-topic
+2022-06-14 10:23:02 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @shrewsmorris: This Spring or Summer do something different……like learn a language or four. In fact, learn Spanish, Italian, German or F…
+2022-06-14 10:23:02 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1450120128474005504, "id": 1536610075837612032, "text": "RT @shrewsmorris: This Spring or Summer do something different\u2026\u2026like learn a language or four. In fact, learn Spanish, Italian, German or F\u2026", "createdAt": 1655191365000}, to topictwitter-topic
+2022-06-14 10:23:02 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:23:02 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 709651277890736128, "id": 1536610081294254080, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191366000}, to topictwitter-topic
+2022-06-14 10:23:02 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @CommercialeSeme: What a progress: Top artificial Intelligence companies in Canada!!!!!!!!!!!
+
+#100DaysOfCode #CyberSecurity #Blockchain…
+2022-06-14 10:23:02 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1319903481486950400, "id": 1536610079507681280, "text": "RT @CommercialeSeme: What a progress: Top artificial Intelligence companies in Canada!!!!!!!!!!!\n\n#100DaysOfCode #CyberSecurity #Blockchain\u2026", "createdAt": 1655191366000}, to topictwitter-topic
+2022-06-14 10:23:02 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:23:02 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 178970477, "id": 1536610079927152642, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191366000}, to topictwitter-topic
+2022-06-14 10:23:02 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @spring_yugyeom: 220610 청춘페스티벌
+🖤
+@yugyeom 
+#GOT7    #갓세븐    #YUGYEOM   #유겸 https://t.co/cUXFcZSupI
+2022-06-14 10:23:02 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1251941267992276992, "id": 1536610082300915712, "text": "RT @spring_yugyeom: 220610 청춘페스티벌\n🖤\n@yugyeom \n#GOT7    #갓세븐    #YUGYEOM   #유겸 https://t.co/cUXFcZSupI", "createdAt": 1655191367000}, to topictwitter-topic
+2022-06-14 10:23:02 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicFeeling stuck with assignment
+Class kicking my ass....
+essay due
+ math
+sociology 
+java script
+h/work.
+accounting
+h/work.'int''
+essay pay  .'
+algebra
+literature
+chemistry
+statistics
+business.
+law
+2022-06-14 10:23:02 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1494575623972573190, "id": 1536610088483422208, "text": "Feeling stuck with assignment\nClass kicking my ass....\nessay due\n math\nsociology \njava script\nh/work.\naccounting\nh/work.'int''\nessay pay  .'\nalgebra\nliterature\nchemistry\nstatistics\nbusiness.\nlaw", "createdAt": 1655191368000}, to topictwitter-topic
+2022-06-14 10:23:02 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:23:02 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1517567808573681664, "id": 1536610089322237957, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191368000}, to topictwitter-topic
+2022-06-14 10:23:02 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:23:02 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 264057788, "id": 1536610089385492480, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191368000}, to topictwitter-topic
+2022-06-14 10:23:02 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:23:02 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1371360896186937345, "id": 1536610094418255872, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191370000}, to topictwitter-topic
+2022-06-14 10:23:02 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRrrrrroyal! So cool 😎 
+https://t.co/nEfrStjz9U
+2022-06-14 10:23:02 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 2676234874, "id": 1536610096347860992, "text": "Rrrrrroyal! So cool 😎 \nhttps://t.co/nEfrStjz9U", "createdAt": 1655191370000}, to topictwitter-topic
+2022-06-14 10:23:02 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topic@WeaponOutfitter Eyyy, Mazel Tov
+2022-06-14 10:23:02 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1305577742830907393, "id": 1536610100139331585, "text": "@WeaponOutfitter Eyyy, Mazel Tov", "createdAt": 1655191371000}, to topictwitter-topic
+2022-06-14 10:23:02 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:23:02 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 559329118, "id": 1536610099745017856, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191371000}, to topictwitter-topic
+2022-06-14 10:23:02 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @spring_yugyeom: 220610 청춘페스티벌
+네가 웃으면 나도 좋아:) 💚
+@yugyeom 
+#GOT7    #갓세븐    #YUGYEOM   #유겸 https://t.co/ehzHq4vS41
+2022-06-14 10:23:02 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 873139524578066432, "id": 1536610100021846017, "text": "RT @spring_yugyeom: 220610 청춘페스티벌\n네가 웃으면 나도 좋아:) 💚\n@yugyeom \n#GOT7    #갓세븐    #YUGYEOM   #유겸 https://t.co/ehzHq4vS41", "createdAt": 1655191371000}, to topictwitter-topic
+2022-06-14 10:23:02 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @spring_yugyeom: 220610 청춘페스티벌
+네가 웃으면 나도 좋아:) 💚
+@yugyeom 
+#GOT7    #갓세븐    #YUGYEOM   #유겸 https://t.co/ehzHq4vS41
+2022-06-14 10:23:02 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 887876715690590209, "id": 1536610101078806528, "text": "RT @spring_yugyeom: 220610 청춘페스티벌\n네가 웃으면 나도 좋아:) 💚\n@yugyeom \n#GOT7    #갓세븐    #YUGYEOM   #유겸 https://t.co/ehzHq4vS41", "createdAt": 1655191371000}, to topictwitter-topic
+2022-06-14 10:23:10 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @esikuri_zablon: @radiomaisha @annjogu Twende nayo nayo #staarabika nikiwa spring valley
+2022-06-14 10:23:10 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1487446374618648587, "id": 1536610102697926657, "text": "RT @esikuri_zablon: @radiomaisha @annjogu Twende nayo nayo #staarabika nikiwa spring valley", "createdAt": 1655191371000}, to topictwitter-topic
+2022-06-14 10:23:10 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:23:10 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 265424053, "id": 1536610107051900928, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191373000}, to topictwitter-topic
+2022-06-14 10:23:10 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:23:10 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1260558169882820608, "id": 1536610104300085253, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191372000}, to topictwitter-topic
+2022-06-14 10:23:10 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @raspstyles: thierry mugler spring/summer 1999 https://t.co/hhtkSSzRYw
+2022-06-14 10:23:10 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1420818506015182852, "id": 1536610105680179200, "text": "RT @raspstyles: thierry mugler spring/summer 1999 https://t.co/hhtkSSzRYw", "createdAt": 1655191372000}, to topictwitter-topic
+2022-06-14 10:23:10 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @B_S_Spring: The Only Savior we can count on
+#PAHLAVi4iran https://t.co/ojshB7847H
+2022-06-14 10:23:10 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1047309841549512704, "id": 1536610110834757633, "text": "RT @B_S_Spring: The Only Savior we can count on\n#PAHLAVi4iran https://t.co/ojshB7847H", "createdAt": 1655191373000}, to topictwitter-topic
+2022-06-14 10:23:10 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @spring_yugyeom: 220610 청춘페스티벌
+네가 웃으면 나도 좋아:) 💚
+@yugyeom 
+#GOT7    #갓세븐    #YUGYEOM   #유겸 https://t.co/ehzHq4vS41
+2022-06-14 10:23:10 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1251941267992276992, "id": 1536610111489073153, "text": "RT @spring_yugyeom: 220610 청춘페스티벌\n네가 웃으면 나도 좋아:) 💚\n@yugyeom \n#GOT7    #갓세븐    #YUGYEOM   #유겸 https://t.co/ehzHq4vS41", "createdAt": 1655191374000}, to topictwitter-topic
+2022-06-14 10:23:10 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicFeeling stuck with assignment
+Class kicking my ass....
+essay due
+ math
+sociology 
+java script
+h/work.
+accounting
+h/work.'int''
+essay pay  .'
+algebra
+literature
+chemistry
+statistics
+business.
+law..
+2022-06-14 10:23:10 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1494575623972573190, "id": 1536610114081378304, "text": "Feeling stuck with assignment\nClass kicking my ass....\nessay due\n math\nsociology \njava script\nh/work.\naccounting\nh/work.'int''\nessay pay  .'\nalgebra\nliterature\nchemistry\nstatistics\nbusiness.\nlaw..", "createdAt": 1655191374000}, to topictwitter-topic
+2022-06-14 10:23:10 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicLimited edition to promise a Spring on OpenSea https://t.co/F9PtHToSnW via @opensea
+ #nft #nfts #nftart #nftartist #nftcollector #nftcollectors #nftcommunity #nftproject #polygonnft #ethnft #bnbnft #solnft #solananft
+2022-06-14 10:23:10 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1488934921209098241, "id": 1536610113640972288, "text": "Limited edition to promise a Spring on OpenSea https://t.co/F9PtHToSnW via @opensea\n #nft #nfts #nftart #nftartist #nftcollector #nftcollectors #nftcommunity #nftproject #polygonnft #ethnft #bnbnft #solnft #solananft", "createdAt": 1655191374000}, to topictwitter-topic
+2022-06-14 10:23:10 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topic@703shifon 今夜は満月ですから
+はしゃいで気持ちが上がるかもね🎶
+ストロベリームーン🌕️
+2022-06-14 10:23:10 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1367643402683125760, "id": 1536610122973446144, "text": "@703shifon 今夜は満月ですから\nはしゃいで気持ちが上がるかもね🎶\nストロベリームーン🌕️", "createdAt": 1655191376000}, to topictwitter-topic
+2022-06-14 10:23:10 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @RaviDeveloper97: Top 7 programming language and their uses have provided below in the image.
+
+#Python #100DaysOfCode #Java #AI #Machine…
+2022-06-14 10:23:10 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1489493416509587458, "id": 1536610123715592193, "text": "RT @RaviDeveloper97: Top 7 programming language and their uses have provided below in the image.\n\n#Python #100DaysOfCode #Java #AI #Machine\u2026", "createdAt": 1655191376000}, to topictwitter-topic
+2022-06-14 10:23:10 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:23:10 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1424699008254021639, "id": 1536610122465968128, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191376000}, to topictwitter-topic
+2022-06-14 10:23:10 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:23:10 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 2910716636, "id": 1536610130514415616, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191378000}, to topictwitter-topic
+2022-06-14 10:23:10 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:23:10 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 2988667557, "id": 1536610130489245696, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191378000}, to topictwitter-topic
+2022-06-14 10:23:10 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:23:10 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1149151112, "id": 1536610133769433088, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191379000}, to topictwitter-topic
+2022-06-14 10:23:13 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topic#VH1PLAYLIST Spring Day by BTS
+2022-06-14 10:23:13 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1498633991133356037, "id": 1536610133328809985, "text": "#VH1PLAYLIST Spring Day by BTS", "createdAt": 1655191379000}, to topictwitter-topic
+2022-06-14 10:23:13 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @cadxnce_: -Spring 2020 Giveaway-
+✽ Winner gets to win Spring 2020!
+
+→Rules
+~Follow me 
+~RT this post w tags
+~Comment ‘Done’
+
+♡ Extras i…
+2022-06-14 10:23:13 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1536608898891026432, "id": 1536610134155468800, "text": "RT @cadxnce_: -Spring 2020 Giveaway-\n✽ Winner gets to win Spring 2020!\n\n→Rules\n~Follow me \n~RT this post w tags\n~Comment \u2018Done\u2019\n\n♡ Extras i\u2026", "createdAt": 1655191379000}, to topictwitter-topic
+2022-06-14 10:23:13 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicXin chao!! Welcome to the land of miracles! 
+
+Your local cuisine dish will be 🥁 
+ 
+Vietnamese spring rolls!  
+
+I challenge you to eat this dish with a soup spoon. And without closing your elegant eyes.
+2022-06-14 10:23:13 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1303165953182593024, "id": 1536610136038338561, "text": "Xin chao!! Welcome to the land of miracles! \n\nYour local cuisine dish will be 🥁 \n \nVietnamese spring rolls!  \n\nI challenge you to eat this dish with a soup spoon. And without closing your elegant eyes.", "createdAt": 1655191379000}, to topictwitter-topic
+2022-06-14 10:23:13 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:23:13 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 102949544, "id": 1536610137951338497, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191380000}, to topictwitter-topic
+2022-06-14 10:23:13 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:23:13 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1072361804548890625, "id": 1536610139469680640, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191380000}, to topictwitter-topic
+2022-06-14 10:23:13 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:23:13 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1333244868, "id": 1536610142069788673, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191381000}, to topictwitter-topic
+2022-06-14 10:23:13 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @raspstyles: thierry mugler spring/summer 1999 https://t.co/hhtkSSzRYw
+2022-06-14 10:23:13 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 256935708, "id": 1536610141868638210, "text": "RT @raspstyles: thierry mugler spring/summer 1999 https://t.co/hhtkSSzRYw", "createdAt": 1655191381000}, to topictwitter-topic
+2022-06-14 10:23:13 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:23:13 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 487210271, "id": 1536610143206805504, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191381000}, to topictwitter-topic
+2022-06-14 10:23:13 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:23:13 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 637250427, "id": 1536610144951443457, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191382000}, to topictwitter-topic
+2022-06-14 10:23:13 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @tulips_holland: Happy Tulip Tuesday! Colourful tulips in different shapes and varieties during springtime. Enjoy today! 🙋🏼‍♀️🌷
+ 
+#trave…
+2022-06-14 10:23:13 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 20279780, "id": 1536610141868814336, "text": "RT @tulips_holland: Happy Tulip Tuesday! Colourful tulips in different shapes and varieties during springtime. Enjoy today! 🙋🏼\u200D♀️🌷\n \n#trave\u2026", "createdAt": 1655191381000}, to topictwitter-topic
+2022-06-14 10:23:13 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicDo you want to live a normal life? Then, follow him!
+#PAHLAVi4iran https://t.co/eWS9OhTTsW
+2022-06-14 10:23:13 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1266215032188219392, "id": 1536610145446264832, "text": "Do you want to live a normal life? Then, follow him!\n#PAHLAVi4iran https://t.co/eWS9OhTTsW", "createdAt": 1655191382000}, to topictwitter-topic
+2022-06-14 10:23:13 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @spring_yugyeom: 220610 청춘페스티벌
+🖤
+@yugyeom 
+#GOT7    #갓세븐    #YUGYEOM   #유겸 https://t.co/cUXFcZSupI
+2022-06-14 10:23:13 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1071526352979808256, "id": 1536610142812516354, "text": "RT @spring_yugyeom: 220610 청춘페스티벌\n🖤\n@yugyeom \n#GOT7    #갓세븐    #YUGYEOM   #유겸 https://t.co/cUXFcZSupI", "createdAt": 1655191381000}, to topictwitter-topic
+2022-06-14 10:23:13 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:23:13 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 3098582616, "id": 1536610144632860672, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191381000}, to topictwitter-topic
+2022-06-14 10:23:13 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:23:13 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 554708200, "id": 1536610147115872257, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191382000}, to topictwitter-topic
+2022-06-14 10:23:13 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topic@Spring_trn لبخند بزن مصنوعی
+وانمود کن مست بودی https://t.co/YLwXwFWQAr
+2022-06-14 10:23:13 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1394575174322827264, "id": 1536610146671116289, "text": "@Spring_trn لبخند بزن مصنوعی\nوانمود کن مست بودی https://t.co/YLwXwFWQAr", "createdAt": 1655191382000}, to topictwitter-topic
+2022-06-14 10:23:18 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:23:18 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1529337325599092737, "id": 1536610148902264832, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191382000}, to topictwitter-topic
+2022-06-14 10:23:18 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:23:18 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1240506043773235200, "id": 1536610151628562432, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191383000}, to topictwitter-topic
+2022-06-14 10:23:18 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:23:18 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 845934225932992513, "id": 1536610157118926849, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191384000}, to topictwitter-topic
+2022-06-14 10:23:18 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:23:18 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1054136149696929792, "id": 1536610155714203648, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191384000}, to topictwitter-topic
+2022-06-14 10:23:18 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topic7＋1で瞳get✨(｡•̀ᴗ-)و ̑̑✨
+
+次男が風邪をひいたようなので 病院🏥に連れて行きます*°
+
+不安定なお天気…
+皆さまも体調にお気をつけくださいm(*_ _)m
+今週も よろしくお願いいたします🙏
+#ポケコロ https://t.co/xkCD5QwxI2
+2022-06-14 10:23:18 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1237278654591168512, "id": 1536610153474441216, "text": "7＋1で瞳get✨(｡\u2022̀ᴗ-)و ̑̑✨\n\n次男が風邪をひいたようなので 病院🏥に連れて行きます*°\n\n不安定なお天気\u2026\n皆さまも体調にお気をつけくださいm(*_ _)m\n今週も よろしくお願いいたします🙏\n#ポケコロ https://t.co/xkCD5QwxI2", "createdAt": 1655191384000}, to topictwitter-topic
+2022-06-14 10:23:18 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:23:18 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1268465785, "id": 1536610156619997184, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191384000}, to topictwitter-topic
+2022-06-14 10:23:18 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:23:18 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1389127290, "id": 1536610158721531904, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191385000}, to topictwitter-topic
+2022-06-14 10:23:18 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topic@karolgrudzinski @makneta That sounds pretty interesting! I hope you will enjoy that journey 👏
+2022-06-14 10:23:18 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 786673326559203328, "id": 1536610159723970562, "text": "@karolgrudzinski @makneta That sounds pretty interesting! I hope you will enjoy that journey 👏", "createdAt": 1655191385000}, to topictwitter-topic
+2022-06-14 10:23:18 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:23:18 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1370812235082125312, "id": 1536610165419802624, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191386000}, to topictwitter-topic
+2022-06-14 10:23:18 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:23:18 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 2910720475, "id": 1536610164924907520, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191386000}, to topictwitter-topic
+2022-06-14 10:23:18 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @spring_yugyeom: 220610 청춘페스티벌
+무대에서 더 빛나는 너🌠
+@yugyeom 
+#GOT7    #갓세븐    #YUGYEOM   #유겸 https://t.co/glZWQMgRLY
+2022-06-14 10:23:18 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 1251941267992276992, "id": 1536610164454793221, "text": "RT @spring_yugyeom: 220610 청춘페스티벌\n무대에서 더 빛나는 너🌠\n@yugyeom \n#GOT7    #갓세븐    #YUGYEOM   #유겸 https://t.co/glZWQMgRLY", "createdAt": 1655191386000}, to topictwitter-topic
+2022-06-14 10:23:18 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @pjwupdates: jeongwoo jikjin at blue spring festival !
+
+https://t.co/hhHykk74E6
+2022-06-14 10:23:18 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 4113275654, "id": 1536610163074904066, "text": "RT @pjwupdates: jeongwoo jikjin at blue spring festival !\n\nhttps://t.co/hhHykk74E6", "createdAt": 1655191386000}, to topictwitter-topic
+2022-06-14 10:23:18 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @housefoods_now: ／
+フォロー&RTで、その場で当たる🎉
+#ジャワカレー 詰合せが抽選で50名様に✨
+＼
+
+大人のスパイスを味わおう！キャンペーン🎁
+6/17まで応募可能✌️
+
+1. @housefoods_nowをフォロー
+2. 6/15 14:59迄に…
+2022-06-14 10:23:18 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 2438253224, "id": 1536610165621141504, "text": "RT @housefoods_now: ／\nフォロー&RTで、その場で当たる🎉\n#ジャワカレー 詰合せが抽選で50名様に✨\n＼\n\n大人のスパイスを味わおう！キャンペーン🎁\n6/17まで応募可能✌️\n\n1. @housefoods_nowをフォロー\n2. 6/15 14:59迄に\u2026", "createdAt": 1655191386000}, to topictwitter-topic
+2022-06-14 10:23:18 [main] INFO  c.e.m.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text twitter-topicRT @spring_yugyeom: 220610 청춘페스티벌
+청춘을 의인화하면 유겸이 같아🫶🏻
+@yugyeom 
+#GOT7    #갓세븐    #YUGYEOM   #유겸 https://t.co/zBL0q5mLff
+2022-06-14 10:23:18 [main] INFO  c.e.m.k.p.c.service.KafkaProducer - Sending the message{"userId": 3278657959, "id": 1536610168191844352, "text": "RT @spring_yugyeom: 220610 청춘페스티벌\n청춘을 의인화하면 유겸이 같아🫶🏻\n@yugyeom \n#GOT7    #갓세븐    #YUGYEOM   #유겸 https://t.co/zBL0q5mLff", "createdAt": 1655191387000}, to topictwitter-topic
+2022-06-14 10:23:20 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.admin.client for adminclient-1 unregistered
+2022-06-14 10:23:20 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2022-06-14 10:23:20 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2022-06-14 10:23:20 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2022-06-14 10:23:20 [SpringApplicationShutdownHook] INFO  c.e.m.k.p.c.service.KafkaProducer - Closing kafka producer
+2022-06-14 10:23:20 [SpringApplicationShutdownHook] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2022-06-14 10:23:20 [SpringApplicationShutdownHook] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2022-06-14 10:23:20 [SpringApplicationShutdownHook] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2022-06-14 10:23:20 [SpringApplicationShutdownHook] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2022-06-14 10:23:20 [SpringApplicationShutdownHook] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.producer for producer-1 unregistered

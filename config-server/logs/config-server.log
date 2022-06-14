@@ -1685,3 +1685,21 @@ Caused by: org.eclipse.jgit.api.errors.RefNotFoundException: Ref main cannot be 
 2022-06-13 17:35:52 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
 2022-06-13 17:36:00 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [C:\Users\bless\AppData\Local\Temp\config-repo-12953037584310926452\twitter-to-kafka-service.yml]' via location 'file:/C:/Users/bless/AppData/Local/Temp/config-repo-12953037584310926452/'
 2022-06-13 17:46:40 [Thread-3] WARN  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Failed to delete temporary directory on exit: java.nio.file.AccessDeniedException: C:\Users\bless\AppData\Local\Temp\config-repo-12953037584310926452\.git\objects\pack\pack-68d8190a8ea2c77c9fdf092257d956f96de0ce85.idx
+2022-06-14 10:20:46 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
+2022-06-14 10:20:46 [main] INFO  c.e.m.config.server.ConfigServer - Starting ConfigServer using Java 18.0.1.1 on AMasterPiece with PID 9380 (D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\config-server\target\classes started by bless in D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices)
+2022-06-14 10:20:46 [main] INFO  c.e.m.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2022-06-14 10:20:49 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=5e5cd37e-57b2-39c1-9570-81a7b9767a1f
+2022-06-14 10:20:51 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2022-06-14 10:20:51 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2022-06-14 10:20:51 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-14 10:20:51 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-14 10:20:51 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-14 10:20:51 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4628 ms
+2022-06-14 10:20:54 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2022-06-14 10:20:54 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2022-06-14 10:20:54 [main] INFO  c.e.m.config.server.ConfigServer - Started ConfigServer in 10.537 seconds (JVM running for 12.535)
+2022-06-14 10:21:26 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-14 10:21:26 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-06-14 10:21:26 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2022-06-14 10:21:35 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [C:\Users\bless\AppData\Local\Temp\config-repo-3423162488206359149\twitter-to-kafka-service.yml]' via location 'file:/C:/Users/bless/AppData/Local/Temp/config-repo-3423162488206359149/'
+2022-06-14 10:23:20 [Thread-3] WARN  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Failed to delete temporary directory on exit: java.nio.file.AccessDeniedException: C:\Users\bless\AppData\Local\Temp\config-repo-3423162488206359149\.git\objects\pack\pack-893572ca9762c9cb0b22a4c2eb886bf5462310f7.idx
