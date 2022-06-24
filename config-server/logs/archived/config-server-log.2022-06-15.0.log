@@ -1,0 +1,535 @@
+2022-06-15 15:26:27 [main] INFO  c.e.m.config.server.ConfigServer - Starting ConfigServer using Java 18.0.1.1 on AMasterPiece with PID 14144 (D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\config-server\target\classes started by bless in D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices)
+2022-06-15 15:26:27 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
+2022-06-15 15:26:27 [main] INFO  c.e.m.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2022-06-15 15:26:29 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=d6fa766b-4bad-3b19-9efb-bad6959c38ba
+2022-06-15 15:26:30 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2022-06-15 15:26:30 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2022-06-15 15:26:30 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-15 15:26:30 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-15 15:26:30 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-15 15:26:30 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3090 ms
+2022-06-15 15:26:31 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/decrypt/**'] with [org.springframework.security.web.session.DisableEncodeUrlFilter@1280682, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@41ccb3b9, org.springframework.security.web.context.SecurityContextPersistenceFilter@72b6832e, org.springframework.security.web.header.HeaderWriterFilter@29050de5, org.springframework.security.web.csrf.CsrfFilter@5261ec9, org.springframework.security.web.authentication.logout.LogoutFilter@3913f206, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3d9f5016, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4087c7fc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@53d9826f, org.springframework.security.web.session.SessionManagementFilter@23ed382c, org.springframework.security.web.access.ExceptionTranslationFilter@55fdf7f9]
+2022-06-15 15:26:32 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2022-06-15 15:26:32 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2022-06-15 15:26:33 [main] INFO  c.e.m.config.server.ConfigServer - Started ConfigServer in 7.05 seconds (JVM running for 8.48)
+2022-06-15 15:26:53 [http-nio-8888-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-15 15:26:53 [http-nio-8888-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-06-15 15:26:53 [http-nio-8888-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2022-06-15 15:30:49 [Thread-3] WARN  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Failed to delete temporary directory on exit: java.nio.file.AccessDeniedException: C:\Users\bless\AppData\Local\Temp\config-repo-852428066656869184\.git\objects\pack\pack-94552c009a52eddf017793d5890d96e03352fe7f.idx
+2022-06-15 15:36:50 [main] INFO  c.e.m.config.server.ConfigServer - Starting ConfigServer using Java 18.0.1.1 on AMasterPiece with PID 18316 (D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\config-server\target\classes started by bless in D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices)
+2022-06-15 15:36:50 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
+2022-06-15 15:36:50 [main] INFO  c.e.m.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2022-06-15 15:36:52 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=d6fa766b-4bad-3b19-9efb-bad6959c38ba
+2022-06-15 15:36:53 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2022-06-15 15:36:53 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2022-06-15 15:36:53 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-15 15:36:53 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-15 15:36:53 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-15 15:36:53 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3176 ms
+2022-06-15 15:36:53 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/decrypt/**'] with [org.springframework.security.web.session.DisableEncodeUrlFilter@3610f277, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@c689973, org.springframework.security.web.context.SecurityContextPersistenceFilter@46e3559f, org.springframework.security.web.header.HeaderWriterFilter@a146b11, org.springframework.security.web.csrf.CsrfFilter@2fb25f4c, org.springframework.security.web.authentication.logout.LogoutFilter@5c887052, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@32118208, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2eda072, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@41fa769c, org.springframework.security.web.session.SessionManagementFilter@67b355c8, org.springframework.security.web.access.ExceptionTranslationFilter@52227eb2]
+2022-06-15 15:36:55 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2022-06-15 15:36:55 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2022-06-15 15:36:55 [main] INFO  c.e.m.config.server.ConfigServer - Started ConfigServer in 6.776 seconds (JVM running for 8.398)
+2022-06-15 15:37:08 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-15 15:37:08 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-06-15 15:37:08 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-06-15 15:37:09 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Cannot pull from remote null, the working tree is not clean.
+2022-06-15 15:37:09 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Could not refresh default label main
+org.springframework.cloud.config.server.environment.NoSuchLabelException: No such label: main
+	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.refresh(JGitEnvironmentRepository.java:314)
+	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.getLocations(JGitEnvironmentRepository.java:262)
+	at org.springframework.cloud.config.server.environment.MultipleJGitEnvironmentRepository.getLocations(MultipleJGitEnvironmentRepository.java:139)
+	at org.springframework.cloud.config.server.environment.AbstractScmEnvironmentRepository.findOne(AbstractScmEnvironmentRepository.java:55)
+	at org.springframework.cloud.config.server.environment.MultipleJGitEnvironmentRepository.findOneFromCandidate(MultipleJGitEnvironmentRepository.java:188)
+	at org.springframework.cloud.config.server.environment.MultipleJGitEnvironmentRepository.findOne(MultipleJGitEnvironmentRepository.java:173)
+	at org.springframework.cloud.config.server.environment.CompositeEnvironmentRepository.findOne(CompositeEnvironmentRepository.java:64)
+	at org.springframework.cloud.config.server.environment.EnvironmentEncryptorEnvironmentRepository.findOne(EnvironmentEncryptorEnvironmentRepository.java:61)
+	at org.springframework.cloud.config.server.environment.EnvironmentController.getEnvironment(EnvironmentController.java:134)
+	at org.springframework.cloud.config.server.environment.EnvironmentController.defaultLabelIncludeOrigin(EnvironmentController.java:116)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:282)
+	at org.springframework.cloud.context.scope.GenericScope$LockedScopedProxyFactoryBean.invoke(GenericScope.java:485)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at org.springframework.cloud.config.server.environment.EnvironmentController$$EnhancerBySpringCGLIB$$112b5782.defaultLabelIncludeOrigin(<generated>)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:204)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.eclipse.jgit.api.errors.RefNotFoundException: Ref main cannot be resolved
+	at org.eclipse.jgit.api.CheckoutCommand.call(CheckoutCommand.java:223)
+	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.checkout(JGitEnvironmentRepository.java:468)
+	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.refresh(JGitEnvironmentRepository.java:307)
+	... 71 common frames omitted
+2022-06-15 15:37:09 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Will try to checkout master label instead.
+2022-06-15 15:37:09 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Cannot pull from remote null, the working tree is not clean.
+2022-06-15 15:37:09 [http-nio-8888-exec-1] WARN  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Could not merge remote for master remote: null
+2022-06-15 15:37:09 [http-nio-8888-exec-1] WARN  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - The local repository is dirty or ahead of origin. Resetting it to origin/master.
+2022-06-15 15:37:09 [http-nio-8888-exec-1] WARN  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Could not reset to remote for master (current ref=refs/remotes/origin/master), remote: null
+2022-06-15 15:40:25 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Cannot pull from remote null, the working tree is not clean.
+2022-06-15 15:40:25 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Could not refresh default label main
+org.springframework.cloud.config.server.environment.NoSuchLabelException: No such label: main
+	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.refresh(JGitEnvironmentRepository.java:314)
+	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.getLocations(JGitEnvironmentRepository.java:262)
+	at org.springframework.cloud.config.server.environment.MultipleJGitEnvironmentRepository.getLocations(MultipleJGitEnvironmentRepository.java:139)
+	at org.springframework.cloud.config.server.environment.AbstractScmEnvironmentRepository.findOne(AbstractScmEnvironmentRepository.java:55)
+	at org.springframework.cloud.config.server.environment.MultipleJGitEnvironmentRepository.findOneFromCandidate(MultipleJGitEnvironmentRepository.java:188)
+	at org.springframework.cloud.config.server.environment.MultipleJGitEnvironmentRepository.findOne(MultipleJGitEnvironmentRepository.java:173)
+	at org.springframework.cloud.config.server.environment.CompositeEnvironmentRepository.findOne(CompositeEnvironmentRepository.java:64)
+	at org.springframework.cloud.config.server.environment.EnvironmentEncryptorEnvironmentRepository.findOne(EnvironmentEncryptorEnvironmentRepository.java:61)
+	at org.springframework.cloud.config.server.environment.EnvironmentController.getEnvironment(EnvironmentController.java:134)
+	at org.springframework.cloud.config.server.environment.EnvironmentController.defaultLabelIncludeOrigin(EnvironmentController.java:116)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:282)
+	at org.springframework.cloud.context.scope.GenericScope$LockedScopedProxyFactoryBean.invoke(GenericScope.java:485)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at org.springframework.cloud.config.server.environment.EnvironmentController$$EnhancerBySpringCGLIB$$112b5782.defaultLabelIncludeOrigin(<generated>)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:204)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.eclipse.jgit.api.errors.RefNotFoundException: Ref main cannot be resolved
+	at org.eclipse.jgit.api.CheckoutCommand.call(CheckoutCommand.java:223)
+	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.checkout(JGitEnvironmentRepository.java:468)
+	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.refresh(JGitEnvironmentRepository.java:307)
+	... 71 common frames omitted
+2022-06-15 15:40:25 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Will try to checkout master label instead.
+2022-06-15 15:40:25 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Cannot pull from remote null, the working tree is not clean.
+2022-06-15 15:40:25 [http-nio-8888-exec-3] WARN  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Could not merge remote for master remote: null
+2022-06-15 15:40:25 [http-nio-8888-exec-3] WARN  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - The local repository is dirty or ahead of origin. Resetting it to origin/master.
+2022-06-15 15:40:25 [http-nio-8888-exec-3] WARN  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Could not reset to remote for master (current ref=refs/remotes/origin/master), remote: null
+2022-06-15 15:45:42 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Cannot pull from remote null, the working tree is not clean.
+2022-06-15 15:45:42 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Could not refresh default label main
+org.springframework.cloud.config.server.environment.NoSuchLabelException: No such label: main
+	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.refresh(JGitEnvironmentRepository.java:314)
+	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.getLocations(JGitEnvironmentRepository.java:262)
+	at org.springframework.cloud.config.server.environment.MultipleJGitEnvironmentRepository.getLocations(MultipleJGitEnvironmentRepository.java:139)
+	at org.springframework.cloud.config.server.environment.AbstractScmEnvironmentRepository.findOne(AbstractScmEnvironmentRepository.java:55)
+	at org.springframework.cloud.config.server.environment.MultipleJGitEnvironmentRepository.findOneFromCandidate(MultipleJGitEnvironmentRepository.java:188)
+	at org.springframework.cloud.config.server.environment.MultipleJGitEnvironmentRepository.findOne(MultipleJGitEnvironmentRepository.java:173)
+	at org.springframework.cloud.config.server.environment.CompositeEnvironmentRepository.findOne(CompositeEnvironmentRepository.java:64)
+	at org.springframework.cloud.config.server.environment.EnvironmentEncryptorEnvironmentRepository.findOne(EnvironmentEncryptorEnvironmentRepository.java:61)
+	at org.springframework.cloud.config.server.environment.EnvironmentController.getEnvironment(EnvironmentController.java:134)
+	at org.springframework.cloud.config.server.environment.EnvironmentController.defaultLabelIncludeOrigin(EnvironmentController.java:116)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:282)
+	at org.springframework.cloud.context.scope.GenericScope$LockedScopedProxyFactoryBean.invoke(GenericScope.java:485)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at org.springframework.cloud.config.server.environment.EnvironmentController$$EnhancerBySpringCGLIB$$112b5782.defaultLabelIncludeOrigin(<generated>)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:204)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.eclipse.jgit.api.errors.RefNotFoundException: Ref main cannot be resolved
+	at org.eclipse.jgit.api.CheckoutCommand.call(CheckoutCommand.java:223)
+	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.checkout(JGitEnvironmentRepository.java:468)
+	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.refresh(JGitEnvironmentRepository.java:307)
+	... 71 common frames omitted
+2022-06-15 15:45:42 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Will try to checkout master label instead.
+2022-06-15 15:45:42 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Cannot pull from remote null, the working tree is not clean.
+2022-06-15 15:45:42 [http-nio-8888-exec-5] WARN  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Could not merge remote for master remote: null
+2022-06-15 15:45:42 [http-nio-8888-exec-5] WARN  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - The local repository is dirty or ahead of origin. Resetting it to origin/master.
+2022-06-15 15:45:42 [http-nio-8888-exec-5] WARN  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Could not reset to remote for master (current ref=refs/remotes/origin/master), remote: null
+2022-06-15 15:47:55 [main] INFO  c.e.m.config.server.ConfigServer - Starting ConfigServer using Java 18.0.1.1 on AMasterPiece with PID 23340 (D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\config-server\target\classes started by bless in D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices)
+2022-06-15 15:47:55 [main] INFO  c.e.m.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2022-06-15 15:47:55 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
+2022-06-15 15:47:57 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=d6fa766b-4bad-3b19-9efb-bad6959c38ba
+2022-06-15 15:47:57 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2022-06-15 15:47:57 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2022-06-15 15:47:57 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-15 15:47:57 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-15 15:47:58 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-15 15:47:58 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2801 ms
+2022-06-15 15:47:58 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/decrypt/**'] with [org.springframework.security.web.session.DisableEncodeUrlFilter@4570d7b6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@72b6832e, org.springframework.security.web.context.SecurityContextPersistenceFilter@65bb6275, org.springframework.security.web.header.HeaderWriterFilter@388623ad, org.springframework.security.web.csrf.CsrfFilter@4e224df5, org.springframework.security.web.authentication.logout.LogoutFilter@77db3d02, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@72a2312e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2d119405, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3850e90c, org.springframework.security.web.session.SessionManagementFilter@1b01a0d, org.springframework.security.web.access.ExceptionTranslationFilter@22bdb1d0]
+2022-06-15 15:47:59 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2022-06-15 15:47:59 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2022-06-15 15:48:00 [main] INFO  c.e.m.config.server.ConfigServer - Started ConfigServer in 6.64 seconds (JVM running for 7.912)
+2022-06-15 15:48:16 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-15 15:48:16 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-06-15 15:48:16 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2022-06-15 15:48:16 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Cannot pull from remote https://github.com/blessedeffulgence/spring-cloud-config-server-repository.git, the working tree is not clean.
+2022-06-15 15:48:17 [http-nio-8888-exec-1] WARN  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - The local repository is dirty or ahead of origin. Resetting it to origin/main.
+2022-06-15 15:48:17 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Reset label main to version AnyObjectId[75434f9614db43938af45f43ebe3b7ede14e00eb]
+2022-06-15 15:49:08 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
+2022-06-15 15:49:09 [main] INFO  c.e.m.config.server.ConfigServer - Starting ConfigServer using Java 18.0.1.1 on AMasterPiece with PID 2552 (D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\config-server\target\classes started by bless in D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices)
+2022-06-15 15:49:09 [main] INFO  c.e.m.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2022-06-15 15:49:11 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=d6fa766b-4bad-3b19-9efb-bad6959c38ba
+2022-06-15 15:49:11 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2022-06-15 15:49:11 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2022-06-15 15:49:11 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-15 15:49:11 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-15 15:49:12 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-15 15:49:12 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2926 ms
+2022-06-15 15:49:12 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/decrypt/**'] with [org.springframework.security.web.session.DisableEncodeUrlFilter@2d0b05, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4b432e53, org.springframework.security.web.context.SecurityContextPersistenceFilter@4ed5a1b0, org.springframework.security.web.header.HeaderWriterFilter@294aba23, org.springframework.security.web.csrf.CsrfFilter@2dbc408c, org.springframework.security.web.authentication.logout.LogoutFilter@2d119405, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3135bf25, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@45900b64, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2b916808, org.springframework.security.web.session.SessionManagementFilter@5ad1904f, org.springframework.security.web.access.ExceptionTranslationFilter@642a16aa]
+2022-06-15 15:49:13 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2022-06-15 15:49:13 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2022-06-15 15:49:14 [main] INFO  c.e.m.config.server.ConfigServer - Started ConfigServer in 6.967 seconds (JVM running for 8.547)
+2022-06-15 15:49:26 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-15 15:49:26 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-06-15 15:49:26 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2022-06-15 15:49:26 [http-nio-8888-exec-1] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/blessedeffulgence/spring-cloud-config-server-repository.git/info/refs?service=git-upload-pack
+2022-06-15 15:49:27 [http-nio-8888-exec-1] WARN  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Could not fetch remote for main remote: https://github.com/blessedeffulgence/spring-cloud-config-server-repository.git
+2022-06-15 15:50:39 [http-nio-8888-exec-6] INFO  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Cannot pull from remote https://github.com/blessedeffulgence/spring-cloud-config-server-repository.git, the working tree is not clean.
+2022-06-15 15:50:39 [http-nio-8888-exec-6] WARN  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - The local repository is dirty or ahead of origin. Resetting it to origin/main.
+2022-06-15 15:50:39 [http-nio-8888-exec-6] INFO  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Reset label main to version AnyObjectId[75434f9614db43938af45f43ebe3b7ede14e00eb]
+2022-06-15 15:50:39 [http-nio-8888-exec-6] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\config-server-respository\twitter-to-kafka-service.yml]' via location 'file:/D:/spring/Projects/Event-Driven-Microservices/event-driven-microservices/config-server-respository/'
+2022-06-15 15:53:17 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Cannot pull from remote https://github.com/blessedeffulgence/spring-cloud-config-server-repository.git, the working tree is not clean.
+2022-06-15 15:53:17 [http-nio-8888-exec-9] WARN  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - The local repository is dirty or ahead of origin. Resetting it to origin/main.
+2022-06-15 15:53:17 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Reset label main to version AnyObjectId[75434f9614db43938af45f43ebe3b7ede14e00eb]
+2022-06-15 15:53:17 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\config-server-respository\kafka-to-elastic-service.yml]' via location 'file:/D:/spring/Projects/Event-Driven-Microservices/event-driven-microservices/config-server-respository/'
+2022-06-15 15:55:47 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Cannot pull from remote https://github.com/blessedeffulgence/spring-cloud-config-server-repository.git, the working tree is not clean.
+2022-06-15 15:55:47 [http-nio-8888-exec-3] WARN  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - The local repository is dirty or ahead of origin. Resetting it to origin/main.
+2022-06-15 15:55:47 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Reset label main to version AnyObjectId[75434f9614db43938af45f43ebe3b7ede14e00eb]
+2022-06-15 15:55:47 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\config-server-respository\kafka-to-elastic-service.yml]' via location 'file:/D:/spring/Projects/Event-Driven-Microservices/event-driven-microservices/config-server-respository/'
+2022-06-15 15:56:55 [main] INFO  c.e.m.config.server.ConfigServer - Starting ConfigServer using Java 18.0.1.1 on AMasterPiece with PID 10892 (D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\config-server\target\classes started by bless in D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices)
+2022-06-15 15:56:55 [main] INFO  c.e.m.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2022-06-15 15:56:56 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
+2022-06-15 15:56:58 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=d6fa766b-4bad-3b19-9efb-bad6959c38ba
+2022-06-15 15:56:58 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2022-06-15 15:56:58 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2022-06-15 15:56:58 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-15 15:56:58 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-15 15:56:59 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-15 15:56:59 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2917 ms
+2022-06-15 15:56:59 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/decrypt/**'] with [org.springframework.security.web.session.DisableEncodeUrlFilter@2a235b8e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@76536c53, org.springframework.security.web.context.SecurityContextPersistenceFilter@55fdf7f9, org.springframework.security.web.header.HeaderWriterFilter@4ed9f7b1, org.springframework.security.web.csrf.CsrfFilter@79f90a3a, org.springframework.security.web.authentication.logout.LogoutFilter@4373f66f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@29050de5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@40113163, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@38d08cb5, org.springframework.security.web.session.SessionManagementFilter@1290ed28, org.springframework.security.web.access.ExceptionTranslationFilter@47c7a9e5]
+2022-06-15 15:57:00 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2022-06-15 15:57:00 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2022-06-15 15:57:01 [main] INFO  c.e.m.config.server.ConfigServer - Started ConfigServer in 6.445 seconds (JVM running for 7.465)
+2022-06-15 15:57:15 [http-nio-8888-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-15 15:57:15 [http-nio-8888-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-06-15 15:57:15 [http-nio-8888-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2022-06-15 15:57:15 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Cannot pull from remote https://github.com/blessedeffulgence/spring-cloud-config-server-repository.git, the working tree is not clean.
+2022-06-15 15:57:16 [http-nio-8888-exec-3] WARN  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - The local repository is dirty or ahead of origin. Resetting it to origin/main.
+2022-06-15 15:57:16 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Reset label main to version AnyObjectId[75434f9614db43938af45f43ebe3b7ede14e00eb]
+2022-06-15 15:57:16 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\config-server-respository\twitter-to-kafka-service.yml]' via location 'file:/D:/spring/Projects/Event-Driven-Microservices/event-driven-microservices/config-server-respository/'
+2022-06-15 15:58:14 [http-nio-8888-exec-4] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/blessedeffulgence/spring-cloud-config-server-repository.git/info/refs?service=git-upload-pack
+2022-06-15 15:58:16 [http-nio-8888-exec-4] WARN  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Could not fetch remote for main remote: https://github.com/blessedeffulgence/spring-cloud-config-server-repository.git
+2022-06-15 15:58:16 [http-nio-8888-exec-4] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\config-server-respository\kafka-to-elastic-service.yml]' via location 'file:/D:/spring/Projects/Event-Driven-Microservices/event-driven-microservices/config-server-respository/'
+2022-06-15 16:01:50 [main] INFO  c.e.m.config.server.ConfigServer - Starting ConfigServer using Java 18.0.1.1 on AMasterPiece with PID 13272 (D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\config-server\target\classes started by bless in D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices)
+2022-06-15 16:01:50 [main] INFO  c.e.m.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2022-06-15 16:01:50 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
+2022-06-15 16:01:52 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=d6fa766b-4bad-3b19-9efb-bad6959c38ba
+2022-06-15 16:01:53 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2022-06-15 16:01:53 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2022-06-15 16:01:53 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-15 16:01:53 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-15 16:01:53 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-15 16:01:53 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3098 ms
+2022-06-15 16:01:53 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/decrypt/**'] with [org.springframework.security.web.session.DisableEncodeUrlFilter@76536c53, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@38d08cb5, org.springframework.security.web.context.SecurityContextPersistenceFilter@4091b9c3, org.springframework.security.web.header.HeaderWriterFilter@2d119405, org.springframework.security.web.csrf.CsrfFilter@22bdb1d0, org.springframework.security.web.authentication.logout.LogoutFilter@399ca607, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3610f277, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@71a3e05c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@363c32cc, org.springframework.security.web.session.SessionManagementFilter@7a3269f5, org.springframework.security.web.access.ExceptionTranslationFilter@7951c3a2]
+2022-06-15 16:01:54 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2022-06-15 16:01:55 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2022-06-15 16:01:55 [main] INFO  c.e.m.config.server.ConfigServer - Started ConfigServer in 6.413 seconds (JVM running for 7.595)
+2022-06-15 16:02:10 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-15 16:02:10 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-06-15 16:02:10 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-06-15 16:02:11 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Cannot pull from remote https://github.com/blessedeffulgence/spring-cloud-config-server-repository.git, the working tree is not clean.
+2022-06-15 16:02:11 [http-nio-8888-exec-1] WARN  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - The local repository is dirty or ahead of origin. Resetting it to origin/main.
+2022-06-15 16:02:11 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Reset label main to version AnyObjectId[75434f9614db43938af45f43ebe3b7ede14e00eb]
+2022-06-15 16:02:11 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\config-server-respository\twitter-to-kafka-service.yml]' via location 'file:/D:/spring/Projects/Event-Driven-Microservices/event-driven-microservices/config-server-respository/'
+2022-06-15 16:04:20 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
+2022-06-15 16:04:20 [main] INFO  c.e.m.config.server.ConfigServer - Starting ConfigServer using Java 18.0.1.1 on AMasterPiece with PID 12904 (D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\config-server\target\classes started by bless in D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices)
+2022-06-15 16:04:20 [main] INFO  c.e.m.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2022-06-15 16:04:22 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=d6fa766b-4bad-3b19-9efb-bad6959c38ba
+2022-06-15 16:04:23 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2022-06-15 16:04:23 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2022-06-15 16:04:23 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-15 16:04:23 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-15 16:04:23 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-15 16:04:23 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2654 ms
+2022-06-15 16:04:23 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/decrypt/**'] with [org.springframework.security.web.session.DisableEncodeUrlFilter@78d9f51b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@23ed382c, org.springframework.security.web.context.SecurityContextPersistenceFilter@1b01a0d, org.springframework.security.web.header.HeaderWriterFilter@79f90a3a, org.springframework.security.web.csrf.CsrfFilter@294aba23, org.springframework.security.web.authentication.logout.LogoutFilter@2b148329, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5261ec9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@47c7a9e5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6bedd4e4, org.springframework.security.web.session.SessionManagementFilter@3fa21d49, org.springframework.security.web.access.ExceptionTranslationFilter@45900b64]
+2022-06-15 16:04:25 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2022-06-15 16:04:25 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2022-06-15 16:04:25 [main] INFO  c.e.m.config.server.ConfigServer - Started ConfigServer in 5.752 seconds (JVM running for 6.826)
+2022-06-15 16:04:48 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-15 16:04:48 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-06-15 16:04:48 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-06-15 16:04:48 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Cannot pull from remote https://github.com/blessedeffulgence/spring-cloud-config-server-repository.git, the working tree is not clean.
+2022-06-15 16:04:48 [http-nio-8888-exec-1] WARN  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - The local repository is dirty or ahead of origin. Resetting it to origin/main.
+2022-06-15 16:04:48 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Reset label main to version AnyObjectId[75434f9614db43938af45f43ebe3b7ede14e00eb]
+2022-06-15 16:04:48 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\config-server-respository\twitter-to-kafka-service.yml]' via location 'file:/D:/spring/Projects/Event-Driven-Microservices/event-driven-microservices/config-server-respository/'
+2022-06-15 16:05:26 [http-nio-8888-exec-4] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/blessedeffulgence/spring-cloud-config-server-repository.git/info/refs?service=git-upload-pack
+2022-06-15 16:05:27 [http-nio-8888-exec-4] WARN  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Could not fetch remote for main remote: https://github.com/blessedeffulgence/spring-cloud-config-server-repository.git
+2022-06-15 16:05:27 [http-nio-8888-exec-4] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\config-server-respository\kafka-to-elastic-service.yml]' via location 'file:/D:/spring/Projects/Event-Driven-Microservices/event-driven-microservices/config-server-respository/'
+2022-06-15 16:08:08 [http-nio-8888-exec-5] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/blessedeffulgence/spring-cloud-config-server-repository.git/info/refs?service=git-upload-pack
+2022-06-15 16:08:09 [http-nio-8888-exec-5] WARN  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Could not fetch remote for main remote: https://github.com/blessedeffulgence/spring-cloud-config-server-repository.git
+2022-06-15 16:08:09 [http-nio-8888-exec-5] WARN  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - The local repository is dirty or ahead of origin. Resetting it to origin/main.
+2022-06-15 16:08:09 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Reset label main to version AnyObjectId[75434f9614db43938af45f43ebe3b7ede14e00eb]
+2022-06-15 16:08:09 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\config-server-respository\kafka-to-elastic-service.yml]' via location 'file:/D:/spring/Projects/Event-Driven-Microservices/event-driven-microservices/config-server-respository/'
+2022-06-15 16:12:03 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
+2022-06-15 16:12:03 [main] INFO  c.e.m.config.server.ConfigServer - Starting ConfigServer using Java 18.0.1.1 on AMasterPiece with PID 22912 (D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\config-server\target\classes started by bless in D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices)
+2022-06-15 16:12:03 [main] INFO  c.e.m.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2022-06-15 16:12:04 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=d6fa766b-4bad-3b19-9efb-bad6959c38ba
+2022-06-15 16:12:05 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2022-06-15 16:12:05 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2022-06-15 16:12:05 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-15 16:12:05 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-15 16:12:05 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-15 16:12:05 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2682 ms
+2022-06-15 16:12:06 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/decrypt/**'] with [org.springframework.security.web.session.DisableEncodeUrlFilter@7a3269f5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5c887052, org.springframework.security.web.context.SecurityContextPersistenceFilter@79f90a3a, org.springframework.security.web.header.HeaderWriterFilter@1d02af26, org.springframework.security.web.csrf.CsrfFilter@3e28fee1, org.springframework.security.web.authentication.logout.LogoutFilter@a6c54c3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@67b355c8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3b83459e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@55fdf7f9, org.springframework.security.web.session.SessionManagementFilter@59c04bee, org.springframework.security.web.access.ExceptionTranslationFilter@58a2d9f9]
+2022-06-15 16:12:07 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2022-06-15 16:12:07 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2022-06-15 16:12:07 [main] INFO  c.e.m.config.server.ConfigServer - Started ConfigServer in 5.891 seconds (JVM running for 7.022)
+2022-06-15 16:12:31 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-15 16:12:31 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-06-15 16:12:31 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2022-06-15 16:12:32 [http-nio-8888-exec-1] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/blessedeffulgence/spring-cloud-config-server-repository.git/info/refs?service=git-upload-pack
+2022-06-15 16:12:33 [http-nio-8888-exec-1] WARN  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Could not fetch remote for main remote: https://github.com/blessedeffulgence/spring-cloud-config-server-repository.git
+2022-06-15 16:12:34 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\config-server-respository\kafka-to-elastic-service.yml]' via location 'file:/D:/spring/Projects/Event-Driven-Microservices/event-driven-microservices/config-server-respository/'
+2022-06-15 16:13:03 [http-nio-8888-exec-2] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/blessedeffulgence/spring-cloud-config-server-repository.git/info/refs?service=git-upload-pack
+2022-06-15 16:13:03 [http-nio-8888-exec-2] WARN  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Could not fetch remote for main remote: https://github.com/blessedeffulgence/spring-cloud-config-server-repository.git
+2022-06-15 16:13:03 [http-nio-8888-exec-2] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\config-server-respository\twitter-to-kafka-service.yml]' via location 'file:/D:/spring/Projects/Event-Driven-Microservices/event-driven-microservices/config-server-respository/'
+2022-06-15 16:19:09 [http-nio-8888-exec-3] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/blessedeffulgence/spring-cloud-config-server-repository.git/info/refs?service=git-upload-pack
+2022-06-15 16:19:15 [http-nio-8888-exec-3] WARN  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Could not fetch remote for main remote: https://github.com/blessedeffulgence/spring-cloud-config-server-repository.git
+2022-06-15 16:19:15 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\config-server-respository\kafka-to-elastic-service.yml]' via location 'file:/D:/spring/Projects/Event-Driven-Microservices/event-driven-microservices/config-server-respository/'
+2022-06-15 16:22:06 [http-nio-8888-exec-7] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/blessedeffulgence/spring-cloud-config-server-repository.git/info/refs?service=git-upload-pack
+2022-06-15 16:22:11 [http-nio-8888-exec-7] WARN  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Could not fetch remote for main remote: https://github.com/blessedeffulgence/spring-cloud-config-server-repository.git
+2022-06-15 16:22:11 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\config-server-respository\kafka-to-elastic-service.yml]' via location 'file:/D:/spring/Projects/Event-Driven-Microservices/event-driven-microservices/config-server-respository/'
+2022-06-15 16:31:06 [http-nio-8888-exec-9] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/blessedeffulgence/spring-cloud-config-server-repository.git/info/refs?service=git-upload-pack
+2022-06-15 16:31:07 [http-nio-8888-exec-9] WARN  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Could not fetch remote for main remote: https://github.com/blessedeffulgence/spring-cloud-config-server-repository.git
+2022-06-15 16:31:07 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\config-server-respository\kafka-to-elastic-service.yml]' via location 'file:/D:/spring/Projects/Event-Driven-Microservices/event-driven-microservices/config-server-respository/'
+2022-06-15 16:47:52 [http-nio-8888-exec-1] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/blessedeffulgence/spring-cloud-config-server-repository.git/info/refs?service=git-upload-pack
+2022-06-15 16:47:53 [http-nio-8888-exec-1] WARN  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Could not fetch remote for main remote: https://github.com/blessedeffulgence/spring-cloud-config-server-repository.git
+2022-06-15 16:47:53 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\config-server-respository\kafka-to-elastic-service.yml]' via location 'file:/D:/spring/Projects/Event-Driven-Microservices/event-driven-microservices/config-server-respository/'
+2022-06-15 16:48:47 [http-nio-8888-exec-4] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/blessedeffulgence/spring-cloud-config-server-repository.git/info/refs?service=git-upload-pack
+2022-06-15 16:48:48 [http-nio-8888-exec-4] WARN  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Could not fetch remote for main remote: https://github.com/blessedeffulgence/spring-cloud-config-server-repository.git
+2022-06-15 16:48:48 [http-nio-8888-exec-4] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\config-server-respository\kafka-to-elastic-service.yml]' via location 'file:/D:/spring/Projects/Event-Driven-Microservices/event-driven-microservices/config-server-respository/'
+2022-06-15 16:58:21 [main] INFO  c.e.m.config.server.ConfigServer - Starting ConfigServer using Java 18.0.1.1 on AMasterPiece with PID 24344 (D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\config-server\target\classes started by bless in D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices)
+2022-06-15 16:58:21 [main] INFO  c.e.m.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2022-06-15 16:58:21 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
+2022-06-15 16:58:23 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=d6fa766b-4bad-3b19-9efb-bad6959c38ba
+2022-06-15 16:58:24 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2022-06-15 16:58:24 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2022-06-15 16:58:24 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-15 16:58:24 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-15 16:58:24 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-15 16:58:24 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2744 ms
+2022-06-15 16:58:25 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/decrypt/**'] with [org.springframework.security.web.session.DisableEncodeUrlFilter@33f17289, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@f1266c6, org.springframework.security.web.context.SecurityContextPersistenceFilter@c889805, org.springframework.security.web.header.HeaderWriterFilter@78fe204a, org.springframework.security.web.csrf.CsrfFilter@2eda072, org.springframework.security.web.authentication.logout.LogoutFilter@5b5b59, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@78d9f51b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@72b6832e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3913f206, org.springframework.security.web.session.SessionManagementFilter@39c85c1a, org.springframework.security.web.access.ExceptionTranslationFilter@a6c54c3]
+2022-06-15 16:58:26 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2022-06-15 16:58:26 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2022-06-15 16:58:26 [main] INFO  c.e.m.config.server.ConfigServer - Started ConfigServer in 6.149 seconds (JVM running for 7.414)
+2022-06-15 16:58:44 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-15 16:58:44 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-06-15 16:58:44 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2022-06-15 16:58:44 [http-nio-8888-exec-1] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/blessedeffulgence/spring-cloud-config-server-repository.git/info/refs?service=git-upload-pack
+2022-06-15 16:58:46 [http-nio-8888-exec-1] WARN  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Could not fetch remote for main remote: https://github.com/blessedeffulgence/spring-cloud-config-server-repository.git
+2022-06-15 16:58:46 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\config-server-respository\twitter-to-kafka-service.yml]' via location 'file:/D:/spring/Projects/Event-Driven-Microservices/event-driven-microservices/config-server-respository/'
+2022-06-15 16:59:40 [http-nio-8888-exec-3] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/blessedeffulgence/spring-cloud-config-server-repository.git/info/refs?service=git-upload-pack
+2022-06-15 16:59:51 [http-nio-8888-exec-3] WARN  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Could not fetch remote for main remote: https://github.com/blessedeffulgence/spring-cloud-config-server-repository.git
+2022-06-15 16:59:51 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\config-server-respository\kafka-to-elastic-service.yml]' via location 'file:/D:/spring/Projects/Event-Driven-Microservices/event-driven-microservices/config-server-respository/'
+2022-06-15 17:18:09 [main] INFO  c.e.m.config.server.ConfigServer - Starting ConfigServer using Java 18.0.1.1 on AMasterPiece with PID 10464 (D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\config-server\target\classes started by bless in D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices)
+2022-06-15 17:18:09 [main] INFO  c.e.m.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2022-06-15 17:18:09 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
+2022-06-15 17:18:11 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=d6fa766b-4bad-3b19-9efb-bad6959c38ba
+2022-06-15 17:18:12 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2022-06-15 17:18:12 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2022-06-15 17:18:12 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-15 17:18:12 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-15 17:18:12 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-15 17:18:12 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2925 ms
+2022-06-15 17:18:12 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/decrypt/**'] with [org.springframework.security.web.session.DisableEncodeUrlFilter@1934ad7c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@b27b210, org.springframework.security.web.context.SecurityContextPersistenceFilter@39c85c1a, org.springframework.security.web.header.HeaderWriterFilter@62f11ebb, org.springframework.security.web.csrf.CsrfFilter@414f87a9, org.springframework.security.web.authentication.logout.LogoutFilter@6f3f0ae, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@62c72501, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@23ed382c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@69aa7d76, org.springframework.security.web.session.SessionManagementFilter@41fa769c, org.springframework.security.web.access.ExceptionTranslationFilter@4b432e53]
+2022-06-15 17:18:14 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2022-06-15 17:18:14 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2022-06-15 17:18:14 [main] INFO  c.e.m.config.server.ConfigServer - Started ConfigServer in 6.281 seconds (JVM running for 7.406)
+2022-06-15 17:18:34 [http-nio-8888-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-15 17:18:34 [http-nio-8888-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-06-15 17:18:34 [http-nio-8888-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2022-06-15 17:18:35 [http-nio-8888-exec-3] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/blessedeffulgence/spring-cloud-config-server-repository.git/info/refs?service=git-upload-pack
+2022-06-15 17:18:36 [http-nio-8888-exec-3] WARN  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Could not fetch remote for main remote: https://github.com/blessedeffulgence/spring-cloud-config-server-repository.git
+2022-06-15 17:18:37 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\config-server-respository\twitter-to-kafka-service.yml]' via location 'file:/D:/spring/Projects/Event-Driven-Microservices/event-driven-microservices/config-server-respository/'
+2022-06-15 17:19:49 [http-nio-8888-exec-8] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/blessedeffulgence/spring-cloud-config-server-repository.git/info/refs?service=git-upload-pack
+2022-06-15 17:19:49 [http-nio-8888-exec-8] WARN  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Could not fetch remote for main remote: https://github.com/blessedeffulgence/spring-cloud-config-server-repository.git
+2022-06-15 17:19:50 [http-nio-8888-exec-8] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\config-server-respository\kafka-to-elastic-service.yml]' via location 'file:/D:/spring/Projects/Event-Driven-Microservices/event-driven-microservices/config-server-respository/'
+2022-06-15 17:25:09 [http-nio-8888-exec-1] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/blessedeffulgence/spring-cloud-config-server-repository.git/info/refs?service=git-upload-pack
+2022-06-15 17:25:10 [http-nio-8888-exec-1] WARN  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Could not fetch remote for main remote: https://github.com/blessedeffulgence/spring-cloud-config-server-repository.git
+2022-06-15 17:25:10 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\config-server-respository\kafka-to-elastic-service.yml]' via location 'file:/D:/spring/Projects/Event-Driven-Microservices/event-driven-microservices/config-server-respository/'
+2022-06-15 17:33:43 [http-nio-8888-exec-5] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/blessedeffulgence/spring-cloud-config-server-repository.git/info/refs?service=git-upload-pack
+2022-06-15 17:33:48 [http-nio-8888-exec-5] WARN  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Could not fetch remote for main remote: https://github.com/blessedeffulgence/spring-cloud-config-server-repository.git
+2022-06-15 17:33:48 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\config-server-respository\kafka-to-elastic-service.yml]' via location 'file:/D:/spring/Projects/Event-Driven-Microservices/event-driven-microservices/config-server-respository/'
+2022-06-15 17:41:38 [main] INFO  c.e.m.config.server.ConfigServer - Starting ConfigServer using Java 18.0.1.1 on AMasterPiece with PID 8356 (D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\config-server\target\classes started by bless in D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices)
+2022-06-15 17:41:38 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
+2022-06-15 17:41:38 [main] INFO  c.e.m.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2022-06-15 17:41:40 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=d6fa766b-4bad-3b19-9efb-bad6959c38ba
+2022-06-15 17:41:41 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2022-06-15 17:41:41 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2022-06-15 17:41:41 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-15 17:41:41 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-15 17:41:41 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-15 17:41:41 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3129 ms
+2022-06-15 17:41:42 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/decrypt/**'] with [org.springframework.security.web.session.DisableEncodeUrlFilter@75fd65c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@d499c13, org.springframework.security.web.context.SecurityContextPersistenceFilter@63f855b, org.springframework.security.web.header.HeaderWriterFilter@23ed382c, org.springframework.security.web.csrf.CsrfFilter@4b432e53, org.springframework.security.web.authentication.logout.LogoutFilter@4dc7cd1c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4cffcc61, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@76bf1bb8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2ceca2ef, org.springframework.security.web.session.SessionManagementFilter@321ca237, org.springframework.security.web.access.ExceptionTranslationFilter@77db3d02]
+2022-06-15 17:41:43 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2022-06-15 17:41:43 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2022-06-15 17:41:43 [main] INFO  c.e.m.config.server.ConfigServer - Started ConfigServer in 6.537 seconds (JVM running for 7.726)
+2022-06-15 17:41:54 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-15 17:41:54 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-06-15 17:41:54 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2022-06-15 17:41:55 [http-nio-8888-exec-1] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/blessedeffulgence/spring-cloud-config-server-repository.git/info/refs?service=git-upload-pack
+2022-06-15 17:42:00 [http-nio-8888-exec-1] WARN  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Could not fetch remote for main remote: https://github.com/blessedeffulgence/spring-cloud-config-server-repository.git
+2022-06-15 17:42:00 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\config-server-respository\twitter-to-kafka-service.yml]' via location 'file:/D:/spring/Projects/Event-Driven-Microservices/event-driven-microservices/config-server-respository/'
+2022-06-15 17:43:33 [http-nio-8888-exec-5] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/blessedeffulgence/spring-cloud-config-server-repository.git/info/refs?service=git-upload-pack
+2022-06-15 17:43:34 [http-nio-8888-exec-5] WARN  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Could not fetch remote for main remote: https://github.com/blessedeffulgence/spring-cloud-config-server-repository.git
+2022-06-15 17:43:34 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\config-server-respository\twitter-to-kafka-service.yml]' via location 'file:/D:/spring/Projects/Event-Driven-Microservices/event-driven-microservices/config-server-respository/'
+2022-06-15 17:44:20 [http-nio-8888-exec-6] WARN  o.s.c.c.s.e.HttpClientConfigurableHttpConnectionFactory - No custom http config found for URL: https://github.com/blessedeffulgence/spring-cloud-config-server-repository.git/info/refs?service=git-upload-pack
+2022-06-15 17:44:20 [http-nio-8888-exec-6] WARN  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Could not fetch remote for main remote: https://github.com/blessedeffulgence/spring-cloud-config-server-repository.git
+2022-06-15 17:44:20 [http-nio-8888-exec-6] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\config-server-respository\kafka-to-elastic-service.yml]' via location 'file:/D:/spring/Projects/Event-Driven-Microservices/event-driven-microservices/config-server-respository/'
+2022-06-15 17:49:20 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Cannot pull from remote https://github.com/blessedeffulgence/spring-cloud-config-server-repository.git, the working tree is not clean.
+2022-06-15 17:49:20 [http-nio-8888-exec-7] WARN  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - The local repository is dirty or ahead of origin. Resetting it to origin/main.
+2022-06-15 17:49:20 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Reset label main to version AnyObjectId[9fe622056d49d492960422e378b799d0612bf952]
+2022-06-15 17:49:20 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\config-server-respository\kafka-to-elastic-service.yml]' via location 'file:/D:/spring/Projects/Event-Driven-Microservices/event-driven-microservices/config-server-respository/'

@@ -1,11 +1,9 @@
 spring:
-  config:
-    import: 'optional:configserver:http://localhost:8888'
-  cloud:
-    config:
-      username: admin
-      password: admin
   application:
     name: twitter-to-kafka-service
+  config:
+    import: 'optional:configserver:http://localhost:8888'
+
+
 
 

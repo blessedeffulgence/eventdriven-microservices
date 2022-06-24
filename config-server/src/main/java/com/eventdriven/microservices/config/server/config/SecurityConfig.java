@@ -10,7 +10,6 @@ import javax.servlet.Filter;
 @Configuration
 public class SecurityConfig  {
 
-
     @Bean
    SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity) throws Exception {
       return httpSecurity.antMatcher("/encrypt/**")

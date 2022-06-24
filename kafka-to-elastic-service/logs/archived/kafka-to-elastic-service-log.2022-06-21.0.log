@@ -1,0 +1,1541 @@
+2022-06-21 14:28:15 [main] INFO  c.e.m.k.t.e.KafkaToElasticServiceApplication - Starting KafkaToElasticServiceApplication using Java 18.0.1.1 on AMasterPiece with PID 30472 (D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\kafka-to-elastic-service\target\classes started by bless in D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices)
+2022-06-21 14:28:15 [main] INFO  c.e.m.k.t.e.KafkaToElasticServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-06-21 14:28:16 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2022-06-21 14:28:16 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=kafka-to-elastic-service, profiles=[default], label=null, version=53c69581d04ba0f9e073668ad4ac259c55c9240c, state=null
+2022-06-21 14:28:18 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=8dac4d55-8b3a-3f03-8e93-0257afe627e6
+2022-06-21 14:28:18 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2022-06-21 14:28:19 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.1.1
+2022-06-21 14:28:19 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 97671528ba54a138
+2022-06-21 14:28:19 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1655810899390
+2022-06-21 14:28:20 [main] INFO  o.s.b.a.s.r.ReactiveUserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 0bf3ee2c-e850-4ea6-b484-6373029ad219
+
+2022-06-21 14:28:23 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-twitter-topic-consumer-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = twitter-topic-consumer
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.LongDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class io.confluent.kafka.serializers.KafkaAvroDeserializer
+
+2022-06-21 14:28:23 [main] INFO  i.c.k.s.KafkaAvroDeserializerConfig - KafkaAvroDeserializerConfig values: 
+	auto.register.schemas = true
+	avro.reflection.allow.null = false
+	avro.use.logical.type.converters = false
+	basic.auth.credentials.source = URL
+	basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	bearer.auth.token = [hidden]
+	context.name.strategy = class io.confluent.kafka.serializers.context.NullContextNameStrategy
+	id.compatibility.strict = true
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	latest.compatibility.strict = true
+	max.schemas.per.subject = 1000
+	normalize.schemas = false
+	proxy.host = 
+	proxy.port = -1
+	schema.reflection = false
+	schema.registry.basic.auth.user.info = [hidden]
+	schema.registry.ssl.cipher.suites = null
+	schema.registry.ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	schema.registry.ssl.endpoint.identification.algorithm = https
+	schema.registry.ssl.engine.factory.class = null
+	schema.registry.ssl.key.password = null
+	schema.registry.ssl.keymanager.algorithm = SunX509
+	schema.registry.ssl.keystore.certificate.chain = null
+	schema.registry.ssl.keystore.key = null
+	schema.registry.ssl.keystore.location = null
+	schema.registry.ssl.keystore.password = null
+	schema.registry.ssl.keystore.type = JKS
+	schema.registry.ssl.protocol = TLSv1.3
+	schema.registry.ssl.provider = null
+	schema.registry.ssl.secure.random.implementation = null
+	schema.registry.ssl.trustmanager.algorithm = PKIX
+	schema.registry.ssl.truststore.certificates = null
+	schema.registry.ssl.truststore.location = null
+	schema.registry.ssl.truststore.password = null
+	schema.registry.ssl.truststore.type = JKS
+	schema.registry.url = [http://localhost:8081]
+	specific.avro.reader = true
+	use.latest.version = false
+	use.schema.id = -1
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2022-06-21 14:28:23 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.1.1
+2022-06-21 14:28:23 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 97671528ba54a138
+2022-06-21 14:28:23 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1655810903626
+2022-06-21 14:28:23 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Subscribed to topic(s): twitter-topic
+2022-06-21 14:28:23 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-twitter-topic-consumer-2
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = twitter-topic-consumer
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.LongDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class io.confluent.kafka.serializers.KafkaAvroDeserializer
+
+2022-06-21 14:28:23 [main] INFO  i.c.k.s.KafkaAvroDeserializerConfig - KafkaAvroDeserializerConfig values: 
+	auto.register.schemas = true
+	avro.reflection.allow.null = false
+	avro.use.logical.type.converters = false
+	basic.auth.credentials.source = URL
+	basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	bearer.auth.token = [hidden]
+	context.name.strategy = class io.confluent.kafka.serializers.context.NullContextNameStrategy
+	id.compatibility.strict = true
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	latest.compatibility.strict = true
+	max.schemas.per.subject = 1000
+	normalize.schemas = false
+	proxy.host = 
+	proxy.port = -1
+	schema.reflection = false
+	schema.registry.basic.auth.user.info = [hidden]
+	schema.registry.ssl.cipher.suites = null
+	schema.registry.ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	schema.registry.ssl.endpoint.identification.algorithm = https
+	schema.registry.ssl.engine.factory.class = null
+	schema.registry.ssl.key.password = null
+	schema.registry.ssl.keymanager.algorithm = SunX509
+	schema.registry.ssl.keystore.certificate.chain = null
+	schema.registry.ssl.keystore.key = null
+	schema.registry.ssl.keystore.location = null
+	schema.registry.ssl.keystore.password = null
+	schema.registry.ssl.keystore.type = JKS
+	schema.registry.ssl.protocol = TLSv1.3
+	schema.registry.ssl.provider = null
+	schema.registry.ssl.secure.random.implementation = null
+	schema.registry.ssl.trustmanager.algorithm = PKIX
+	schema.registry.ssl.truststore.certificates = null
+	schema.registry.ssl.truststore.location = null
+	schema.registry.ssl.truststore.password = null
+	schema.registry.ssl.truststore.type = JKS
+	schema.registry.url = [http://localhost:8081]
+	specific.avro.reader = true
+	use.latest.version = false
+	use.schema.id = -1
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2022-06-21 14:28:23 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.1.1
+2022-06-21 14:28:23 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 97671528ba54a138
+2022-06-21 14:28:23 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1655810903676
+2022-06-21 14:28:23 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-twitter-topic-consumer-2, groupId=twitter-topic-consumer] Subscribed to topic(s): twitter-topic
+2022-06-21 14:28:23 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-twitter-topic-consumer-3
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = twitter-topic-consumer
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.LongDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class io.confluent.kafka.serializers.KafkaAvroDeserializer
+
+2022-06-21 14:28:23 [main] INFO  i.c.k.s.KafkaAvroDeserializerConfig - KafkaAvroDeserializerConfig values: 
+	auto.register.schemas = true
+	avro.reflection.allow.null = false
+	avro.use.logical.type.converters = false
+	basic.auth.credentials.source = URL
+	basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	bearer.auth.token = [hidden]
+	context.name.strategy = class io.confluent.kafka.serializers.context.NullContextNameStrategy
+	id.compatibility.strict = true
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	latest.compatibility.strict = true
+	max.schemas.per.subject = 1000
+	normalize.schemas = false
+	proxy.host = 
+	proxy.port = -1
+	schema.reflection = false
+	schema.registry.basic.auth.user.info = [hidden]
+	schema.registry.ssl.cipher.suites = null
+	schema.registry.ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	schema.registry.ssl.endpoint.identification.algorithm = https
+	schema.registry.ssl.engine.factory.class = null
+	schema.registry.ssl.key.password = null
+	schema.registry.ssl.keymanager.algorithm = SunX509
+	schema.registry.ssl.keystore.certificate.chain = null
+	schema.registry.ssl.keystore.key = null
+	schema.registry.ssl.keystore.location = null
+	schema.registry.ssl.keystore.password = null
+	schema.registry.ssl.keystore.type = JKS
+	schema.registry.ssl.protocol = TLSv1.3
+	schema.registry.ssl.provider = null
+	schema.registry.ssl.secure.random.implementation = null
+	schema.registry.ssl.trustmanager.algorithm = PKIX
+	schema.registry.ssl.truststore.certificates = null
+	schema.registry.ssl.truststore.location = null
+	schema.registry.ssl.truststore.password = null
+	schema.registry.ssl.truststore.type = JKS
+	schema.registry.url = [http://localhost:8081]
+	specific.avro.reader = true
+	use.latest.version = false
+	use.schema.id = -1
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2022-06-21 14:28:23 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.1.1
+2022-06-21 14:28:23 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 97671528ba54a138
+2022-06-21 14:28:23 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1655810903711
+2022-06-21 14:28:23 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-twitter-topic-consumer-3, groupId=twitter-topic-consumer] Subscribed to topic(s): twitter-topic
+2022-06-21 14:28:23 [twitter-topic-consumer-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Resetting the last seen epoch of partition twitter-topic-0 to 0 since the associated topicId changed from null to nnom9B8ZSDilJjSFbesixw
+2022-06-21 14:28:23 [twitter-topic-consumer-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Resetting the last seen epoch of partition twitter-topic-1 to 0 since the associated topicId changed from null to nnom9B8ZSDilJjSFbesixw
+2022-06-21 14:28:23 [twitter-topic-consumer-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Resetting the last seen epoch of partition twitter-topic-2 to 0 since the associated topicId changed from null to nnom9B8ZSDilJjSFbesixw
+2022-06-21 14:28:23 [twitter-topic-consumer-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Cluster ID: vV9NdIwdR36lJ_n2lFwdCQ
+2022-06-21 14:28:24 [twitter-topic-consumer-2-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-twitter-topic-consumer-3, groupId=twitter-topic-consumer] Resetting the last seen epoch of partition twitter-topic-0 to 0 since the associated topicId changed from null to nnom9B8ZSDilJjSFbesixw
+2022-06-21 14:28:24 [twitter-topic-consumer-1-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-twitter-topic-consumer-2, groupId=twitter-topic-consumer] Resetting the last seen epoch of partition twitter-topic-0 to 0 since the associated topicId changed from null to nnom9B8ZSDilJjSFbesixw
+2022-06-21 14:28:24 [twitter-topic-consumer-2-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-twitter-topic-consumer-3, groupId=twitter-topic-consumer] Resetting the last seen epoch of partition twitter-topic-1 to 0 since the associated topicId changed from null to nnom9B8ZSDilJjSFbesixw
+2022-06-21 14:28:24 [twitter-topic-consumer-1-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-twitter-topic-consumer-2, groupId=twitter-topic-consumer] Resetting the last seen epoch of partition twitter-topic-1 to 0 since the associated topicId changed from null to nnom9B8ZSDilJjSFbesixw
+2022-06-21 14:28:24 [twitter-topic-consumer-1-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-twitter-topic-consumer-2, groupId=twitter-topic-consumer] Resetting the last seen epoch of partition twitter-topic-2 to 0 since the associated topicId changed from null to nnom9B8ZSDilJjSFbesixw
+2022-06-21 14:28:24 [twitter-topic-consumer-2-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-twitter-topic-consumer-3, groupId=twitter-topic-consumer] Resetting the last seen epoch of partition twitter-topic-2 to 0 since the associated topicId changed from null to nnom9B8ZSDilJjSFbesixw
+2022-06-21 14:28:24 [twitter-topic-consumer-1-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-twitter-topic-consumer-2, groupId=twitter-topic-consumer] Cluster ID: vV9NdIwdR36lJ_n2lFwdCQ
+2022-06-21 14:28:24 [twitter-topic-consumer-2-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-twitter-topic-consumer-3, groupId=twitter-topic-consumer] Cluster ID: vV9NdIwdR36lJ_n2lFwdCQ
+2022-06-21 14:28:24 [twitter-topic-consumer-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Discovered group coordinator localhost:39092 (id: 2147483644 rack: null)
+2022-06-21 14:28:24 [twitter-topic-consumer-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] (Re-)joining group
+2022-06-21 14:28:24 [twitter-topic-consumer-1-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-2, groupId=twitter-topic-consumer] Discovered group coordinator localhost:39092 (id: 2147483644 rack: null)
+2022-06-21 14:28:24 [twitter-topic-consumer-2-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-3, groupId=twitter-topic-consumer] Discovered group coordinator localhost:39092 (id: 2147483644 rack: null)
+2022-06-21 14:28:24 [twitter-topic-consumer-1-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-2, groupId=twitter-topic-consumer] (Re-)joining group
+2022-06-21 14:28:24 [twitter-topic-consumer-2-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-3, groupId=twitter-topic-consumer] (Re-)joining group
+2022-06-21 14:28:24 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port 8083
+2022-06-21 14:28:25 [twitter-topic-consumer-2-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-3, groupId=twitter-topic-consumer] Request joining group due to: need to re-join with the given member-id
+2022-06-21 14:28:25 [twitter-topic-consumer-2-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-3, groupId=twitter-topic-consumer] (Re-)joining group
+2022-06-21 14:28:25 [twitter-topic-consumer-1-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-2, groupId=twitter-topic-consumer] Request joining group due to: need to re-join with the given member-id
+2022-06-21 14:28:25 [twitter-topic-consumer-1-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-2, groupId=twitter-topic-consumer] (Re-)joining group
+2022-06-21 14:28:25 [twitter-topic-consumer-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Request joining group due to: need to re-join with the given member-id
+2022-06-21 14:28:25 [twitter-topic-consumer-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] (Re-)joining group
+2022-06-21 14:28:25 [main] INFO  c.e.m.k.t.e.KafkaToElasticServiceApplication - Started KafkaToElasticServiceApplication in 17.307 seconds (JVM running for 20.485)
+2022-06-21 14:28:25 [main] INFO  c.e.m.k.a.c.client.KafkaAdminClient - Reading kafka topics[twitter-topic], attempts 0
+2022-06-21 14:28:25 [main] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - Topics with twitter-topic name is ready for operation
+2022-06-21 14:28:31 [twitter-topic-consumer-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Successfully joined group with generation Generation{generationId=1, memberId='consumer-twitter-topic-consumer-1-fd09d608-27b7-44e0-8191-b6650e44bcd2', protocol='range'}
+2022-06-21 14:28:31 [twitter-topic-consumer-2-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-3, groupId=twitter-topic-consumer] Successfully joined group with generation Generation{generationId=1, memberId='consumer-twitter-topic-consumer-3-0b8ee6c7-c450-4159-9d88-1da2b0dffb3c', protocol='range'}
+2022-06-21 14:28:31 [twitter-topic-consumer-2-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-3, groupId=twitter-topic-consumer] Finished assignment for group at generation 1: {consumer-twitter-topic-consumer-1-fd09d608-27b7-44e0-8191-b6650e44bcd2=Assignment(partitions=[twitter-topic-0]), consumer-twitter-topic-consumer-3-0b8ee6c7-c450-4159-9d88-1da2b0dffb3c=Assignment(partitions=[twitter-topic-2]), consumer-twitter-topic-consumer-2-03260411-4af8-4741-96bc-88d3ee06e265=Assignment(partitions=[twitter-topic-1])}
+2022-06-21 14:28:31 [twitter-topic-consumer-1-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-2, groupId=twitter-topic-consumer] Successfully joined group with generation Generation{generationId=1, memberId='consumer-twitter-topic-consumer-2-03260411-4af8-4741-96bc-88d3ee06e265', protocol='range'}
+2022-06-21 14:28:31 [twitter-topic-consumer-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Successfully synced group in generation Generation{generationId=1, memberId='consumer-twitter-topic-consumer-1-fd09d608-27b7-44e0-8191-b6650e44bcd2', protocol='range'}
+2022-06-21 14:28:31 [twitter-topic-consumer-2-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-3, groupId=twitter-topic-consumer] Successfully synced group in generation Generation{generationId=1, memberId='consumer-twitter-topic-consumer-3-0b8ee6c7-c450-4159-9d88-1da2b0dffb3c', protocol='range'}
+2022-06-21 14:28:31 [twitter-topic-consumer-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Notifying assignor about the new Assignment(partitions=[twitter-topic-0])
+2022-06-21 14:28:31 [twitter-topic-consumer-2-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-3, groupId=twitter-topic-consumer] Notifying assignor about the new Assignment(partitions=[twitter-topic-2])
+2022-06-21 14:28:31 [twitter-topic-consumer-1-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-2, groupId=twitter-topic-consumer] Successfully synced group in generation Generation{generationId=1, memberId='consumer-twitter-topic-consumer-2-03260411-4af8-4741-96bc-88d3ee06e265', protocol='range'}
+2022-06-21 14:28:31 [twitter-topic-consumer-1-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-2, groupId=twitter-topic-consumer] Notifying assignor about the new Assignment(partitions=[twitter-topic-1])
+2022-06-21 14:28:31 [twitter-topic-consumer-2-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-3, groupId=twitter-topic-consumer] Adding newly assigned partitions: twitter-topic-2
+2022-06-21 14:28:31 [twitter-topic-consumer-1-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-2, groupId=twitter-topic-consumer] Adding newly assigned partitions: twitter-topic-1
+2022-06-21 14:28:31 [twitter-topic-consumer-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Adding newly assigned partitions: twitter-topic-0
+2022-06-21 14:28:32 [twitter-topic-consumer-2-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-3, groupId=twitter-topic-consumer] Found no committed offset for partition twitter-topic-2
+2022-06-21 14:28:32 [twitter-topic-consumer-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Found no committed offset for partition twitter-topic-0
+2022-06-21 14:28:32 [twitter-topic-consumer-1-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-2, groupId=twitter-topic-consumer] Found no committed offset for partition twitter-topic-1
+2022-06-21 14:28:32 [twitter-topic-consumer-2-C-1] INFO  o.a.k.c.c.i.SubscriptionState - [Consumer clientId=consumer-twitter-topic-consumer-3, groupId=twitter-topic-consumer] Resetting offset for partition twitter-topic-2 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:39092 (id: 3 rack: null)], epoch=0}}.
+2022-06-21 14:28:32 [twitter-topic-consumer-2-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - twitter-topic-consumer: partitions assigned: [twitter-topic-2]
+2022-06-21 14:28:32 [twitter-topic-consumer-1-C-1] INFO  o.a.k.c.c.i.SubscriptionState - [Consumer clientId=consumer-twitter-topic-consumer-2, groupId=twitter-topic-consumer] Resetting offset for partition twitter-topic-1 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:29092 (id: 2 rack: null)], epoch=0}}.
+2022-06-21 14:28:32 [twitter-topic-consumer-1-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - twitter-topic-consumer: partitions assigned: [twitter-topic-1]
+2022-06-21 14:28:32 [twitter-topic-consumer-0-C-1] INFO  o.a.k.c.c.i.SubscriptionState - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Resetting offset for partition twitter-topic-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:19092 (id: 1 rack: null)], epoch=0}}.
+2022-06-21 14:28:32 [twitter-topic-consumer-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - twitter-topic-consumer: partitions assigned: [twitter-topic-0]
+2022-06-21 14:28:35 [twitter-topic-consumer-2-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 86 number of message received with keys [719838293177839616, 1531987308228100096, 961565634898288641, 1430525809815478272, 930871517860319232, 1306249003919523841, 3235770240, 967846981698834433, 1482135646340796416, 1531987308228100096, 1134857233135575042, 1356963838566957056, 1307278517386780676, 1469358139761848323, 1356963838566957056, 2265552066, 1331965357381206018, 1021881036, 852603639575261189, 1453016597853966336, 1420759413762101251, 1254366378376654852, 1393077685547462659, 1469358139761848323, 1258927315209207808, 1315268228935938048, 1364252587571167243, 1358806251077922816, 942007369332150272, 1375961552122044417, 1390161784808611847, 1240495416459710465, 1240495416459710465, 1040083876985561088, 1156849318520926208, 1441015212816023564, 1331320133654962176, 1529408731963871234, 1168883770004578309, 1301498122892238848, 150637108, 1258927315209207808, 1246913010544730112, 112655361, 1538814886708252672, 1241877952431706113, 1491034740782436357, 906091621, 1292450494552526848, 1403302645687750664, 4803398774, 1275098642152595459, 4578864559, 1400921930115563524, 705427401325449216, 1036265003433648130, 1849493396, 112655361, 3099143715, 1248155416938156032, 1040083876985561088, 1225032654531121154, 1849493396, 1249928614692487170, 1849493396, 1253715527844806657, 1225032654531121154, 104517546, 1849493396, 1426804932267544583, 1118719219569311744, 1395949009, 856500417827438592, 12079182, 1514960509652684804, 1225032654531121154, 1849493396, 926606020419481601, 1230716117988990978, 1083658640496775168, 1427979634759569413, 977636605858115584, 1849493396, 1458766349820624896, 1312600905393471489, 1198127163922190336], partitions [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] and offsets [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85], sending it to elastic: Thread id 30
+2022-06-21 14:28:35 [twitter-topic-consumer-1-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 82 number of message received with keys [913439317682479105, 69797010, 2910931909, 1349273076395986944, 1853894491, 1152048597812338688, 2530870968, 886080240820170752, 1448977970228445188, 1529509059061489664, 1168003348626173952, 1354047563280707586, 1232175629065322496, 1270949274793029632, 1491384652015157249, 1225774470490550274, 1000014818177372161, 834826824844615680, 536291841, 1347150079996678145, 1024968185072771072, 146973643, 1349273076395986944, 3329852237, 1232175629065322496, 719151618961186816, 141215056, 1291684961422991360, 1276243133492330497, 1674979092, 1111168335385772032, 1329327146125430784, 3111536505, 1505477093911834629, 1354047563280707586, 1258405934348431363, 2911402290, 256374753, 835822561757904897, 141215056, 1024968185072771072, 862390570353926145, 1291684961422991360, 1249775732936437769, 213745259, 1729193269, 895236246095527936, 2195522898, 1235748516342796288, 1466330287974109190, 124955108, 758377215813906432, 240308863, 922356620503298048, 47489276, 1154454245388800000, 4891291757, 302750596, 1310131627, 1485641204821901316, 1284748563981971459, 1479418718946234372, 1329106304674131972, 180421526, 180421526, 180421526, 1230627013624463362, 1334470940680450048, 180421526, 1314872682580774912, 1463530791007408133, 1314830670959525888, 919615132266663936, 1175418971778011136, 1070341317690048512, 197923023, 385444738, 101871850, 178179388, 1497879529876238337, 1354047563280707586, 14260115], partitions [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] and offsets [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81], sending it to elastic: Thread id 28
+2022-06-21 14:28:35 [twitter-topic-consumer-0-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 100 number of message received with keys [1247359380288233474, 1247359380288233474, 1423655520196435969, 1221804777304154113, 110800256, 1248269101664890881, 1368268001364090889, 1518689852304338953, 1257218869493551105, 1360631738263736322, 1404829256220250115, 227589319, 788273712814432256, 1407020741552312321, 757129890328109056, 1315927538619748352, 856823533, 1389989855598313475, 788273712814432256, 1509868931367931908, 227589319, 517225657, 1496959567653183490, 2178382423, 1465388049085480961, 1282005766023634946, 1379915298459971596, 1496109755403800577, 1415285583715332097, 80214039, 1397554931301855236, 1362930025486409729, 1531988901761622017, 1476723783457288209, 1216380697469784065, 1531988901761622017, 1156842572293083136, 1084661783715934209, 1005757932728807424, 1169254223927578624, 1511260056062365704, 1018780081651638272, 1372418893310873604, 1259841239714861057, 1298134141683326982, 1176703422424371200, 1371684632270233605, 1379915298459971596, 1415285583715332097, 3044954368, 1268758087890014208, 890402480365993984, 3122440637, 1435867539930812420, 1127901372563611648, 1537721755577352192, 42204443, 6692952, 1379915298459971596, 1027911378793689090, 3195445915, 1506686108905746433, 1506686108905746433, 1506686108905746433, 2600030414, 1049906804875042817, 861541325937799168, 1533509258683510784, 1362930025486409729, 1209358336191344641, 1326717585342099456, 1501992605848117261, 757311899025276928, 1249244143001284610, 1671634789, 1357255322411233281, 1461602253320589312, 2815616769, 1237278654591168512, 1348240767031001088, 8060412, 1344651392011489280, 3024354159, 1454508724282875906, 1011565812, 1390602086241374208, 3219906546, 2233274562, 1314164146934513665, 1488837755975225345, 1511766525924962304, 1212292093856452608, 1029382765664501762, 819148730905595905, 1127901372563611648, 1511766525924962304, 1474091351599812616, 1424012563600142341, 1381684345035886592, 1357001864211025926], partitions [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] and offsets [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99], sending it to elastic: Thread id 26
+2022-06-21 14:28:35 [twitter-topic-consumer-0-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 4 number of message received with keys [1492855912347811844, 1492260524960235521, 1474091351599812616, 2989871662], partitions [0, 0, 0, 0] and offsets [100, 101, 102, 103], sending it to elastic: Thread id 26
+2022-06-21 14:28:35 [twitter-topic-consumer-2-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 3 number of message received with keys [1483018040359145480, 104638713, 368446573], partitions [2, 2, 2] and offsets [86, 87, 88], sending it to elastic: Thread id 30
+2022-06-21 14:28:35 [twitter-topic-consumer-1-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 7 number of message received with keys [1538700632181604352, 1139083503222419456, 907532287582937088, 1385686792729362433, 1453438585672290309, 59609946, 1479844473551138825], partitions [1, 1, 1, 1, 1, 1, 1] and offsets [82, 83, 84, 85, 86, 87, 88], sending it to elastic: Thread id 28
+2022-06-21 14:28:40 [twitter-topic-consumer-2-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 1 number of message received with keys [908653450099150848], partitions [2] and offsets [89], sending it to elastic: Thread id 30
+2022-06-21 14:28:40 [twitter-topic-consumer-1-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 1 number of message received with keys [816878940015001600], partitions [1] and offsets [89], sending it to elastic: Thread id 28
+2022-06-21 14:28:40 [twitter-topic-consumer-0-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 2 number of message received with keys [1392437468935331846, 1501315585308864522], partitions [0, 0] and offsets [104, 105], sending it to elastic: Thread id 26
+2022-06-21 14:28:40 [twitter-topic-consumer-1-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 2 number of message received with keys [1530347142178557953, 1143420163766702080], partitions [1, 1] and offsets [90, 91], sending it to elastic: Thread id 28
+2022-06-21 14:28:40 [twitter-topic-consumer-2-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1119741520368865282], partitions [2] and offsets [90], sending it to elastic: Thread id 30
+2022-06-21 14:28:40 [twitter-topic-consumer-0-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1511766525924962304], partitions [0] and offsets [106], sending it to elastic: Thread id 26
+2022-06-21 14:28:40 [twitter-topic-consumer-1-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 1 number of message received with keys [947652785465540608], partitions [1] and offsets [92], sending it to elastic: Thread id 28
+2022-06-21 14:28:40 [twitter-topic-consumer-0-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 1 number of message received with keys [830426321289355265], partitions [0] and offsets [107], sending it to elastic: Thread id 26
+2022-06-21 14:28:40 [twitter-topic-consumer-1-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 3 number of message received with keys [1286660020487114752, 1491657870383128577, 1386570895032868870], partitions [1, 1, 1] and offsets [93, 94, 95], sending it to elastic: Thread id 28
+2022-06-21 14:28:40 [twitter-topic-consumer-1-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1528402571949314049], partitions [1] and offsets [96], sending it to elastic: Thread id 28
+2022-06-21 14:28:45 [twitter-topic-consumer-2-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 2 number of message received with keys [1505882617455210496, 1198127163922190336], partitions [2, 2] and offsets [91, 92], sending it to elastic: Thread id 30
+2022-06-21 14:28:45 [twitter-topic-consumer-0-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 3 number of message received with keys [1159269456, 1423578545184329732, 1528976635462144000], partitions [0, 0, 0] and offsets [108, 109, 110], sending it to elastic: Thread id 26
+2022-06-21 14:28:45 [twitter-topic-consumer-1-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 3 number of message received with keys [1228536577875300353, 1496653609194381313, 1524587794605445120], partitions [1, 1, 1] and offsets [97, 98, 99], sending it to elastic: Thread id 28
+2022-06-21 14:28:45 [twitter-topic-consumer-2-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1389948770822021121], partitions [2] and offsets [93], sending it to elastic: Thread id 30
+2022-06-21 14:28:45 [twitter-topic-consumer-0-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 2 number of message received with keys [1476132951343525890, 1159269456], partitions [0, 0] and offsets [111, 112], sending it to elastic: Thread id 26
+2022-06-21 14:28:45 [twitter-topic-consumer-2-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1471272258073149443], partitions [2] and offsets [94], sending it to elastic: Thread id 30
+2022-06-21 14:28:45 [twitter-topic-consumer-0-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1173917859019284481], partitions [0] and offsets [113], sending it to elastic: Thread id 26
+2022-06-21 14:28:50 [twitter-topic-consumer-1-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 2 number of message received with keys [174886190, 1113077547925827586], partitions [1, 1] and offsets [100, 101], sending it to elastic: Thread id 28
+2022-06-21 14:28:50 [twitter-topic-consumer-2-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 1 number of message received with keys [918062878481047552], partitions [2] and offsets [95], sending it to elastic: Thread id 30
+2022-06-21 14:28:50 [twitter-topic-consumer-0-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 1 number of message received with keys [960783317053263872], partitions [0] and offsets [114], sending it to elastic: Thread id 26
+2022-06-21 14:28:50 [twitter-topic-consumer-1-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1052490811915427842], partitions [1] and offsets [102], sending it to elastic: Thread id 28
+2022-06-21 14:28:50 [twitter-topic-consumer-2-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1517424595204440064], partitions [2] and offsets [96], sending it to elastic: Thread id 30
+2022-06-21 14:28:50 [twitter-topic-consumer-1-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 2 number of message received with keys [1489612608428781571, 1539206529253261313], partitions [1, 1] and offsets [103, 104], sending it to elastic: Thread id 28
+2022-06-21 14:28:50 [twitter-topic-consumer-0-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1369248184451571714], partitions [0] and offsets [115], sending it to elastic: Thread id 26
+2022-06-21 14:28:50 [twitter-topic-consumer-2-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 2 number of message received with keys [98722356, 1461420331], partitions [2, 2] and offsets [97, 98], sending it to elastic: Thread id 30
+2022-06-21 14:28:50 [twitter-topic-consumer-0-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 3 number of message received with keys [893271207495073792, 1438789225, 452121863], partitions [0, 0, 0] and offsets [116, 117, 118], sending it to elastic: Thread id 26
+2022-06-21 14:28:54 [twitter-topic-consumer-0-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1507031696255946758], partitions [0] and offsets [119], sending it to elastic: Thread id 26
+2022-06-21 14:28:55 [twitter-topic-consumer-1-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 1 number of message received with keys [54572764], partitions [1] and offsets [105], sending it to elastic: Thread id 28
+2022-06-21 14:28:55 [twitter-topic-consumer-2-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1258386683067641861], partitions [2] and offsets [99], sending it to elastic: Thread id 30
+2022-06-21 14:28:55 [twitter-topic-consumer-0-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 1 number of message received with keys [793421722896572416], partitions [0] and offsets [120], sending it to elastic: Thread id 26
+2022-06-21 14:28:56 [twitter-topic-consumer-1-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 1 number of message received with keys [925084164218433536], partitions [1] and offsets [106], sending it to elastic: Thread id 28
+2022-06-21 14:28:56 [twitter-topic-consumer-0-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 1 number of message received with keys [950089649602646016], partitions [0] and offsets [121], sending it to elastic: Thread id 26
+2022-06-21 14:28:56 [twitter-topic-consumer-2-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1282808975843418112], partitions [2] and offsets [100], sending it to elastic: Thread id 30
+2022-06-21 14:28:56 [twitter-topic-consumer-1-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 2 number of message received with keys [400574573, 1449348235819167754], partitions [1, 1] and offsets [107, 108], sending it to elastic: Thread id 28
+2022-06-21 14:28:56 [twitter-topic-consumer-0-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 3 number of message received with keys [893271207495073792, 1299617826483785728, 1405502581086900226], partitions [0, 0, 0] and offsets [122, 123, 124], sending it to elastic: Thread id 26
+2022-06-21 14:28:56 [twitter-topic-consumer-2-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1363790356051943424], partitions [2] and offsets [101], sending it to elastic: Thread id 30
+2022-06-21 14:28:59 [twitter-topic-consumer-1-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 2 number of message received with keys [3235934774, 132439554], partitions [1, 1] and offsets [109, 110], sending it to elastic: Thread id 28
+2022-06-21 14:28:59 [twitter-topic-consumer-2-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 1 number of message received with keys [695928952863485953], partitions [2] and offsets [102], sending it to elastic: Thread id 30
+2022-06-21 14:28:59 [twitter-topic-consumer-0-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 2 number of message received with keys [1245511647021666304, 55853393], partitions [0, 0] and offsets [125, 126], sending it to elastic: Thread id 26
+2022-06-21 14:28:59 [twitter-topic-consumer-1-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 1 number of message received with keys [2469208400], partitions [1] and offsets [111], sending it to elastic: Thread id 28
+2022-06-21 14:28:59 [twitter-topic-consumer-2-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 3 number of message received with keys [1150346056992821253, 478875048, 1493168494673907715], partitions [2, 2, 2] and offsets [103, 104, 105], sending it to elastic: Thread id 30
+2022-06-21 14:28:59 [twitter-topic-consumer-0-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 2 number of message received with keys [209495981, 1442122733886664704], partitions [0, 0] and offsets [127, 128], sending it to elastic: Thread id 26
+2022-06-21 14:28:59 [twitter-topic-consumer-2-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1849493396], partitions [2] and offsets [106], sending it to elastic: Thread id 30
+2022-06-21 14:28:59 [twitter-topic-consumer-0-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 1 number of message received with keys [868497336124661760], partitions [0] and offsets [129], sending it to elastic: Thread id 26
+2022-06-21 14:28:59 [twitter-topic-consumer-0-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 2 number of message received with keys [435663739, 1313452534665678848], partitions [0, 0] and offsets [130, 131], sending it to elastic: Thread id 26
+2022-06-21 14:29:07 [twitter-topic-consumer-1-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 3 number of message received with keys [1089636246207586311, 825471810053484545, 54572764], partitions [1, 1, 1] and offsets [112, 113, 114], sending it to elastic: Thread id 28
+2022-06-21 14:29:07 [twitter-topic-consumer-2-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 1 number of message received with keys [947575780632018944], partitions [2] and offsets [107], sending it to elastic: Thread id 30
+2022-06-21 14:29:07 [twitter-topic-consumer-0-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 1 number of message received with keys [3013336561], partitions [0] and offsets [132], sending it to elastic: Thread id 26
+2022-06-21 14:29:07 [twitter-topic-consumer-2-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1293928443382386688], partitions [2] and offsets [108], sending it to elastic: Thread id 30
+2022-06-21 14:29:07 [twitter-topic-consumer-1-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1526589246689054721], partitions [1] and offsets [115], sending it to elastic: Thread id 28
+2022-06-21 14:29:07 [twitter-topic-consumer-0-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 1 number of message received with keys [3300054510], partitions [0] and offsets [133], sending it to elastic: Thread id 26
+2022-06-21 14:29:07 [twitter-topic-consumer-2-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1225032654531121154], partitions [2] and offsets [109], sending it to elastic: Thread id 30
+2022-06-21 14:29:07 [twitter-topic-consumer-1-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1484101966460755977], partitions [1] and offsets [116], sending it to elastic: Thread id 28
+2022-06-21 14:29:07 [twitter-topic-consumer-2-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1072799735642112000], partitions [2] and offsets [110], sending it to elastic: Thread id 30
+2022-06-21 14:29:07 [twitter-topic-consumer-1-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 2 number of message received with keys [1537248725504262144, 3111536505], partitions [1, 1] and offsets [117, 118], sending it to elastic: Thread id 28
+2022-06-21 14:29:07 [twitter-topic-consumer-2-C-1] INFO  c.e.m.k.t.e.c.i.TwitterKafkaConsumer - 1 number of message received with keys [1198127163922190336], partitions [2] and offsets [111], sending it to elastic: Thread id 30
+2022-06-21 14:29:10 [twitter-topic-consumer-1-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-2, groupId=twitter-topic-consumer] Revoke previously assigned partitions twitter-topic-1
+2022-06-21 14:29:10 [twitter-topic-consumer-2-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-3, groupId=twitter-topic-consumer] Revoke previously assigned partitions twitter-topic-2
+2022-06-21 14:29:10 [twitter-topic-consumer-1-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - twitter-topic-consumer: partitions revoked: [twitter-topic-1]
+2022-06-21 14:29:10 [twitter-topic-consumer-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Revoke previously assigned partitions twitter-topic-0
+2022-06-21 14:29:10 [twitter-topic-consumer-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - twitter-topic-consumer: partitions revoked: [twitter-topic-0]
+2022-06-21 14:29:10 [twitter-topic-consumer-2-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - twitter-topic-consumer: partitions revoked: [twitter-topic-2]
+2022-06-21 14:29:10 [twitter-topic-consumer-1-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-2, groupId=twitter-topic-consumer] Member consumer-twitter-topic-consumer-2-03260411-4af8-4741-96bc-88d3ee06e265 sending LeaveGroup request to coordinator localhost:39092 (id: 2147483644 rack: null) due to the consumer unsubscribed from all topics
+2022-06-21 14:29:10 [twitter-topic-consumer-1-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-2, groupId=twitter-topic-consumer] Resetting generation due to: consumer pro-actively leaving the group
+2022-06-21 14:29:10 [twitter-topic-consumer-1-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-2, groupId=twitter-topic-consumer] Request joining group due to: consumer pro-actively leaving the group
+2022-06-21 14:29:10 [twitter-topic-consumer-1-C-1] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-twitter-topic-consumer-2, groupId=twitter-topic-consumer] Unsubscribed all topics or patterns and assigned partitions
+2022-06-21 14:29:10 [twitter-topic-consumer-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Member consumer-twitter-topic-consumer-1-fd09d608-27b7-44e0-8191-b6650e44bcd2 sending LeaveGroup request to coordinator localhost:39092 (id: 2147483644 rack: null) due to the consumer unsubscribed from all topics
+2022-06-21 14:29:10 [twitter-topic-consumer-1-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-2, groupId=twitter-topic-consumer] Resetting generation due to: consumer pro-actively leaving the group
+2022-06-21 14:29:10 [twitter-topic-consumer-1-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-2, groupId=twitter-topic-consumer] Request joining group due to: consumer pro-actively leaving the group
+2022-06-21 14:29:10 [twitter-topic-consumer-2-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-3, groupId=twitter-topic-consumer] Member consumer-twitter-topic-consumer-3-0b8ee6c7-c450-4159-9d88-1da2b0dffb3c sending LeaveGroup request to coordinator localhost:39092 (id: 2147483644 rack: null) due to the consumer unsubscribed from all topics
+2022-06-21 14:29:10 [twitter-topic-consumer-2-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-3, groupId=twitter-topic-consumer] Resetting generation due to: consumer pro-actively leaving the group
+2022-06-21 14:29:10 [twitter-topic-consumer-2-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-3, groupId=twitter-topic-consumer] Request joining group due to: consumer pro-actively leaving the group
+2022-06-21 14:29:10 [twitter-topic-consumer-2-C-1] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-twitter-topic-consumer-3, groupId=twitter-topic-consumer] Unsubscribed all topics or patterns and assigned partitions
+2022-06-21 14:29:10 [twitter-topic-consumer-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Resetting generation due to: consumer pro-actively leaving the group
+2022-06-21 14:29:10 [twitter-topic-consumer-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Request joining group due to: consumer pro-actively leaving the group
+2022-06-21 14:29:10 [twitter-topic-consumer-0-C-1] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Unsubscribed all topics or patterns and assigned partitions
+2022-06-21 14:29:10 [twitter-topic-consumer-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Resetting generation due to: consumer pro-actively leaving the group
+2022-06-21 14:29:10 [twitter-topic-consumer-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-1, groupId=twitter-topic-consumer] Request joining group due to: consumer pro-actively leaving the group
+2022-06-21 14:29:10 [twitter-topic-consumer-2-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-3, groupId=twitter-topic-consumer] Resetting generation due to: consumer pro-actively leaving the group
+2022-06-21 14:29:10 [twitter-topic-consumer-2-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-twitter-topic-consumer-3, groupId=twitter-topic-consumer] Request joining group due to: consumer pro-actively leaving the group
+2022-06-21 14:29:11 [twitter-topic-consumer-2-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2022-06-21 14:29:11 [twitter-topic-consumer-2-C-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2022-06-21 14:29:11 [twitter-topic-consumer-2-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2022-06-21 14:29:11 [twitter-topic-consumer-2-C-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-twitter-topic-consumer-3 unregistered
+2022-06-21 14:29:11 [twitter-topic-consumer-2-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - twitter-topic-consumer: Consumer stopped
+2022-06-21 14:29:11 [twitter-topic-consumer-1-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2022-06-21 14:29:11 [twitter-topic-consumer-1-C-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2022-06-21 14:29:11 [twitter-topic-consumer-1-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2022-06-21 14:29:11 [twitter-topic-consumer-1-C-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-twitter-topic-consumer-2 unregistered
+2022-06-21 14:29:11 [twitter-topic-consumer-1-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - twitter-topic-consumer: Consumer stopped
+2022-06-21 14:29:11 [twitter-topic-consumer-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2022-06-21 14:29:11 [twitter-topic-consumer-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2022-06-21 14:29:11 [twitter-topic-consumer-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2022-06-21 14:29:11 [twitter-topic-consumer-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-twitter-topic-consumer-1 unregistered
+2022-06-21 14:29:11 [twitter-topic-consumer-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - twitter-topic-consumer: Consumer stopped
+2022-06-21 14:29:11 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.admin.client for adminclient-1 unregistered
+2022-06-21 14:29:11 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2022-06-21 14:29:11 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2022-06-21 14:29:11 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2022-06-21 17:01:36 [main] INFO  c.e.m.k.t.e.KafkaToElasticServiceApplication - Starting KafkaToElasticServiceApplication using Java 18.0.1.1 on AMasterPiece with PID 26516 (D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\kafka-to-elastic-service\target\classes started by bless in D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices)
+2022-06-21 17:01:37 [main] INFO  c.e.m.k.t.e.KafkaToElasticServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-06-21 17:01:37 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2022-06-21 17:01:37 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=kafka-to-elastic-service, profiles=[default], label=null, version=53c69581d04ba0f9e073668ad4ac259c55c9240c, state=null
+2022-06-21 17:01:39 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Cannot register alias 'elasticsearchTemplate' for name 'elasticsearchOperations': Alias would override bean definition 'elasticsearchTemplate'
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.checkForAliasCircle(DefaultListableBeanFactory.java:1140)
+	at org.springframework.core.SimpleAliasRegistry.registerAlias(SimpleAliasRegistry.java:80)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:210)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:153)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:129)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:343)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.eventdriven.microservices.kafka.to.elastic.KafkaToElasticServiceApplication.main(KafkaToElasticServiceApplication.java:17)
+2022-06-21 17:06:48 [main] INFO  c.e.m.k.t.e.KafkaToElasticServiceApplication - Starting KafkaToElasticServiceApplication using Java 18.0.1.1 on AMasterPiece with PID 4696 (D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\kafka-to-elastic-service\target\classes started by bless in D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices)
+2022-06-21 17:06:48 [main] INFO  c.e.m.k.t.e.KafkaToElasticServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-06-21 17:06:49 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2022-06-21 17:06:49 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=kafka-to-elastic-service, profiles=[default], label=null, version=53c69581d04ba0f9e073668ad4ac259c55c9240c, state=null
+2022-06-21 17:06:50 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-06-21 17:06:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 387 ms. Found 1 Elasticsearch repository interfaces.
+2022-06-21 17:06:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2022-06-21 17:06:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2022-06-21 17:06:51 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=ae9b430f-409d-3790-9e7d-37e54761ff40
+2022-06-21 17:06:52 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2022-06-21 17:06:53 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.1.1
+2022-06-21 17:06:53 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 97671528ba54a138
+2022-06-21 17:06:53 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1655820413516
+2022-06-21 17:06:56 [main] WARN  o.s.b.w.r.c.AnnotationConfigReactiveWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterKafkaConsumer' defined in file [D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\kafka-to-elastic-service\target\classes\com\eventdriven\microservices\kafka\to\elastic\consumer\impl\TwitterKafkaConsumer.class]: Unsatisfied dependency expressed through constructor parameter 5; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterElasticRepositoryIndexClient' defined in file [D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\elastic\elastic-index\target\classes\com\eventdriven\microservices\elastic\index\service\impl\TwitterElasticRepositoryIndexClient.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'twitterElasticsearchIndexRepository' defined in com.eventdriven.microservices.elastic.index.repository.TwitterElasticsearchIndexRepository defined in @EnableElasticsearchRepositories declared on ElasticSearchConfig: Invocation of init method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.elasticsearch.repository.support.SimpleElasticsearchRepository]: Constructor threw exception; nested exception is org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'elasticConfigData' cannot be found on null
+2022-06-21 17:06:56 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.admin.client for adminclient-1 unregistered
+2022-06-21 17:06:56 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2022-06-21 17:06:56 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2022-06-21 17:06:56 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2022-06-21 17:06:56 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-06-21 17:06:56 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterKafkaConsumer' defined in file [D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\kafka-to-elastic-service\target\classes\com\eventdriven\microservices\kafka\to\elastic\consumer\impl\TwitterKafkaConsumer.class]: Unsatisfied dependency expressed through constructor parameter 5; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterElasticRepositoryIndexClient' defined in file [D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\elastic\elastic-index\target\classes\com\eventdriven\microservices\elastic\index\service\impl\TwitterElasticRepositoryIndexClient.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'twitterElasticsearchIndexRepository' defined in com.eventdriven.microservices.elastic.index.repository.TwitterElasticsearchIndexRepository defined in @EnableElasticsearchRepositories declared on ElasticSearchConfig: Invocation of init method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.elasticsearch.repository.support.SimpleElasticsearchRepository]: Constructor threw exception; nested exception is org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'elasticConfigData' cannot be found on null
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.eventdriven.microservices.kafka.to.elastic.KafkaToElasticServiceApplication.main(KafkaToElasticServiceApplication.java:17)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterElasticRepositoryIndexClient' defined in file [D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\elastic\elastic-index\target\classes\com\eventdriven\microservices\elastic\index\service\impl\TwitterElasticRepositoryIndexClient.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'twitterElasticsearchIndexRepository' defined in com.eventdriven.microservices.elastic.index.repository.TwitterElasticsearchIndexRepository defined in @EnableElasticsearchRepositories declared on ElasticSearchConfig: Invocation of init method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.elasticsearch.repository.support.SimpleElasticsearchRepository]: Constructor threw exception; nested exception is org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'elasticConfigData' cannot be found on null
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'twitterElasticsearchIndexRepository' defined in com.eventdriven.microservices.elastic.index.repository.TwitterElasticsearchIndexRepository defined in @EnableElasticsearchRepositories declared on ElasticSearchConfig: Invocation of init method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.elasticsearch.repository.support.SimpleElasticsearchRepository]: Constructor threw exception; nested exception is org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'elasticConfigData' cannot be found on null
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 33 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.elasticsearch.repository.support.SimpleElasticsearchRepository]: Constructor threw exception; nested exception is org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'elasticConfigData' cannot be found on null
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.lambda$instantiateClass$5(RepositoryFactorySupport.java:578)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.instantiateClass(RepositoryFactorySupport.java:578)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getTargetRepositoryViaReflection(RepositoryFactorySupport.java:543)
+	at org.springframework.data.elasticsearch.repository.support.ElasticsearchRepositoryFactory.getTargetRepository(ElasticsearchRepositoryFactory.java:74)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:324)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:322)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:230)
+	at org.springframework.data.util.Lazy.get(Lazy.java:114)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:328)
+	at org.springframework.data.elasticsearch.repository.support.ElasticsearchRepositoryFactoryBean.afterPropertiesSet(ElasticsearchRepositoryFactoryBean.java:69)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 44 common frames omitted
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'elasticConfigData' cannot be found on null
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:213)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:91)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueRef(CompoundExpression.java:55)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:91)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getTypedValue(SpelNodeImpl.java:117)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:309)
+	at org.springframework.data.elasticsearch.core.mapping.SimpleElasticsearchPersistentEntity.resolve(SimpleElasticsearchPersistentEntity.java:315)
+	at org.springframework.data.elasticsearch.core.mapping.SimpleElasticsearchPersistentEntity.resolve(SimpleElasticsearchPersistentEntity.java:297)
+	at org.springframework.data.elasticsearch.core.mapping.SimpleElasticsearchPersistentEntity.getIndexCoordinates(SimpleElasticsearchPersistentEntity.java:126)
+	at org.springframework.data.elasticsearch.core.AbstractIndexTemplate.getIndexCoordinatesFor(AbstractIndexTemplate.java:238)
+	at org.springframework.data.elasticsearch.core.AbstractIndexTemplate.getIndexCoordinates(AbstractIndexTemplate.java:234)
+	at org.springframework.data.elasticsearch.core.AbstractIndexTemplate.exists(AbstractIndexTemplate.java:130)
+	at org.springframework.data.elasticsearch.repository.support.SimpleElasticsearchRepository.<init>(SimpleElasticsearchRepository.java:87)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:211)
+	... 57 common frames omitted
+2022-06-21 17:09:07 [main] INFO  c.e.m.k.t.e.KafkaToElasticServiceApplication - Starting KafkaToElasticServiceApplication using Java 18.0.1.1 on AMasterPiece with PID 22916 (D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\kafka-to-elastic-service\target\classes started by bless in D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices)
+2022-06-21 17:09:07 [main] INFO  c.e.m.k.t.e.KafkaToElasticServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-06-21 17:09:07 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2022-06-21 17:09:07 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=kafka-to-elastic-service, profiles=[default], label=null, version=53c69581d04ba0f9e073668ad4ac259c55c9240c, state=null
+2022-06-21 17:09:09 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-06-21 17:09:09 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 307 ms. Found 1 Elasticsearch repository interfaces.
+2022-06-21 17:09:09 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2022-06-21 17:09:09 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2022-06-21 17:09:10 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=ae9b430f-409d-3790-9e7d-37e54761ff40
+2022-06-21 17:09:11 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2022-06-21 17:09:11 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.1.1
+2022-06-21 17:09:11 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 97671528ba54a138
+2022-06-21 17:09:11 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1655820551630
+2022-06-21 17:09:13 [main] WARN  o.s.b.w.r.c.AnnotationConfigReactiveWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterKafkaConsumer' defined in file [D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\kafka-to-elastic-service\target\classes\com\eventdriven\microservices\kafka\to\elastic\consumer\impl\TwitterKafkaConsumer.class]: Unsatisfied dependency expressed through constructor parameter 5; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterElasticRepositoryIndexClient' defined in file [D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\elastic\elastic-index\target\classes\com\eventdriven\microservices\elastic\index\service\impl\TwitterElasticRepositoryIndexClient.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'twitterElasticsearchIndexRepository' defined in com.eventdriven.microservices.elastic.index.repository.TwitterElasticsearchIndexRepository defined in @EnableElasticsearchRepositories declared on ElasticSearchConfig: Invocation of init method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.elasticsearch.repository.support.SimpleElasticsearchRepository]: Constructor threw exception; nested exception is org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'elasticConfigData' cannot be found on null
+2022-06-21 17:09:13 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.admin.client for adminclient-1 unregistered
+2022-06-21 17:09:13 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2022-06-21 17:09:13 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2022-06-21 17:09:13 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2022-06-21 17:09:13 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-06-21 17:09:13 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterKafkaConsumer' defined in file [D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\kafka-to-elastic-service\target\classes\com\eventdriven\microservices\kafka\to\elastic\consumer\impl\TwitterKafkaConsumer.class]: Unsatisfied dependency expressed through constructor parameter 5; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterElasticRepositoryIndexClient' defined in file [D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\elastic\elastic-index\target\classes\com\eventdriven\microservices\elastic\index\service\impl\TwitterElasticRepositoryIndexClient.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'twitterElasticsearchIndexRepository' defined in com.eventdriven.microservices.elastic.index.repository.TwitterElasticsearchIndexRepository defined in @EnableElasticsearchRepositories declared on ElasticSearchConfig: Invocation of init method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.elasticsearch.repository.support.SimpleElasticsearchRepository]: Constructor threw exception; nested exception is org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'elasticConfigData' cannot be found on null
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.eventdriven.microservices.kafka.to.elastic.KafkaToElasticServiceApplication.main(KafkaToElasticServiceApplication.java:17)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterElasticRepositoryIndexClient' defined in file [D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\elastic\elastic-index\target\classes\com\eventdriven\microservices\elastic\index\service\impl\TwitterElasticRepositoryIndexClient.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'twitterElasticsearchIndexRepository' defined in com.eventdriven.microservices.elastic.index.repository.TwitterElasticsearchIndexRepository defined in @EnableElasticsearchRepositories declared on ElasticSearchConfig: Invocation of init method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.elasticsearch.repository.support.SimpleElasticsearchRepository]: Constructor threw exception; nested exception is org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'elasticConfigData' cannot be found on null
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'twitterElasticsearchIndexRepository' defined in com.eventdriven.microservices.elastic.index.repository.TwitterElasticsearchIndexRepository defined in @EnableElasticsearchRepositories declared on ElasticSearchConfig: Invocation of init method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.elasticsearch.repository.support.SimpleElasticsearchRepository]: Constructor threw exception; nested exception is org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'elasticConfigData' cannot be found on null
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 33 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.elasticsearch.repository.support.SimpleElasticsearchRepository]: Constructor threw exception; nested exception is org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'elasticConfigData' cannot be found on null
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.lambda$instantiateClass$5(RepositoryFactorySupport.java:578)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.instantiateClass(RepositoryFactorySupport.java:578)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getTargetRepositoryViaReflection(RepositoryFactorySupport.java:543)
+	at org.springframework.data.elasticsearch.repository.support.ElasticsearchRepositoryFactory.getTargetRepository(ElasticsearchRepositoryFactory.java:74)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:324)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:322)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:230)
+	at org.springframework.data.util.Lazy.get(Lazy.java:114)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:328)
+	at org.springframework.data.elasticsearch.repository.support.ElasticsearchRepositoryFactoryBean.afterPropertiesSet(ElasticsearchRepositoryFactoryBean.java:69)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 44 common frames omitted
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'elasticConfigData' cannot be found on null
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:213)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:91)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueRef(CompoundExpression.java:55)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:91)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getTypedValue(SpelNodeImpl.java:117)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:309)
+	at org.springframework.data.elasticsearch.core.mapping.SimpleElasticsearchPersistentEntity.resolve(SimpleElasticsearchPersistentEntity.java:315)
+	at org.springframework.data.elasticsearch.core.mapping.SimpleElasticsearchPersistentEntity.resolve(SimpleElasticsearchPersistentEntity.java:297)
+	at org.springframework.data.elasticsearch.core.mapping.SimpleElasticsearchPersistentEntity.getIndexCoordinates(SimpleElasticsearchPersistentEntity.java:126)
+	at org.springframework.data.elasticsearch.core.AbstractIndexTemplate.getIndexCoordinatesFor(AbstractIndexTemplate.java:238)
+	at org.springframework.data.elasticsearch.core.AbstractIndexTemplate.getIndexCoordinates(AbstractIndexTemplate.java:234)
+	at org.springframework.data.elasticsearch.core.AbstractIndexTemplate.exists(AbstractIndexTemplate.java:130)
+	at org.springframework.data.elasticsearch.repository.support.SimpleElasticsearchRepository.<init>(SimpleElasticsearchRepository.java:87)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:211)
+	... 57 common frames omitted
+2022-06-21 17:13:16 [main] INFO  c.e.m.k.t.e.KafkaToElasticServiceApplication - Starting KafkaToElasticServiceApplication using Java 18.0.1.1 on AMasterPiece with PID 24256 (D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\kafka-to-elastic-service\target\classes started by bless in D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices)
+2022-06-21 17:13:16 [main] INFO  c.e.m.k.t.e.KafkaToElasticServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-06-21 17:13:16 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2022-06-21 17:13:16 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=kafka-to-elastic-service, profiles=[default], label=null, version=53c69581d04ba0f9e073668ad4ac259c55c9240c, state=null
+2022-06-21 17:13:17 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-06-21 17:13:18 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 347 ms. Found 1 Elasticsearch repository interfaces.
+2022-06-21 17:13:18 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2022-06-21 17:13:18 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2022-06-21 17:13:19 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=ae9b430f-409d-3790-9e7d-37e54761ff40
+2022-06-21 17:13:19 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2022-06-21 17:13:20 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.1.1
+2022-06-21 17:13:20 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 97671528ba54a138
+2022-06-21 17:13:20 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1655820800442
+2022-06-21 17:13:23 [main] WARN  org.elasticsearch.client.RestClient - request [HEAD http://localhost:9200/twitter-index?ignore_throttled=false&ignore_unavailable=false&expand_wildcards=open%2Cclosed&allow_no_indices=false] returned 1 warnings: [299 Elasticsearch-8.2.3-9905bfb62a3f0b044948376b4f607f70a8a151b4 "[ignore_throttled] parameter is deprecated because frozen indices have been deprecated. Consider cold or frozen tiers in place of frozen indices."]
+2022-06-21 17:13:26 [main] INFO  o.s.b.a.s.r.ReactiveUserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 30181a73-535b-4029-a55f-db5f801de838
+
+2022-06-21 17:13:26 [main] WARN  o.s.b.w.r.c.AnnotationConfigReactiveWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'reactiveElasticsearchClient' defined in class path resource [org/springframework/boot/autoconfigure/data/elasticsearch/ReactiveElasticsearchRestClientAutoConfiguration.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [org.springframework.data.elasticsearch.client.reactive.DefaultReactiveElasticsearchClient] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@4b1210ee]
+2022-06-21 17:13:26 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.admin.client for adminclient-1 unregistered
+2022-06-21 17:13:26 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2022-06-21 17:13:26 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2022-06-21 17:13:26 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2022-06-21 17:13:26 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-06-21 17:13:26 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'reactiveElasticsearchClient' defined in class path resource [org/springframework/boot/autoconfigure/data/elasticsearch/ReactiveElasticsearchRestClientAutoConfiguration.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [org.springframework.data.elasticsearch.client.reactive.DefaultReactiveElasticsearchClient] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@4b1210ee]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.eventdriven.microservices.kafka.to.elastic.KafkaToElasticServiceApplication.main(KafkaToElasticServiceApplication.java:17)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.data.elasticsearch.client.reactive.DefaultReactiveElasticsearchClient] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@4b1210ee]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:321)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.buildLifecycleMetadata(InitDestroyAnnotationBeanPostProcessor.java:232)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.findLifecycleMetadata(InitDestroyAnnotationBeanPostProcessor.java:210)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(InitDestroyAnnotationBeanPostProcessor.java:149)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:305)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	... 15 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/elasticsearch/xcontent/XContentParser
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3434)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2536)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:467)
+	... 22 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.elasticsearch.xcontent.XContentParser
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 26 common frames omitted
+2022-06-21 17:16:17 [main] INFO  c.e.m.k.t.e.KafkaToElasticServiceApplication - Starting KafkaToElasticServiceApplication using Java 18.0.1.1 on AMasterPiece with PID 16828 (D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\kafka-to-elastic-service\target\classes started by bless in D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices)
+2022-06-21 17:16:17 [main] INFO  c.e.m.k.t.e.KafkaToElasticServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-06-21 17:16:17 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2022-06-21 17:16:17 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=kafka-to-elastic-service, profiles=[default], label=null, version=53c69581d04ba0f9e073668ad4ac259c55c9240c, state=null
+2022-06-21 17:16:18 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-06-21 17:16:19 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 419 ms. Found 1 Elasticsearch repository interfaces.
+2022-06-21 17:16:19 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2022-06-21 17:16:19 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2022-06-21 17:16:19 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=ae9b430f-409d-3790-9e7d-37e54761ff40
+2022-06-21 17:16:20 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2022-06-21 17:16:21 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.1.1
+2022-06-21 17:16:21 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 97671528ba54a138
+2022-06-21 17:16:21 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1655820981135
+2022-06-21 17:16:23 [main] WARN  org.elasticsearch.client.RestClient - request [HEAD http://localhost:9200/twitter-index?ignore_throttled=false&ignore_unavailable=false&expand_wildcards=open%2Cclosed&allow_no_indices=false] returned 1 warnings: [299 Elasticsearch-8.2.3-9905bfb62a3f0b044948376b4f607f70a8a151b4 "[ignore_throttled] parameter is deprecated because frozen indices have been deprecated. Consider cold or frozen tiers in place of frozen indices."]
+2022-06-21 17:16:23 [main] INFO  o.s.b.a.s.r.ReactiveUserDetailsServiceAutoConfiguration - 
+
+Using generated security password: cd395e49-b188-497b-9bb8-d49ab57e3f4e
+
+2022-06-21 17:16:23 [main] WARN  o.s.b.w.r.c.AnnotationConfigReactiveWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'reactiveElasticsearchClient' defined in class path resource [org/springframework/boot/autoconfigure/data/elasticsearch/ReactiveElasticsearchRestClientAutoConfiguration.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [org.springframework.data.elasticsearch.client.reactive.DefaultReactiveElasticsearchClient] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@4b1210ee]
+2022-06-21 17:16:23 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.admin.client for adminclient-1 unregistered
+2022-06-21 17:16:23 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2022-06-21 17:16:23 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2022-06-21 17:16:23 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2022-06-21 17:16:23 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-06-21 17:16:23 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'reactiveElasticsearchClient' defined in class path resource [org/springframework/boot/autoconfigure/data/elasticsearch/ReactiveElasticsearchRestClientAutoConfiguration.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [org.springframework.data.elasticsearch.client.reactive.DefaultReactiveElasticsearchClient] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@4b1210ee]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.eventdriven.microservices.kafka.to.elastic.KafkaToElasticServiceApplication.main(KafkaToElasticServiceApplication.java:17)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.data.elasticsearch.client.reactive.DefaultReactiveElasticsearchClient] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@4b1210ee]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:321)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.buildLifecycleMetadata(InitDestroyAnnotationBeanPostProcessor.java:232)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.findLifecycleMetadata(InitDestroyAnnotationBeanPostProcessor.java:210)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(InitDestroyAnnotationBeanPostProcessor.java:149)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:305)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	... 15 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/elasticsearch/core/TimeValue
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3434)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2536)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:467)
+	... 22 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.elasticsearch.core.TimeValue
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 26 common frames omitted
+2022-06-21 17:19:55 [main] INFO  c.e.m.k.t.e.KafkaToElasticServiceApplication - Starting KafkaToElasticServiceApplication using Java 18.0.1.1 on AMasterPiece with PID 21728 (D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\kafka-to-elastic-service\target\classes started by bless in D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices)
+2022-06-21 17:19:55 [main] INFO  c.e.m.k.t.e.KafkaToElasticServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-06-21 17:19:55 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2022-06-21 17:19:55 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=kafka-to-elastic-service, profiles=[default], label=null, version=53c69581d04ba0f9e073668ad4ac259c55c9240c, state=null
+2022-06-21 17:19:56 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Cannot register alias 'elasticsearchTemplate' for name 'elasticsearchOperations': Alias would override bean definition 'elasticsearchTemplate'
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.checkForAliasCircle(DefaultListableBeanFactory.java:1140)
+	at org.springframework.core.SimpleAliasRegistry.registerAlias(SimpleAliasRegistry.java:80)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:210)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:153)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:129)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:343)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.eventdriven.microservices.kafka.to.elastic.KafkaToElasticServiceApplication.main(KafkaToElasticServiceApplication.java:17)
+2022-06-21 17:21:50 [main] INFO  c.e.m.k.t.e.KafkaToElasticServiceApplication - Starting KafkaToElasticServiceApplication using Java 18.0.1.1 on AMasterPiece with PID 12128 (D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\kafka-to-elastic-service\target\classes started by bless in D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices)
+2022-06-21 17:21:50 [main] INFO  c.e.m.k.t.e.KafkaToElasticServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-06-21 17:21:50 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2022-06-21 17:21:50 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=kafka-to-elastic-service, profiles=[default], label=null, version=53c69581d04ba0f9e073668ad4ac259c55c9240c, state=null
+2022-06-21 17:21:51 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Cannot register alias 'elasticsearchTemplate' for name 'elasticsearchOperations': Alias would override bean definition 'elasticsearchTemplate'
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.checkForAliasCircle(DefaultListableBeanFactory.java:1140)
+	at org.springframework.core.SimpleAliasRegistry.registerAlias(SimpleAliasRegistry.java:80)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:210)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:153)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:129)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:343)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.eventdriven.microservices.kafka.to.elastic.KafkaToElasticServiceApplication.main(KafkaToElasticServiceApplication.java:17)
+2022-06-21 17:25:34 [main] INFO  c.e.m.k.t.e.KafkaToElasticServiceApplication - Starting KafkaToElasticServiceApplication using Java 18.0.1.1 on AMasterPiece with PID 29516 (D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\kafka-to-elastic-service\target\classes started by bless in D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices)
+2022-06-21 17:25:34 [main] INFO  c.e.m.k.t.e.KafkaToElasticServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-06-21 17:25:34 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2022-06-21 17:25:34 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=kafka-to-elastic-service, profiles=[default], label=null, version=53c69581d04ba0f9e073668ad4ac259c55c9240c, state=null
+2022-06-21 17:25:37 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Cannot register alias 'elasticsearchTemplate' for name 'elasticsearchOperations': Alias would override bean definition 'elasticsearchTemplate'
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.checkForAliasCircle(DefaultListableBeanFactory.java:1140)
+	at org.springframework.core.SimpleAliasRegistry.registerAlias(SimpleAliasRegistry.java:80)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:210)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:153)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:129)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:343)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.eventdriven.microservices.kafka.to.elastic.KafkaToElasticServiceApplication.main(KafkaToElasticServiceApplication.java:17)
+2022-06-21 17:27:29 [main] INFO  c.e.m.k.t.e.KafkaToElasticServiceApplication - Starting KafkaToElasticServiceApplication using Java 18.0.1.1 on AMasterPiece with PID 27328 (D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\kafka-to-elastic-service\target\classes started by bless in D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices)
+2022-06-21 17:27:29 [main] INFO  c.e.m.k.t.e.KafkaToElasticServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-06-21 17:27:29 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2022-06-21 17:27:29 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=kafka-to-elastic-service, profiles=[default], label=null, version=53c69581d04ba0f9e073668ad4ac259c55c9240c, state=null
+2022-06-21 17:27:30 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Cannot register alias 'elasticsearchTemplate' for name 'elasticsearchOperations': Alias would override bean definition 'elasticsearchTemplate'
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.checkForAliasCircle(DefaultListableBeanFactory.java:1140)
+	at org.springframework.core.SimpleAliasRegistry.registerAlias(SimpleAliasRegistry.java:80)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:210)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:153)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:129)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:343)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.eventdriven.microservices.kafka.to.elastic.KafkaToElasticServiceApplication.main(KafkaToElasticServiceApplication.java:17)
+2022-06-21 18:02:57 [main] INFO  c.e.m.k.t.e.KafkaToElasticServiceApplication - Starting KafkaToElasticServiceApplication using Java 18.0.1.1 on AMasterPiece with PID 10832 (D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\kafka-to-elastic-service\target\classes started by bless in D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices)
+2022-06-21 18:02:57 [main] INFO  c.e.m.k.t.e.KafkaToElasticServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-06-21 18:02:57 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2022-06-21 18:02:57 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2022-06-21 18:02:57 [main] WARN  o.s.c.c.c.ConfigServerConfigDataLoader - Could not locate PropertySource ([ConfigServerConfigDataResource@2e27d72f uris = array<String>['http://localhost:8888'], optional = true, profiles = list['default']]): I/O error on GET request for "http://localhost:8888/kafka-to-elastic-service/default": Connection refused: no further information; nested exception is java.net.ConnectException: Connection refused: no further information
+2022-06-21 18:02:58 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Cannot register alias 'elasticsearchTemplate' for name 'elasticsearchOperations': Alias would override bean definition 'elasticsearchTemplate'
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.checkForAliasCircle(DefaultListableBeanFactory.java:1140)
+	at org.springframework.core.SimpleAliasRegistry.registerAlias(SimpleAliasRegistry.java:80)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:210)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:153)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:129)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:343)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.eventdriven.microservices.kafka.to.elastic.KafkaToElasticServiceApplication.main(KafkaToElasticServiceApplication.java:17)
+2022-06-21 18:03:52 [main] INFO  c.e.m.k.t.e.KafkaToElasticServiceApplication - Starting KafkaToElasticServiceApplication using Java 18.0.1.1 on AMasterPiece with PID 27360 (D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\kafka-to-elastic-service\target\classes started by bless in D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices)
+2022-06-21 18:03:52 [main] INFO  c.e.m.k.t.e.KafkaToElasticServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-06-21 18:03:53 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2022-06-21 18:03:53 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2022-06-21 18:03:53 [main] WARN  o.s.c.c.c.ConfigServerConfigDataLoader - Could not locate PropertySource ([ConfigServerConfigDataResource@214894fc uris = array<String>['http://localhost:8888'], optional = true, profiles = list['default']]): I/O error on GET request for "http://localhost:8888/kafka-to-elastic-service/default": Connection refused: no further information; nested exception is java.net.ConnectException: Connection refused: no further information
+2022-06-21 18:03:53 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Cannot register alias 'elasticsearchTemplate' for name 'elasticsearchOperations': Alias would override bean definition 'elasticsearchTemplate'
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.checkForAliasCircle(DefaultListableBeanFactory.java:1140)
+	at org.springframework.core.SimpleAliasRegistry.registerAlias(SimpleAliasRegistry.java:80)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:210)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:153)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:129)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:343)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.eventdriven.microservices.kafka.to.elastic.KafkaToElasticServiceApplication.main(KafkaToElasticServiceApplication.java:17)
+2022-06-21 18:06:49 [main] INFO  c.e.m.k.t.e.KafkaToElasticServiceApplication - Starting KafkaToElasticServiceApplication using Java 18.0.1.1 on AMasterPiece with PID 28460 (D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\kafka-to-elastic-service\target\classes started by bless in D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices)
+2022-06-21 18:06:49 [main] INFO  c.e.m.k.t.e.KafkaToElasticServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-06-21 18:06:49 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2022-06-21 18:06:49 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2022-06-21 18:06:49 [main] WARN  o.s.c.c.c.ConfigServerConfigDataLoader - Could not locate PropertySource ([ConfigServerConfigDataResource@6548bb7d uris = array<String>['http://localhost:8888'], optional = true, profiles = list['default']]): I/O error on GET request for "http://localhost:8888/kafka-to-elastic-service/default": Connection refused: no further information; nested exception is java.net.ConnectException: Connection refused: no further information
+2022-06-21 18:06:50 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-06-21 18:06:50 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Elasticsearch repository interfaces.
+2022-06-21 18:06:50 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2022-06-21 18:06:50 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2022-06-21 18:06:51 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=ae8c89a8-5833-35ff-b611-14d6f7afa1e7
+2022-06-21 18:06:51 [main] WARN  o.s.b.w.r.c.AnnotationConfigReactiveWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterKafkaConsumer' defined in file [D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\kafka-to-elastic-service\target\classes\com\eventdriven\microservices\kafka\to\elastic\consumer\impl\TwitterKafkaConsumer.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'kafkaAdminClient' defined in file [D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\kafka\admin\target\classes\com\eventdriven\microservices\kafka\admin\config\client\KafkaAdminClient.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminClient' defined in class path resource [com/eventdriven/microservices/kafka/admin/config/KafkaAdminConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.kafka.clients.admin.AdminClient]: Factory method 'adminClient' threw exception; nested exception is java.lang.NullPointerException
+2022-06-21 18:06:51 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-06-21 18:06:51 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterKafkaConsumer' defined in file [D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\kafka-to-elastic-service\target\classes\com\eventdriven\microservices\kafka\to\elastic\consumer\impl\TwitterKafkaConsumer.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'kafkaAdminClient' defined in file [D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\kafka\admin\target\classes\com\eventdriven\microservices\kafka\admin\config\client\KafkaAdminClient.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminClient' defined in class path resource [com/eventdriven/microservices/kafka/admin/config/KafkaAdminConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.kafka.clients.admin.AdminClient]: Factory method 'adminClient' threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.eventdriven.microservices.kafka.to.elastic.KafkaToElasticServiceApplication.main(KafkaToElasticServiceApplication.java:17)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'kafkaAdminClient' defined in file [D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\kafka\admin\target\classes\com\eventdriven\microservices\kafka\admin\config\client\KafkaAdminClient.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminClient' defined in class path resource [com/eventdriven/microservices/kafka/admin/config/KafkaAdminConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.kafka.clients.admin.AdminClient]: Factory method 'adminClient' threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminClient' defined in class path resource [com/eventdriven/microservices/kafka/admin/config/KafkaAdminConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.kafka.clients.admin.AdminClient]: Factory method 'adminClient' threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:486)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 33 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.kafka.clients.admin.AdminClient]: Factory method 'adminClient' threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 47 common frames omitted
+Caused by: java.lang.NullPointerException: null
+	at java.base/java.util.Objects.requireNonNull(Objects.java:208)
+	at java.base/java.util.ImmutableCollections$Map1.<init>(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at com.eventdriven.microservices.kafka.admin.config.KafkaAdminConfig.adminClient(KafkaAdminConfig.java:25)
+	at com.eventdriven.microservices.kafka.admin.config.KafkaAdminConfig$$EnhancerBySpringCGLIB$$ffd8eb77.CGLIB$adminClient$0(<generated>)
+	at com.eventdriven.microservices.kafka.admin.config.KafkaAdminConfig$$EnhancerBySpringCGLIB$$ffd8eb77$$FastClassBySpringCGLIB$$5ceb843.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.eventdriven.microservices.kafka.admin.config.KafkaAdminConfig$$EnhancerBySpringCGLIB$$ffd8eb77.adminClient(<generated>)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 48 common frames omitted
