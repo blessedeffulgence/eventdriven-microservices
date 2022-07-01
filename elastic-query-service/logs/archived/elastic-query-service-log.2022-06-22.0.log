@@ -1,0 +1,406 @@
+2022-06-22 16:23:31 [main] INFO  c.e.m.e.q.s.ElasticQueryServiceApplication - Starting ElasticQueryServiceApplication using Java 18.0.1.1 on AMasterPiece with PID 15416 (D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\elastic-query-service\target\classes started by bless in D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices)
+2022-06-22 16:23:31 [main] INFO  c.e.m.e.q.s.ElasticQueryServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-06-22 16:23:31 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2022-06-22 16:23:31 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=elastic-query-service, profiles=[default], label=null, version=4847b8cacdf6ddfb06572b0546cbf6ae458b4d14, state=null
+2022-06-22 16:23:32 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-06-22 16:23:32 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Elasticsearch repository interfaces.
+2022-06-22 16:23:33 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-06-22 16:23:33 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Elasticsearch repository interfaces.
+2022-06-22 16:23:33 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2022-06-22 16:23:33 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2022-06-22 16:23:33 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=ceec19c9-48a2-3f83-8996-d46d0fc897bf
+2022-06-22 16:23:34 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8084 (http)
+2022-06-22 16:23:34 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8084"]
+2022-06-22 16:23:34 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-22 16:23:34 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-22 16:23:34 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-22 16:23:34 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3081 ms
+2022-06-22 16:23:35 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterElasticRepositoryQueryClient' defined in file [D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\elastic\elastic-query-client\target\classes\com\eventdriven\microservices\elastic\query\client\service\impl\TwitterElasticRepositoryQueryClient.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.eventdriven.microservices.elastic.query.client.repository.TwitterElasticSearchQueryRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2022-06-22 16:23:36 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2022-06-22 16:23:36 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-06-22 16:23:36 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.eventdriven.microservices.elastic.query.client.service.impl.TwitterElasticRepositoryQueryClient required a bean of type 'com.eventdriven.microservices.elastic.query.client.repository.TwitterElasticSearchQueryRepository' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.eventdriven.microservices.elastic.query.client.repository.TwitterElasticSearchQueryRepository' in your configuration.
+
+2022-06-22 16:26:08 [main] INFO  c.e.m.e.q.s.ElasticQueryServiceApplication - Starting ElasticQueryServiceApplication using Java 18.0.1.1 on AMasterPiece with PID 16352 (D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\elastic-query-service\target\classes started by bless in D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices)
+2022-06-22 16:26:08 [main] INFO  c.e.m.e.q.s.ElasticQueryServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-06-22 16:26:08 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2022-06-22 16:26:08 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=elastic-query-service, profiles=[default], label=null, version=4847b8cacdf6ddfb06572b0546cbf6ae458b4d14, state=null
+2022-06-22 16:26:10 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-06-22 16:26:10 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Elasticsearch repository interfaces.
+2022-06-22 16:26:10 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-06-22 16:26:10 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Elasticsearch repository interfaces.
+2022-06-22 16:26:10 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2022-06-22 16:26:10 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2022-06-22 16:26:11 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=ceec19c9-48a2-3f83-8996-d46d0fc897bf
+2022-06-22 16:26:11 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8084 (http)
+2022-06-22 16:26:11 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8084"]
+2022-06-22 16:26:11 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-22 16:26:11 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-22 16:26:12 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-22 16:26:12 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3250 ms
+2022-06-22 16:26:13 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterElasticRepositoryQueryClient' defined in file [D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\elastic\elastic-query-client\target\classes\com\eventdriven\microservices\elastic\query\client\service\impl\TwitterElasticRepositoryQueryClient.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.eventdriven.microservices.elastic.query.client.repository.TwitterElasticSearchQueryRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2022-06-22 16:26:13 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2022-06-22 16:26:13 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-06-22 16:26:13 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.eventdriven.microservices.elastic.query.client.service.impl.TwitterElasticRepositoryQueryClient required a bean of type 'com.eventdriven.microservices.elastic.query.client.repository.TwitterElasticSearchQueryRepository' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.eventdriven.microservices.elastic.query.client.repository.TwitterElasticSearchQueryRepository' in your configuration.
+
+2022-06-22 16:36:28 [main] INFO  c.e.m.e.q.s.ElasticQueryServiceApplication - Starting ElasticQueryServiceApplication using Java 18.0.1.1 on AMasterPiece with PID 28884 (D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\elastic-query-service\target\classes started by bless in D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices)
+2022-06-22 16:36:28 [main] INFO  c.e.m.e.q.s.ElasticQueryServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-06-22 16:36:28 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2022-06-22 16:36:28 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=elastic-query-service, profiles=[default], label=null, version=4847b8cacdf6ddfb06572b0546cbf6ae458b4d14, state=null
+2022-06-22 16:36:29 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-06-22 16:36:29 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Elasticsearch repository interfaces.
+2022-06-22 16:36:29 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-06-22 16:36:29 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Elasticsearch repository interfaces.
+2022-06-22 16:36:29 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2022-06-22 16:36:30 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2022-06-22 16:36:30 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=ceec19c9-48a2-3f83-8996-d46d0fc897bf
+2022-06-22 16:36:31 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8084 (http)
+2022-06-22 16:36:31 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8084"]
+2022-06-22 16:36:31 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-22 16:36:31 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-22 16:36:31 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-22 16:36:31 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3234 ms
+2022-06-22 16:36:32 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterElasticRepositoryQueryClient' defined in file [D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\elastic\elastic-query-client\target\classes\com\eventdriven\microservices\elastic\query\client\service\impl\TwitterElasticRepositoryQueryClient.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.eventdriven.microservices.elastic.query.client.repository.TwitterElasticSearchQueryRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2022-06-22 16:36:32 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2022-06-22 16:36:32 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-06-22 16:36:32 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.eventdriven.microservices.elastic.query.client.service.impl.TwitterElasticRepositoryQueryClient required a bean of type 'com.eventdriven.microservices.elastic.query.client.repository.TwitterElasticSearchQueryRepository' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.eventdriven.microservices.elastic.query.client.repository.TwitterElasticSearchQueryRepository' in your configuration.
+
+2022-06-22 16:37:48 [main] INFO  c.e.m.e.q.s.ElasticQueryServiceApplication - Starting ElasticQueryServiceApplication using Java 18.0.1.1 on AMasterPiece with PID 18368 (D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\elastic-query-service\target\classes started by bless in D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices)
+2022-06-22 16:37:48 [main] INFO  c.e.m.e.q.s.ElasticQueryServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-06-22 16:37:48 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2022-06-22 16:37:48 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=elastic-query-service, profiles=[default], label=null, version=4847b8cacdf6ddfb06572b0546cbf6ae458b4d14, state=null
+2022-06-22 16:37:49 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-06-22 16:37:49 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Elasticsearch repository interfaces.
+2022-06-22 16:37:49 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-06-22 16:37:49 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Elasticsearch repository interfaces.
+2022-06-22 16:37:49 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2022-06-22 16:37:49 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2022-06-22 16:37:49 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=ceec19c9-48a2-3f83-8996-d46d0fc897bf
+2022-06-22 16:37:50 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8084 (http)
+2022-06-22 16:37:50 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8084"]
+2022-06-22 16:37:50 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-22 16:37:50 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-22 16:37:50 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-22 16:37:50 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2510 ms
+2022-06-22 16:37:52 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterElasticRepositoryQueryClient' defined in file [D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\elastic\elastic-query-client\target\classes\com\eventdriven\microservices\elastic\query\client\service\impl\TwitterElasticRepositoryQueryClient.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.eventdriven.microservices.elastic.query.client.repository.TwitterElasticSearchQueryRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2022-06-22 16:37:52 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2022-06-22 16:37:52 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-06-22 16:37:52 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.eventdriven.microservices.elastic.query.client.service.impl.TwitterElasticRepositoryQueryClient required a bean of type 'com.eventdriven.microservices.elastic.query.client.repository.TwitterElasticSearchQueryRepository' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.eventdriven.microservices.elastic.query.client.repository.TwitterElasticSearchQueryRepository' in your configuration.
+
+2022-06-22 16:38:47 [main] INFO  c.e.m.e.q.s.ElasticQueryServiceApplication - Starting ElasticQueryServiceApplication using Java 18.0.1.1 on AMasterPiece with PID 3628 (D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\elastic-query-service\target\classes started by bless in D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices)
+2022-06-22 16:38:47 [main] INFO  c.e.m.e.q.s.ElasticQueryServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-06-22 16:38:47 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2022-06-22 16:38:47 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=elastic-query-service, profiles=[default], label=null, version=4847b8cacdf6ddfb06572b0546cbf6ae458b4d14, state=null
+2022-06-22 16:38:48 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-06-22 16:38:48 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Elasticsearch repository interfaces.
+2022-06-22 16:38:48 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-06-22 16:38:48 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Elasticsearch repository interfaces.
+2022-06-22 16:38:48 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2022-06-22 16:38:48 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2022-06-22 16:38:49 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=ceec19c9-48a2-3f83-8996-d46d0fc897bf
+2022-06-22 16:38:49 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8084 (http)
+2022-06-22 16:38:49 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8084"]
+2022-06-22 16:38:49 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-22 16:38:49 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-22 16:38:50 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-22 16:38:50 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2811 ms
+2022-06-22 16:38:51 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterElasticRepositoryQueryClient' defined in file [D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\elastic\elastic-query-client\target\classes\com\eventdriven\microservices\elastic\query\client\service\impl\TwitterElasticRepositoryQueryClient.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.eventdriven.microservices.elastic.query.client.repository.TwitterElasticSearchQueryRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2022-06-22 16:38:51 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2022-06-22 16:38:51 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-06-22 16:38:51 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.eventdriven.microservices.elastic.query.client.service.impl.TwitterElasticRepositoryQueryClient required a bean of type 'com.eventdriven.microservices.elastic.query.client.repository.TwitterElasticSearchQueryRepository' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.eventdriven.microservices.elastic.query.client.repository.TwitterElasticSearchQueryRepository' in your configuration.
+
+2022-06-22 16:46:46 [main] INFO  c.e.m.e.q.s.ElasticQueryServiceApplication - Starting ElasticQueryServiceApplication using Java 18.0.1.1 on AMasterPiece with PID 25588 (D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\elastic-query-service\target\classes started by bless in D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices)
+2022-06-22 16:46:46 [main] INFO  c.e.m.e.q.s.ElasticQueryServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-06-22 16:46:46 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2022-06-22 16:46:46 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=elastic-query-service, profiles=[default], label=null, version=4847b8cacdf6ddfb06572b0546cbf6ae458b4d14, state=null
+2022-06-22 16:46:47 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-06-22 16:46:47 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Elasticsearch repository interfaces.
+2022-06-22 16:46:48 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-06-22 16:46:48 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 Elasticsearch repository interfaces.
+2022-06-22 16:46:48 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2022-06-22 16:46:48 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2022-06-22 16:46:48 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=ceec19c9-48a2-3f83-8996-d46d0fc897bf
+2022-06-22 16:46:49 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8084 (http)
+2022-06-22 16:46:49 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8084"]
+2022-06-22 16:46:49 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-22 16:46:49 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-22 16:46:49 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-22 16:46:49 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2810 ms
+2022-06-22 16:46:50 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterElasticRepositoryQueryClient' defined in file [D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\elastic\elastic-query-client\target\classes\com\eventdriven\microservices\elastic\query\client\service\impl\TwitterElasticRepositoryQueryClient.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.eventdriven.microservices.elastic.query.client.repository.TwitterElasticSearchQueryRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2022-06-22 16:46:50 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2022-06-22 16:46:50 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-06-22 16:46:50 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.eventdriven.microservices.elastic.query.client.service.impl.TwitterElasticRepositoryQueryClient required a bean of type 'com.eventdriven.microservices.elastic.query.client.repository.TwitterElasticSearchQueryRepository' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.eventdriven.microservices.elastic.query.client.repository.TwitterElasticSearchQueryRepository' in your configuration.
+
+2022-06-22 16:51:18 [main] INFO  c.e.m.e.q.s.ElasticQueryServiceApplication - Starting ElasticQueryServiceApplication using Java 18.0.1.1 on AMasterPiece with PID 27984 (D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\elastic-query-service\target\classes started by bless in D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices)
+2022-06-22 16:51:18 [main] INFO  c.e.m.e.q.s.ElasticQueryServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-06-22 16:51:18 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2022-06-22 16:51:18 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=elastic-query-service, profiles=[default], label=null, version=4847b8cacdf6ddfb06572b0546cbf6ae458b4d14, state=null
+2022-06-22 16:51:20 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-06-22 16:51:20 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Elasticsearch repository interfaces.
+2022-06-22 16:51:20 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-06-22 16:51:20 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Elasticsearch repository interfaces.
+2022-06-22 16:51:20 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2022-06-22 16:51:20 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2022-06-22 16:51:20 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=ceec19c9-48a2-3f83-8996-d46d0fc897bf
+2022-06-22 16:51:21 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8084 (http)
+2022-06-22 16:51:21 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8084"]
+2022-06-22 16:51:21 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-22 16:51:21 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-22 16:51:21 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-22 16:51:21 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2885 ms
+2022-06-22 16:51:22 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterElasticRepositoryQueryClient' defined in file [D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\elastic\elastic-query-client\target\classes\com\eventdriven\microservices\elastic\query\client\service\impl\TwitterElasticRepositoryQueryClient.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.eventdriven.microservices.elastic.query.client.repository.TwitterElasticSearchQueryRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2022-06-22 16:51:22 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2022-06-22 16:51:22 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-06-22 16:51:23 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.eventdriven.microservices.elastic.query.client.service.impl.TwitterElasticRepositoryQueryClient required a bean of type 'com.eventdriven.microservices.elastic.query.client.repository.TwitterElasticSearchQueryRepository' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.eventdriven.microservices.elastic.query.client.repository.TwitterElasticSearchQueryRepository' in your configuration.
+
+2022-06-22 16:54:00 [main] INFO  c.e.m.e.q.s.ElasticQueryServiceApplication - Starting ElasticQueryServiceApplication using Java 18.0.1.1 on AMasterPiece with PID 21252 (D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\elastic-query-service\target\classes started by bless in D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices)
+2022-06-22 16:54:00 [main] INFO  c.e.m.e.q.s.ElasticQueryServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-06-22 16:54:01 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2022-06-22 16:54:01 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=elastic-query-service, profiles=[default], label=null, version=4847b8cacdf6ddfb06572b0546cbf6ae458b4d14, state=null
+2022-06-22 16:54:01 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-06-22 16:54:01 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Elasticsearch repository interfaces.
+2022-06-22 16:54:01 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-06-22 16:54:02 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 95 ms. Found 1 Elasticsearch repository interfaces.
+2022-06-22 16:54:02 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2022-06-22 16:54:02 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2022-06-22 16:54:02 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=e5cacf75-c292-313d-adbf-6fcb8f4f6a16
+2022-06-22 16:54:03 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8084 (http)
+2022-06-22 16:54:03 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8084"]
+2022-06-22 16:54:03 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-22 16:54:03 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-22 16:54:04 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-22 16:54:04 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3000 ms
+2022-06-22 16:54:06 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 14266d06-d1ce-45a9-9741-7c1afe27d13d
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-06-22 16:54:06 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3e2c8ef, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@290807e5, org.springframework.security.web.context.SecurityContextPersistenceFilter@8aa5ab4, org.springframework.security.web.header.HeaderWriterFilter@13404f75, org.springframework.security.web.csrf.CsrfFilter@5534e6f1, org.springframework.security.web.authentication.logout.LogoutFilter@380e33c2, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@54f373d4, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1c31de5d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@60bc308b, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@507f47f9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@62360a68, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1450ffa3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@56499781, org.springframework.security.web.session.SessionManagementFilter@6b6fd0, org.springframework.security.web.access.ExceptionTranslationFilter@66314fee, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3f908bc0]
+2022-06-22 16:54:07 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8084"]
+2022-06-22 16:54:07 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8084 (http) with context path ''
+2022-06-22 16:54:07 [main] INFO  c.e.m.e.q.s.ElasticQueryServiceApplication - Started ElasticQueryServiceApplication in 11.148 seconds (JVM running for 12.83)
+2022-06-22 16:58:06 [http-nio-8084-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-22 16:58:06 [http-nio-8084-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-06-22 16:58:06 [http-nio-8084-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 65 ms
+2022-06-22 16:58:07 [http-nio-8084-exec-1] WARN  o.a.c.util.SessionIdGeneratorBase - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [143] milliseconds.
+2022-06-22 17:12:58 [main] INFO  c.e.m.e.q.s.ElasticQueryServiceApplication - Starting ElasticQueryServiceApplication using Java 18.0.1.1 on AMasterPiece with PID 28376 (D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\elastic-query-service\target\classes started by bless in D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices)
+2022-06-22 17:12:58 [main] INFO  c.e.m.e.q.s.ElasticQueryServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-06-22 17:12:58 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2022-06-22 17:12:58 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=elastic-query-service, profiles=[default], label=null, version=4847b8cacdf6ddfb06572b0546cbf6ae458b4d14, state=null
+2022-06-22 17:12:59 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-06-22 17:12:59 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Elasticsearch repository interfaces.
+2022-06-22 17:12:59 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-06-22 17:12:59 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 83 ms. Found 1 Elasticsearch repository interfaces.
+2022-06-22 17:12:59 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2022-06-22 17:12:59 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2022-06-22 17:13:00 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=aa1fb53d-519d-32b8-bfab-efa11e4eabfb
+2022-06-22 17:13:00 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8084 (http)
+2022-06-22 17:13:00 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8084"]
+2022-06-22 17:13:00 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-22 17:13:00 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-22 17:13:01 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-22 17:13:01 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3084 ms
+2022-06-22 17:13:03 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 9edd1127-7817-404a-95b3-acbd1cd19621
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-06-22 17:13:03 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@36871e98, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@70d687b8, org.springframework.security.web.context.SecurityContextPersistenceFilter@448086ab, org.springframework.security.web.header.HeaderWriterFilter@1b8d20e6, org.springframework.security.web.csrf.CsrfFilter@7b79ff1c, org.springframework.security.web.authentication.logout.LogoutFilter@7bce9ce4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6de610c6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@23ec2bdc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6533629, org.springframework.security.web.session.SessionManagementFilter@24eecabf, org.springframework.security.web.access.ExceptionTranslationFilter@1a43a88e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@70022d44]
+2022-06-22 17:13:04 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8084"]
+2022-06-22 17:13:04 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8084 (http) with context path ''
+2022-06-22 17:13:04 [main] INFO  c.e.m.e.q.s.ElasticQueryServiceApplication - Started ElasticQueryServiceApplication in 13.22 seconds (JVM running for 15.538)
+2022-06-22 17:13:39 [http-nio-8084-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-22 17:13:39 [http-nio-8084-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-06-22 17:13:39 [http-nio-8084-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2022-06-22 17:17:23 [main] INFO  c.e.m.e.q.s.ElasticQueryServiceApplication - Starting ElasticQueryServiceApplication using Java 18.0.1.1 on AMasterPiece with PID 13216 (D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\elastic-query-service\target\classes started by bless in D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices)
+2022-06-22 17:17:23 [main] INFO  c.e.m.e.q.s.ElasticQueryServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-06-22 17:17:23 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2022-06-22 17:17:23 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=elastic-query-service, profiles=[default], label=null, version=4847b8cacdf6ddfb06572b0546cbf6ae458b4d14, state=null
+2022-06-22 17:17:25 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-06-22 17:17:25 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Elasticsearch repository interfaces.
+2022-06-22 17:17:25 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-06-22 17:17:25 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 84 ms. Found 1 Elasticsearch repository interfaces.
+2022-06-22 17:17:25 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2022-06-22 17:17:25 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2022-06-22 17:17:25 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=aa1fb53d-519d-32b8-bfab-efa11e4eabfb
+2022-06-22 17:17:26 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8084 (http)
+2022-06-22 17:17:26 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8084"]
+2022-06-22 17:17:26 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-22 17:17:26 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-22 17:17:27 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-22 17:17:27 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3179 ms
+2022-06-22 17:17:29 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 00f99417-6933-4867-bba9-747056a88e57
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-06-22 17:17:29 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5909ae90, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4489f60f, org.springframework.security.web.context.SecurityContextPersistenceFilter@4c50cd7d, org.springframework.security.web.header.HeaderWriterFilter@71b3ba5a, org.springframework.security.web.csrf.CsrfFilter@2804b13f, org.springframework.security.web.authentication.logout.LogoutFilter@334b392d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1a4930cf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3fd33f48, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@fe08eaf, org.springframework.security.web.session.SessionManagementFilter@1b8d20e6, org.springframework.security.web.access.ExceptionTranslationFilter@1c43df76, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@34e25492]
+2022-06-22 17:17:31 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8084"]
+2022-06-22 17:17:31 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8084 (http) with context path ''
+2022-06-22 17:17:32 [main] INFO  c.e.m.e.q.s.ElasticQueryServiceApplication - Started ElasticQueryServiceApplication in 14.518 seconds (JVM running for 16.331)
+2022-06-22 17:17:42 [http-nio-8084-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-22 17:17:42 [http-nio-8084-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-06-22 17:17:42 [http-nio-8084-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-06-22 17:18:50 [http-nio-8084-exec-1] INFO  c.e.m.e.q.s.a.ElasticDocumentController - Elastic Search returned tt of document
+2022-06-22 17:34:58 [main] INFO  c.e.m.e.q.s.ElasticQueryServiceApplication - Starting ElasticQueryServiceApplication using Java 18.0.1.1 on AMasterPiece with PID 20980 (D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\elastic-query-service\target\classes started by bless in D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices)
+2022-06-22 17:34:58 [main] INFO  c.e.m.e.q.s.ElasticQueryServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-06-22 17:34:58 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2022-06-22 17:34:58 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=elastic-query-service, profiles=[default], label=null, version=4847b8cacdf6ddfb06572b0546cbf6ae458b4d14, state=null
+2022-06-22 17:34:59 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-06-22 17:34:59 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Elasticsearch repository interfaces.
+2022-06-22 17:34:59 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-06-22 17:34:59 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 44 ms. Found 1 Elasticsearch repository interfaces.
+2022-06-22 17:34:59 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2022-06-22 17:34:59 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2022-06-22 17:35:00 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=aa1fb53d-519d-32b8-bfab-efa11e4eabfb
+2022-06-22 17:35:00 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8084 (http)
+2022-06-22 17:35:00 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8084"]
+2022-06-22 17:35:00 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-22 17:35:00 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-22 17:35:00 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-22 17:35:00 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1922 ms
+2022-06-22 17:35:02 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 292dc4ae-aca8-48be-b894-d71a218e30ba
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-06-22 17:35:02 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@669c2b07, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1b1ea1d9, org.springframework.security.web.context.SecurityContextPersistenceFilter@563263a, org.springframework.security.web.header.HeaderWriterFilter@fee881, org.springframework.security.web.authentication.logout.LogoutFilter@54e0f76f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@76ffc17c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6e794f53, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@75f4d8a8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6a902015, org.springframework.security.web.session.SessionManagementFilter@315cf170, org.springframework.security.web.access.ExceptionTranslationFilter@3b33fff9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@43423d40]
+2022-06-22 17:35:03 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8084"]
+2022-06-22 17:35:03 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8084 (http) with context path ''
+2022-06-22 17:35:03 [main] INFO  c.e.m.e.q.s.ElasticQueryServiceApplication - Started ElasticQueryServiceApplication in 9.539 seconds (JVM running for 10.424)
+2022-06-22 17:46:10 [main] INFO  c.e.m.e.q.s.ElasticQueryServiceApplication - Starting ElasticQueryServiceApplication using Java 18.0.1.1 on AMasterPiece with PID 15644 (D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\elastic-query-service\target\classes started by bless in D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices)
+2022-06-22 17:46:10 [main] INFO  c.e.m.e.q.s.ElasticQueryServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-06-22 17:46:10 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2022-06-22 17:46:10 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=elastic-query-service, profiles=[default], label=null, version=4847b8cacdf6ddfb06572b0546cbf6ae458b4d14, state=null
+2022-06-22 17:46:11 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-06-22 17:46:11 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Elasticsearch repository interfaces.
+2022-06-22 17:46:11 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-06-22 17:46:11 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 64 ms. Found 1 Elasticsearch repository interfaces.
+2022-06-22 17:46:11 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2022-06-22 17:46:11 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2022-06-22 17:46:12 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=aa1fb53d-519d-32b8-bfab-efa11e4eabfb
+2022-06-22 17:46:12 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8084 (http)
+2022-06-22 17:46:12 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8084"]
+2022-06-22 17:46:12 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-22 17:46:12 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-22 17:46:13 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-22 17:46:13 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2828 ms
+2022-06-22 17:46:15 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@534d0e20, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7d18338b, org.springframework.security.web.context.SecurityContextPersistenceFilter@102af1bb, org.springframework.security.web.header.HeaderWriterFilter@4ca0b9b1, org.springframework.security.web.authentication.logout.LogoutFilter@22cd8ec2, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@20a9f5fb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@56cd5d76, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@77cd235b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3f4a605f, org.springframework.security.web.session.SessionManagementFilter@abc7005, org.springframework.security.web.access.ExceptionTranslationFilter@5af38a4a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6a902015]
+2022-06-22 17:46:16 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8084"]
+2022-06-22 17:46:16 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8084 (http) with context path ''
+2022-06-22 17:46:16 [main] INFO  c.e.m.e.q.s.ElasticQueryServiceApplication - Started ElasticQueryServiceApplication in 14.155 seconds (JVM running for 15.198)
+2022-06-22 17:47:10 [http-nio-8084-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-22 17:47:10 [http-nio-8084-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-06-22 17:47:10 [http-nio-8084-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-06-22 17:47:11 [http-nio-8084-exec-1] INFO  c.e.m.e.q.s.a.ElasticDocumentController - Elastic Search returned 1 of document
+2022-06-22 17:47:26 [http-nio-8084-exec-3] INFO  c.e.m.e.q.s.a.ElasticDocumentController - Elastic Search returned 1 of document
+2022-06-22 17:47:28 [http-nio-8084-exec-6] INFO  c.e.m.e.q.s.a.ElasticDocumentController - Elastic Search returned 1 of document
+2022-06-22 17:51:50 [http-nio-8084-exec-4] INFO  c.e.m.e.q.s.a.ElasticDocumentController - Elastic Search returned 1 of document

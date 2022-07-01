@@ -1,0 +1,57 @@
+2022-06-23 08:32:42 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
+2022-06-23 08:32:42 [main] INFO  c.e.m.config.server.ConfigServer - Starting ConfigServer using Java 18.0.1.1 on AMasterPiece with PID 25164 (D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\config-server\target\classes started by bless in D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices)
+2022-06-23 08:32:42 [main] INFO  c.e.m.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2022-06-23 08:32:44 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=d6fa766b-4bad-3b19-9efb-bad6959c38ba
+2022-06-23 08:32:45 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2022-06-23 08:32:45 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2022-06-23 08:32:45 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-23 08:32:45 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-23 08:32:45 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-23 08:32:45 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2619 ms
+2022-06-23 08:32:45 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/decrypt/**'] with [org.springframework.security.web.session.DisableEncodeUrlFilter@6bedd4e4, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4570d7b6, org.springframework.security.web.context.SecurityContextPersistenceFilter@5261ec9, org.springframework.security.web.header.HeaderWriterFilter@67b355c8, org.springframework.security.web.csrf.CsrfFilter@5d3b58ca, org.springframework.security.web.authentication.logout.LogoutFilter@c889805, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@64da6cbd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4ed9f7b1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@72b6832e, org.springframework.security.web.session.SessionManagementFilter@6e31d989, org.springframework.security.web.access.ExceptionTranslationFilter@79f90a3a]
+2022-06-23 08:32:46 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2022-06-23 08:32:46 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2022-06-23 08:32:47 [main] INFO  c.e.m.config.server.ConfigServer - Started ConfigServer in 5.445 seconds (JVM running for 6.2)
+2022-06-23 08:33:12 [http-nio-8888-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-23 08:33:12 [http-nio-8888-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-06-23 08:33:12 [http-nio-8888-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2022-06-23 08:33:19 [http-nio-8888-exec-2] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [C:\Users\bless\AppData\Local\Temp\config-repo-16855604316031877333\elastic-query-service.yml]' via location 'file:/C:/Users/bless/AppData/Local/Temp/config-repo-16855604316031877333/'
+2022-06-23 11:10:23 [Thread-3] WARN  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Failed to delete temporary directory on exit: java.nio.file.AccessDeniedException: C:\Users\bless\AppData\Local\Temp\config-repo-16855604316031877333\.git\objects\pack\pack-2407771f6265594dbff554f2e46858b3a0cb5e7d.idx
+2022-06-23 12:30:05 [main] INFO  c.e.m.config.server.ConfigServer - Starting ConfigServer using Java 18.0.1.1 on AMasterPiece with PID 22024 (D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\config-server\target\classes started by bless in D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices)
+2022-06-23 12:30:05 [main] INFO  c.e.m.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2022-06-23 12:30:05 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
+2022-06-23 12:30:08 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=d6fa766b-4bad-3b19-9efb-bad6959c38ba
+2022-06-23 12:30:10 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2022-06-23 12:30:10 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2022-06-23 12:30:10 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-23 12:30:10 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-23 12:30:10 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-23 12:30:10 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5024 ms
+2022-06-23 12:30:11 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/decrypt/**'] with [org.springframework.security.web.session.DisableEncodeUrlFilter@363c32cc, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6f3f0ae, org.springframework.security.web.context.SecurityContextPersistenceFilter@3610f277, org.springframework.security.web.header.HeaderWriterFilter@20580d4e, org.springframework.security.web.csrf.CsrfFilter@388623ad, org.springframework.security.web.authentication.logout.LogoutFilter@76bf1bb8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@41fa769c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2b148329, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6baf25d7, org.springframework.security.web.session.SessionManagementFilter@55fdf7f9, org.springframework.security.web.access.ExceptionTranslationFilter@2d119405]
+2022-06-23 12:30:13 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2022-06-23 12:30:13 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2022-06-23 12:30:14 [main] INFO  c.e.m.config.server.ConfigServer - Started ConfigServer in 11.328 seconds (JVM running for 13.2)
+2022-06-23 12:31:21 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-23 12:31:21 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-06-23 12:31:21 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2022-06-23 12:31:29 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [C:\Users\bless\AppData\Local\Temp\config-repo-6677369220992103759\elastic-query-service.yml]' via location 'file:/C:/Users/bless/AppData/Local/Temp/config-repo-6677369220992103759/'
+2022-06-23 13:47:43 [Thread-3] WARN  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Failed to delete temporary directory on exit: java.nio.file.AccessDeniedException: C:\Users\bless\AppData\Local\Temp\config-repo-6677369220992103759\.git\objects\pack\pack-2407771f6265594dbff554f2e46858b3a0cb5e7d.idx
+2022-06-23 17:41:10 [main] INFO  c.e.m.config.server.ConfigServer - Starting ConfigServer using Java 18.0.1.1 on AMasterPiece with PID 14316 (D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices\config-server\target\classes started by bless in D:\spring\Projects\Event-Driven-Microservices\event-driven-microservices)
+2022-06-23 17:41:10 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
+2022-06-23 17:41:10 [main] INFO  c.e.m.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2022-06-23 17:41:13 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=d6fa766b-4bad-3b19-9efb-bad6959c38ba
+2022-06-23 17:41:14 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2022-06-23 17:41:14 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2022-06-23 17:41:14 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-23 17:41:14 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-23 17:41:15 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-23 17:41:15 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4634 ms
+2022-06-23 17:41:15 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/decrypt/**'] with [org.springframework.security.web.session.DisableEncodeUrlFilter@3850e90c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3d9f5016, org.springframework.security.web.context.SecurityContextPersistenceFilter@72a2312e, org.springframework.security.web.header.HeaderWriterFilter@46e3559f, org.springframework.security.web.csrf.CsrfFilter@5f5827d0, org.springframework.security.web.authentication.logout.LogoutFilter@23ed382c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7951c3a2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@20580d4e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7e91ed74, org.springframework.security.web.session.SessionManagementFilter@5261ec9, org.springframework.security.web.access.ExceptionTranslationFilter@388623ad]
+2022-06-23 17:41:18 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2022-06-23 17:41:18 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2022-06-23 17:41:18 [main] INFO  c.e.m.config.server.ConfigServer - Started ConfigServer in 10.283 seconds (JVM running for 11.983)
+2022-06-23 17:48:58 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-23 17:48:58 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-06-23 17:48:58 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 32 ms
+2022-06-23 17:49:06 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [C:\Users\bless\AppData\Local\Temp\config-repo-624459989439376375\elastic-query-service.yml]' via location 'file:/C:/Users/bless/AppData/Local/Temp/config-repo-624459989439376375/'
+2022-06-23 18:00:43 [Thread-3] WARN  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Failed to delete temporary directory on exit: java.nio.file.AccessDeniedException: C:\Users\bless\AppData\Local\Temp\config-repo-624459989439376375\.git\objects\pack\pack-2407771f6265594dbff554f2e46858b3a0cb5e7d.idx

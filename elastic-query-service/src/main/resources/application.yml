@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: elastic-query-service
+  config:
+    import: 'optional:configserver:http://localhost:8888'
+  security:
+    paths-to-ignore: /api-docs
+    user:
+      name: user
+      password: user
+      roles:
+        - USER
+
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+
